@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 
-.button_products {
+.button__products {
   border: 2px solid var(--accent-color);
   font-style: normal;
   font-weight: 600;
@@ -36,7 +36,7 @@
   }
 }
 
-.button_read {
+.button__read-more {
   background-color: var(--accent-color);
   font-style: normal;
   font-weight: 600;
@@ -57,7 +57,7 @@
   }
 }
 
-.button_made {
+.button__how-made {
   font-style: normal;
   font-weight: 600;
   color: var(--accent-color);
@@ -85,7 +85,7 @@
   }
 }
 
-.button_locations {
+.button__locations {
   background-color: var(--accent-color);
   font-style: normal;
   font-weight: 600;
@@ -106,7 +106,7 @@
   }
 }
 
-.button_franchies {
+.button__franchise {
   border: 2px solid var(--accent-color);
   font-style: normal;
   font-weight: 600;
@@ -126,7 +126,7 @@
   }
 }
 
-.button_buy {
+.button__buy-now {
   background-color: var(--accent-color);
   font-style: normal;
   font-weight: 600;
