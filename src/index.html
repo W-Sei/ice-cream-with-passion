@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DevMonkeys team project" />
+  <meta name="keywords" content="team-project" />
+  <meta name="author" content="DevMonkeys" />
+  <title>Ice Cream With Passion</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="./favicon/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./sass/index.scss" />
+
+</head>
+
+<body>
+  <!-- Partials -->
+  <include src="./partials/header.html"></include>
+  <include src="./partials/mobile-menu.html"></include>
+
+  <main>
+    <include src="./partials/buy-now-modal.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/products-modal.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/about-modal.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/locations-modal.html"></include>
+    <include src="./partials/franchise-modal.html"></include>
+  </main>
+
+  <include src="./partials/footer.html"></include>
+
+  <!-- JS Scripts -->
+  <script type="module" src="./scripts-js/mobile-menu.js"></script>
+  <script type="module" src="./scripts-js/modal.js"></script>
+
+</body>
+
 </html>

@@ -1,0 +1,52 @@
+@mixin centered-flex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+// for paragraphs
+@mixin font(
+  $line-height: 27px,
+  $font-weight: 400,
+  $font-size: 14px,
+  $letter-spacing: 0.04em
+) {
+  line-height: $line-height / $font-size;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+}
+
+// for headings
+@mixin fontHeading(
+  $font-family: 'Seymour One',
+  $line-height: 45px,
+  $font-weight: 400,
+  $font-size: 36px,
+  $letter-spacing: 0.06em,
+  $text-align: center
+) {
+  font-family: $font-family;
+  line-height: $line-height / $font-size;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+  text-align: $text-align;
+}
+
+// for buttons
+@mixin button(
+  $border-radius: 10px,
+  $font-family: 'Montserrat',
+  $font-style: normal,
+  $font-weight: 600,
+  $font-size: 14px,
+  $line-height: 18px
+) {
+  border-radius: $border-radius;
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
