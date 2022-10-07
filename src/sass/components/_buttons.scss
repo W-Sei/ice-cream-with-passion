@@ -1,0 +1,148 @@
+.button {
+  display: inline-block;
+  border: transparent;
+  background-color: transparent;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.button_products {
+  border: 2px solid var(--accent-color);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--text-dark);
+  padding: 12px 34px;
+  min-width: 134px;
+
+  &:hover {
+    border-color: var(--button-green);
+  }
+
+  &:focus {
+    border-color: var(--button-green);
+    color: var(--text-light);
+  }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 8px;
+    line-height: 1.25;
+    border-radius: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.28;
+    border-radius: 10px;
+  }
+}
+
+.button_read {
+  background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--text-dark);
+  padding: 12px 34px;
+  min-width: 164px;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: var(--button-green);
+  }
+
+  &:focus {
+    background-color: var(--button-green);
+    color: var(--text-light);
+  }
+}
+
+.button_made {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--accent-color);
+  padding: 12px 22px;
+  min-width: 154px;
+
+  &:hover {
+    color: var(--button-green);
+  }
+
+  &:focus {
+    color: var(--text-light);
+  }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 8px;
+    line-height: 10px;
+    border-radius: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.28;
+    border-radius: 10px;
+  }
+}
+
+.button_locations {
+  background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--text-dark);
+  padding: 12px 34px;
+  min-width: 196px;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: var(--button-green);
+  }
+
+  &:focus {
+    background-color: var(--button-green);
+    color: var(--text-light);
+  }
+}
+
+.button_franchies {
+  border: 2px solid var(--accent-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--text-dark);
+  padding: 12px 46px;
+  min-width: 196px;
+
+  &:hover {
+    border-color: var(--button-green);
+  }
+
+  &:focus {
+    border-color: var(--button-green);
+    color: var(--text-light);
+  }
+}
+
+.button_buy {
+  background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--text-dark);
+  padding: 12px 34px;
+  min-width: 152px;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: var(--button-green);
+  }
+
+  &:focus {
+    background-color: var(--button-green);
+    color: var(--text-light);
+  }
+}
