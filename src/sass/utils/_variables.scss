@@ -9,12 +9,32 @@
   --green-section-background: #84a178;
 
   //   shades for sections
-  --product-green: #9cbe8f;
-  --product-under-green: rgba(#9cbe8f, 0.7);
+  --product-green: #aec6a5;
+  --circle-green: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  --circle-green-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+
   --product-yellow: #efd478;
-  --product-under-yellow: rgba(#f8d24e, 0.7);
+  --circle-yellow: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  --circle-yellow-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+
   --product-brown: #d6936d;
-  --product-under-brown: rgba(#d5753f, 0.7);
+  --circle-brown: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  --circle-brown-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 
   --input-fill: rgba(#f8d24e, 0.1);
 

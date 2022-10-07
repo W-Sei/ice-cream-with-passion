@@ -24,7 +24,8 @@
   $font-weight: 400,
   $font-size: 36px,
   $letter-spacing: 0.06em,
-  $text-align: center
+  $text-align: center,
+  $text-transform: uppercase
 ) {
   font-family: $font-family;
   line-height: $line-height / $font-size;
@@ -32,6 +33,26 @@
   font-size: $font-size;
   letter-spacing: $letter-spacing;
   text-align: $text-align;
+  text-transform: $text-transform;
+}
+
+// add second heading
+@mixin fontHeadingSmall(
+  $font-family: 'Montserrat',
+  $line-height: 37px,
+  $font-weight: 800,
+  $font-size: 30px,
+  $letter-spacing: 0.04em,
+  $text-align: center,
+  $text-transform: uppercase
+) {
+  font-family: $font-family;
+  line-height: $line-height / $font-size;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+  text-align: $text-align;
+  text-transform: $text-transform;
 }
 
 // for buttons
