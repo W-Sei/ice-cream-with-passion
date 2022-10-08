@@ -1,6 +1,6 @@
 $('.single-item').slick(
     {
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
     }
 );
