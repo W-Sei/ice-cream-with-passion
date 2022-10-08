@@ -25,7 +25,7 @@
 </symbol>
 
 <symbol id="icon-short-arrow" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
+<path  d="M14.019 17.062l-8.5 8.5c-0.588 0.588-1.538 0.588-2.119 0l-1.413-1.412c-0.587-0.588-0.587-1.538 0-2.119l6.025-6.025-6.025-6.025c-0.587-0.588-0.587-1.537 0-2.119l1.406-1.425c0.587-0.588 1.537-0.588 2.119 0l8.5 8.5c0.594 0.588 0.594 1.538 0.006 2.125z"></path>
 </symbol>
 
 <symbol id="icon-github" viewBox="0 0 32 32">
