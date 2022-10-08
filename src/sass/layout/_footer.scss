@@ -1,0 +1,91 @@
+.page-footer {
+  padding-bottom: 60px;
+  background-color: var(--green-section-background);
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.page-footer__wrapper {
+  margin-bottom: 42px;
+}
+
+.page-footer__title {
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+.page-footer__title_dubbed {
+  @include font($line-height: 22px, $font-weight: 700, $font-size: 18px);
+  margin-bottom: 16px;
+}
+
+.page-footer__title_dubbed-passion {
+  @include font($line-height: 41px, $font-weight: 700, $font-size: 34px);
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.social-list__link {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  color: var(--green-section-background);
+
+  // transform: scale(1);
+	// transition-property: transform, color;
+	// transition: transform 500ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--text-light);
+    // background-color: red;
+  }
+
+  // &:focus,
+  // &:hover {
+  //   transform: scale(2);
+  // }
+}
+
+.icon-github,
+.icon-facebook,
+.icon-telegram {
+  fill: currentColor;
+}
+
+.page-footer__contact {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3px;
+  margin-bottom: 40px;
+}
+
+.page-footer__text,
+.button-tel {
+  @include font($line-height: 22px, $font-weight: 700, $font-size: 12px);
+}
+
+.button-tel {
+color: var(--text-light);
+}
+
+.page-footer__copyright {
+  padding-top: 16px;
+  border-top: 1px solid #E1E1E1;
+}
+
+.page-footer__copyright-text {
+  @include font($line-height: 21px, $font-weight: 700, $font-size: 14px);
+  color: var(--footer-text-grey);
+  text-align: center;
+}
