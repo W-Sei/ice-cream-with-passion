@@ -1,0 +1,169 @@
+.contacts {
+background-color: var(--green-section-background);
+}
+.address-container {
+    padding: 40px 32px;
+    width: 280px;
+        height: 412.1px;
+
+        background: rgb(252, 252, 252);
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+            border-radius: 24px;
+            margin-bottom: 20px;
+}
+
+.address {
+
+        padding-bottom: 24px;
+}
+
+
+.contact__name {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+        display: flex;
+            align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+            padding-left: 20px;
+                padding-right: 20px;
+                width: max-content;
+                height: 16px;
+
+        color: var(--text-dark);
+
+        background:var(--accent-color);
+            border-radius: 4px;
+            margin-bottom: 20px;
+}
+
+.contact__place {
+        font-size: 12px;
+        line-height: 1.83;
+    
+        letter-spacing: 0.04em;
+    
+        color:var(--text-dark);
+        margin-bottom: 8px;
+}
+.contact__link {
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+
+    letter-spacing: 0.04em;
+
+    color: #D6936D;
+    width: 190px;
+    flex-wrap: wrap;
+}
+
+.schedule {
+    padding-top: 24px;
+border-top: 1px solid #ececec;
+margin-bottom: 24px;
+}
+
+.schedule__day {
+    font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+    
+        color: #131313;
+}
+
+.schedule__time {
+    font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+    
+        color: #ABABAB;
+
+        margin-bottom: 8px;
+}
+
+.contact-list {
+ padding-top: 24px;
+border-top: 1px solid #ececec;
+}
+
+.contact-list__link {
+    font-weight: 500;
+        font-size: 12px;
+        line-height: 1.2;    
+        color: #131313;
+}
+
+.contact-btn {
+    margin-top: 32px;
+}
+
+.contact-btn__iten {
+    display: flex;
+    justify-content: center;
+}
+
+.button__locations {
+    background-color: var(--accent-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    color: var(--text-dark);
+    padding: 12px 34px;
+    min-width: 196px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+
+    &:hover {
+        background-color: var(--button-green);
+    }
+
+    &:focus {
+        background-color: var(--button-green);
+        color: var(--text-light);
+    }
+}
+
+.button__franchise {
+    border: 2px solid var(--accent-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    color: var(--text-dark);
+    padding: 12px 46px;
+    min-width: 196px;
+
+    &:hover {
+        border-color: var(--button-green);
+    }
+
+    &:focus {
+        border-color: var(--button-green);
+        color: var(--text-light);
+    }
+}
+
+
+// @media screen and (min-width: 320px) 
+
+// @media screen and (min-width: 480px)
+
+/* 0px - 767px */
+
+@media screen and (max-width: 767px) {}
+
+/* 768px + */
+
+@media screen and (min-width: 768px) {}
+
+/* 
+1200px +
+*/
+
+@media screen and (min-width: 1200px) {}
