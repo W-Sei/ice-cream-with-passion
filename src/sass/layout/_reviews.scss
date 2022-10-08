@@ -1,5 +1,4 @@
 .reviews__testimonials {
-    // padding: 29px 28px 80px;
     padding: 34px 39px;
     background: var(--green-section-background);
     border-radius: 24px;
@@ -10,14 +9,34 @@
     font-size: 12px;
     line-height: 255%;
     color: var(--text-light);
+
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;      
+        letter-spacing: 0.04em;
+        padding: 28px 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 39px 109px;
+        max-width: 968px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .reviews__testimonials-name {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 186%;
-    text-align: center;
-    color: var(--text-dark);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 186%;
+        text-align: center;
+        color: var(--text-dark);
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+           
+    }
 }
 
 .reviews__testimonials-img {
