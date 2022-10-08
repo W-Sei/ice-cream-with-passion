@@ -1,4 +1,5 @@
 .reviews__testimonials {
+    height: 256px;
     padding: 34px 39px;
     background: var(--green-section-background);
     border-radius: 24px;
@@ -10,9 +11,12 @@
     line-height: 255%;
     color: var(--text-light);
 
+
+
     @media screen and (min-width: 768px) {
+        height: 138px;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 186%;      
         letter-spacing: 0.04em;
         padding: 28px 80px;
@@ -20,6 +24,7 @@
 
     @media screen and (min-width: 1200px) {
         padding: 39px 109px;
+        font-size: 16px;
         max-width: 968px;
         margin-left: auto;
         margin-right: auto;
@@ -32,13 +37,24 @@
         line-height: 186%;
         text-align: center;
         color: var(--text-dark);
+        // margin-bottom: 14px;
 
     @media screen and (min-width: 768px) {
         font-size: 16px;
-           
+        // margin-bottom: 32px;   
     }
 }
 
 .reviews__testimonials-img {
     margin: 0 auto;
+}
+
+// .button #slick-slide-control103 {
+//     width: 12px;
+//     height: 12px;
+// }
+
+.slick-dots li.slick-active button:before {
+    color: var(--green-section-background);
+    
 }
