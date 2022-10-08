@@ -1,0 +1,26 @@
+.reviews__testimonials {
+    // padding: 29px 28px 80px;
+    padding: 34px 39px;
+    background: var(--green-section-background);
+    border-radius: 24px;
+    margin-top: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 255%;
+    color: var(--text-light);
+}
+
+.reviews__testimonials-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    text-align: center;
+    color: var(--text-dark);
+}
+
+reviews__testimonials-img {
+    margin-right: auto;
+    margin-left: auto;
+}
