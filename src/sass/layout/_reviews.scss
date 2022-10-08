@@ -11,7 +11,13 @@
     line-height: 255%;
     color: var(--text-light);
 
-
+    @media screen and (min-width: 480px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        letter-spacing: 0.04em;
+        padding: 28px 80px;
+    }
 
     @media screen and (min-width: 768px) {
         height: 138px;
@@ -39,7 +45,7 @@
         color: var(--text-dark);
         // margin-bottom: 14px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
         font-size: 16px;
         // margin-bottom: 32px;   
     }
