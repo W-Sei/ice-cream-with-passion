@@ -1,6 +1,6 @@
 .advantages-section {
     background-color: var(--green-section-background);
-    padding-top: 0;
+    // padding-top: 0;
     min-width: 320px;
 }
 .advantages-list {    
@@ -21,7 +21,8 @@
 .advantages-list__title {
     @include fontHeadingSmall ('Roboto', 42px, 700, 36px, 0.04em, center, uppercase);
     color: var(--text-light);
-      margin-bottom: 18px;
+   
+    margin-bottom: 18px;
 
         &::before {
             content: "";
@@ -45,6 +46,7 @@
 .advantages-list__text {
     @include fontHeadingSmall ('Montserrat', 20px, 700, 12px, 0em, center, none);
         color: var(--text-light);
+        margin-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -56,8 +58,12 @@
        
     }
     .advantages-list__item {
-        margin-bottom: 0;
+        
         flex-basis: calc((100% - 160px) / 3);
+
+        &:not(:last-child) {
+                margin-bottom: 0px;
+            }
     }
 
     .advantages-list__wrapper {
@@ -67,7 +73,48 @@
         
     }
 
+    .advantages-list__title {
+        @include fontHeadingSmall ('Montserrat', 59px, 700, 48px, 0.04em, center, none);
+       
+        margin-bottom: 16px;
+    }
 
-
+    .advantages-list__text {
+        @include fontHeadingSmall ('Montserrat', 24px, 400, 14px, 0em, center, none);            
+        }
 }
 
+
+@media screen and (min-width: 1200px) {
+
+    .advantages-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            column-gap: 32px;
+    
+        }
+
+    .advantages-list__item {
+             margin-bottom: 0;
+             flex-basis: calc((100% - 64px) / 3);
+         }
+
+    .advantages-list__wrapper {
+            width: 368px;
+            margin-right: 0;
+                margin-left: 0;
+               
+        }
+
+    .advantages-list__title {
+             @include fontHeadingSmall ('Montserrat', 71px, 700, 58px, 0.04em, center, none);
+           
+                margin-bottom: 16px;
+         }
+    
+         .advantages-list__text {
+             @include fontHeadingSmall ('Montserrat', 28px, 400, 16px, 0.02em, center, none);
+         }
+
+}
