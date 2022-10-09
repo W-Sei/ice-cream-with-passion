@@ -1,5 +1,5 @@
 <div
-  class="backdrop-products-modal backdrop-products-modal-ice-cream is-hidden"
+  class="backdrop-products-modal backdrop-products-modal-ice-cream"
   data-modal
 >
   <!-- START ######## Modal-ice-cream ######## -->
@@ -14,74 +14,115 @@
       autocomplete="off"
     >
       <p class="products-modal-ice-cream-form__title">Chololate icecream</p>
-      <img
-        src="./images/images/products-modal/products-modal-smart.png"
-        alt="Chololate icecream"
-        class="products-modal-ice-cream-form__img"
-      />
-      <ul class="products-modal-form__calorie-table-name-list">
-        <li class="products-modal-form__calorie-table-name-item">kcal</li>
-        <li class="products-modal-form__calorie-table-name-item">Protein...</li>
-        <li class="products-modal-form__calorie-table-name-item">Fats</li>
-        <li class="products-modal-form__calorie-table-name-item">Carbs</li>
+      <picture class="products-modal-ice-cream-form__img">
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/images/products-modal/products-modal-desktop.webp    1x,
+            ./images/images/products-modal/products-modal-desktop@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/images/products-modal/products-modal-desktop.png    1x,
+            ./images/images/products-modal/products-modal-desktop@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/images/products-modal/products-modal-smart.webp    1x,
+            ./images/images/products-modal/products-modal-smart@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/images/products-modal/products-modal-smart.png    1x,
+            ./images/images/products-modal/products-modal-smart@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/images/products-modal/products-modal-smart.png"
+          alt="Chololate icecream"
+        />
+      </picture>
+      <ul class="products-modal-form__calorie-table-list">
+        <li class="products-modal-form__calorie-table-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form_calorie-table-value">320</div>
+            kcal
+          </div>
+        </li>
+        <li class="products-modal-form__calorie-table-name-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form_calorie-table-value">4g</div>
+            Prote...
+          </div>
+        </li>
+        <li class="products-modal-form__calorie-table-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form_calorie-table-value">8,2g</div>
+            Fats
+          </div>
+        </li>
+        <li class="products-modal-form__calorie-table-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form_calorie-table-value">40,4g</div>
+            Carbs
+          </div>
+        </li>
       </ul>
-      <ul class="products-modal-ice-cream-form__calorie-table-value-list">
-        <li class="products-modal-ice-cream-form_calorie-table-value-item">
-          320
-        </li>
-        <li class="products-modal-ice-cream-form_calorie-table-value-item">
-          4g
-        </li>
-        <li class="products-modal-ice-cream-form_calorie-table-value-item">
-          8,2g
-        </li>
-        <li class="products-modal-ice-cream-form_calorie-table-value-item">
-          40,4g
-        </li>
-      </ul>
+
       <p class="products-modal-ice-cream-form__ingridients">Ingredients</p>
-      <ul class="products-modal-ice-cream-form__ingridients-name-list">
-        <li class="products-modal-ice-cream-form__ingridients-name-item">
-          Milk
-        </li>
-        <li class="products-modal-ice-cream-form__ingridients-name-item">
-          Belgian chocolate
-        </li>
-        <li class="products-modal-ice-cream-form__ingridients-name-item">
-          Cream
-        </li>
-        <li class="products-modal-ice-cream-form__ingridients-name-item">
-          Cocoa powder
-        </li>
-        <li class="products-modal-ice-cream-form__ingridients-name-item">
-          Sugar
-        </li>
-        <li class="products-modal-ice-cream-form__ingridients-name-item">
-          Vanilla sugar
-        </li>
-      </ul>
+      <div class="products-modal-ice-cream-form__ingridients-box">
+        <ul class="products-modal-ice-cream-form__ingridients-name-list">
+          <li class="products-modal-ice-cream-form__ingridients-name-item">
+            Milk
+          </li>
+          <li class="products-modal-ice-cream-form__ingridients-name-item">
+            Belgian chocolate
+          </li>
+          <li class="products-modal-ice-cream-form__ingridients-name-item">
+            Cream
+          </li>
+          <li class="products-modal-ice-cream-form__ingridients-name-item">
+            Cocoa powder
+          </li>
+          <li class="products-modal-ice-cream-form__ingridients-name-item">
+            Sugar
+          </li>
+          <li class="products-modal-ice-cream-form__ingridients-name-item">
+            Vanilla sugar
+          </li>
+        </ul>
 
-      <ul class="products-modal-form__ingridients-value-list">
-        <li class="products-modal-ice-cream-form__ingridients-value-item">
-          100ml
-        </li>
-        <li class="products-modal-ice-cream-form__ingridients-value-item">
-          20g
-        </li>
-        <li class="products-modal-ice-cream-form__ingridients-value-item">
-          150 ml
-        </li>
-        <li class="products-modal-ice-cream-form__ingridients-value-item">
-          30g
-        </li>
-        <li class="products-modal-ice-cream-form__ingridients-value-item">
-          40g
-        </li>
-        <li class="products-modal-ice-cream-form__ingridients-value-item">
-          10g
-        </li>
-      </ul>
-
+        <ul class="products-modal-form__ingridients-value-list">
+          <li class="products-modal-ice-cream-form__ingridients-value-item">
+            100ml
+          </li>
+          <li class="products-modal-ice-cream-form__ingridients-value-item">
+            20g
+          </li>
+          <li class="products-modal-ice-cream-form__ingridients-value-item">
+            150 ml
+          </li>
+          <li class="products-modal-ice-cream-form__ingridients-value-item">
+            30g
+          </li>
+          <li class="products-modal-ice-cream-form__ingridients-value-item">
+            40g
+          </li>
+          <li class="products-modal-ice-cream-form__ingridients-value-item">
+            10g
+          </li>
+        </ul>
+      </div>
       <label class="products-modal-form__field">
         <span class="products-modal-form__field-description">Name</span>
         <span class="products-modal-form__input-wrapper">

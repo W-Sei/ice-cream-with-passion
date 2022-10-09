@@ -25,13 +25,11 @@
   &.backdrop-products-modal-milkshakes {
     background-color: var(--modal-backdrop-brown);
   }
-
-  //-ice-coffee   --modal-backdrop-yellow: rgba(#f8d24e, 0.2);
-  //-ice-cream   --modal-backdrop-green: rgba(#0a8817, 0.2);
-  //-milkshakes   --modal-backdrop-brown: rgba(#d5753f, 0.2);
 }
 
 .products-modal {
+  font-family: 'Montserrat';
+  color: var(--text-dark);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,6 +40,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--accent-color);
   border-radius: 10px;
+  padding: 28px 20px 32px 20px;
 
   @media screen and (max-width: 319px) {
     width: 280px;
@@ -49,11 +48,9 @@
 
   @media screen and (min-width: 320px) and (max-width: 479px) {
     width: 95%;
-    padding: 28px 20px 32px 20px;
   }
   @media screen and (min-width: 480px) {
     width: 456px;
-    padding: 28px 20px 32px 20px;
   }
 
   @media screen and (min-width: 768px) {
@@ -82,4 +79,118 @@
   .modal__close-btn:focus & {
     fill: var(--accent-color);
   }
+}
+
+// ###### FORM ######
+.products-modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-modal-ice-cream-form__title {
+  @include fontHeading(
+    $line-height: 28px,
+    $font-size: 20px,
+    $letter-spacing: 0,
+    $text-transform: none
+  );
+  @media screen and (max-width: 479px) {
+    width: 142px;
+  }
+  margin-bottom: 24px;
+}
+
+.products-modal-ice-cream-form__img {
+  margin-bottom: 24px;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  border-radius: 100%;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.products-modal-form__calorie-table-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 39px;
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+}
+.products-modal-form__calorie-table-name {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 28px;
+  @include font(12, 400, 10, 0);
+  font-size: 12px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 53px;
+  height: 72px;
+  @media screen and (min-width: 768px) {
+    width: 65px;
+    height: 90px;
+    @include font(15, 400, 12, 0);
+  }
+
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+}
+
+.products-modal-form_calorie-table-value {
+  @include font(28, 500, 10, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  @media screen and (min-width: 768px) {
+    width: 53px;
+    height: 53px;
+    @include font(28, 500, 12, 0);
+    margin-bottom: 8px;
+  }
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  border-radius: 50%;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.products-modal-ice-cream-form__ingridients {
+  @include font(28, 500, 20, 0);
+  margin-bottom: 24px;
+}
+
+.products-modal-ice-cream-form__ingridients-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  @include font($line-height: 25px);
+  // $line-height: 27px,
+  // $font-weight: 400,
+  // $font-size: 14px,
+  // $letter-spacing: 0.04em;
+  margin-bottom: 48px;
+}
+
+.products-modal-form__ingridients-value-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.products-modal-form__input,
+.products-modal-form__comment {
+  display: block;
+  width: 100%;
 }
