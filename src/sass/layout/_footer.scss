@@ -38,7 +38,7 @@
 
   transform: scale(1);
   transition-property: transform, color;
-  transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: transform var(--easeInOutBack);
 
   &:hover,
   &:focus {
