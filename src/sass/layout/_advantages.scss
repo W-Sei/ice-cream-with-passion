@@ -10,7 +10,7 @@
 .advantages-list__item {
     width: 230px;
     margin-left: auto;
-        margin-right: auto;
+    margin-right: auto;
 
     &:not(:last-child) {
             margin-bottom: 27px;
@@ -46,7 +46,7 @@
 
 .title3::before {
     content: "";
-    background-image: url(../images/images/icon/weight.png);
+    background-image: url(../images/images/icon/ice-cream.png);
 }
 
 .advantages-list__text {
@@ -89,12 +89,10 @@
             }
     }
 
-
     .advantages-list__text {
         @include fontHeadingSmall ('Montserrat', 24px, 400, 14px, 0em, center, none);            
         }
 }
-
 
 @media screen and (min-width: 1200px) {
     .container {
@@ -114,7 +112,6 @@
              margin-bottom: 0;
              flex-basis: calc((100% - 64px) / 3);
          }
-
 
     .advantages-list__title {
              @include fontHeadingSmall ('Montserrat', 71px, 700, 58px, 0.04em, center, none);           
