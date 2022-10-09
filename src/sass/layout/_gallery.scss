@@ -1,4 +1,17 @@
+.slick-prev:before,
+.slick-next:before {
+    transition: opacity var(--easeOutCirc), visibility var(--easeOutCirc);
+}
+
+
 .gallery__list {
+
+    width: 279px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7.40681px;
+    overflow: hidden;
+
 
     & .slick-prev,
     & .slick-next {
@@ -10,27 +23,18 @@
     & .slick-prev:before,
     & .slick-next:before {
         visibility: hidden;
+        opacity: 0;
     }
 
     &:hover,
-    &:hover {
+    &:focus {
 
         .slick-prev:before,
         .slick-next:before {
             visibility: visible;
+            opacity: 1;
         }
     }
-
-}
-
-
-.gallery__list {
-    width: 279px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 7.40681px;
-    overflow: hidden;
-
 }
 
 .gallery__item {
