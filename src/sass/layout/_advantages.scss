@@ -1,8 +1,73 @@
+.advantages-section {
+    background-color: var(--green-section-background);
+    padding-top: 0;
+    min-width: 320px;
+}
+.advantages-list {    
+    text-align: center;
+       
+}
+.advantages-list__item:not(:last-child) {
+    margin-bottom: 27px;
+}
+
+.advantages-list__wrapper {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .advantages-list__title {
-    color: black;
+    @include fontHeadingSmall ('Roboto', 42px, 700, 36px, 0.04em, center, uppercase);
+    color: var(--text-light);
+      margin-bottom: 18px;
+
+        &::before {
+            content: "";
+            display: flex;
+            align-items: center;
+            justify-content: center;             
+            width: 50px;
+            height: 50px; 
+            margin-right: auto;
+            margin-left: auto;            
+            margin-bottom: 16px;
+            border-radius: 50%; 
+            background-color: var(--accent-color);
+            background-image: url(../images/images/icon/cow.png);           
+            background-repeat: no-repeat;
+                           
+        }    
 }
 
 
-.advantages-list {
-    color: yellow;
+.advantages-list__text {
+    @include fontHeadingSmall ('Montserrat', 20px, 700, 12px, 0em, center, none);
+        color: var(--text-light);
 }
+
+@media screen and (min-width: 768px) {
+    .advantages-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 80px;
+       
+    }
+    .advantages-list__item {
+        margin-bottom: 0;
+        flex-basis: calc((100% - 160px) / 3);
+    }
+
+    .advantages-list__wrapper {
+        width: 152px;
+        margin-right: 0;
+        margin-left: 0;
+        
+    }
+
+
+
+}
+
