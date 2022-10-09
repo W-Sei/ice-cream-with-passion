@@ -59,8 +59,18 @@
 .slick-dots li button:before {
     font-size: 12px;
     line-height: 12px;
+    color: #D9D9D9;
+    opacity: 1;
+}
+
+.slick-dots li:nth-child(4) {
+display: none;
 }
 
 .slick-dots li.slick-active button:before {
     color: var(--green-section-background);   
+}
+
+.slick-dots li.slick-current button:before {
+    color: #D9D9D9;
 }
