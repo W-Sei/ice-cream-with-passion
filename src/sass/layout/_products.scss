@@ -2,12 +2,29 @@
     .products {
         background-image: url(../images/images/products/smart/productsfon-smart.png);
     }
+    
+    .products__sub-title {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.23;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .products__title {
+        font-family: 'Seymour One';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.27;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
 }
 
 @media screen and (min-device-pixelratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .hero {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-mobile@2x.jpg);
+    .products {
+        background-image: url(../images/images/products/smart/productsfon-smart@2x.png);
     }
 }
