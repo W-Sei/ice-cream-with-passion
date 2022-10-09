@@ -1,7 +1,7 @@
 .hero {
   background-color: var(--green-section-background);
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) {
   .hero {
     position: relative;
     height: 450px;
@@ -36,19 +36,22 @@
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 6px 14px;
+    padding: 4px 10px;
     background-color: inherit;
+   
   }
   .hero__btn--first {
     color: var(--text-dark);
     border: 2px solid #f8d24e;
     border-radius: 8px;
     margin-right: 8px;
+     width: 62px;
+    height: 24px;
   }
   .hero__btn--second {
     color: var(--accent-color);
     border: none;
-    padding: 8px 14px;
+    padding: 7px 10px;
     text-decoration: underline;
   }
   .item__ball {
@@ -91,7 +94,90 @@
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 349px;
+  }
+  .hero__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    width: 182px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .hero__title__span {
+    font-size: 24px;
+    line-height: 23px;
+  }
+  .hero__menu__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero__menu__numbers {
+    display: flex;
+    flex-direction: column;
+  }
+  .item__text--first {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .item__text--second {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: var(--background-main);
+  }
+  .hero__text {
+    display: block;
+    width: 151px;
+    height: 85px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--text-light);
+    margin-left: 217px;
+    margin-top: 56px;
+  }
+  .item__plate {
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: 13;
+    left: 32;
+    z-index: 2;
+  }
 
+  .item__ball {
+    bottom: 0;
+    left: 15;
+  }
+  .item__shadow {
+    bottom: 130;
+    left: 360;
+  }
+  .item__ice {
+    bottom: 0;
+    left: 415;
+    width: 300px;
+  }
+  .item__smile {
+    bottom: 5;
+    left: 420;
+    z-index: 4;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1200px;
