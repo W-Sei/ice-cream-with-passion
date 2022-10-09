@@ -43,11 +43,11 @@
         line-height: 186%;
         text-align: center;
         color: var(--text-dark);
-        // margin-bottom: 14px;
+        margin-bottom: 10px;
 
     @media screen and (min-width: 480px) {
         font-size: 16px;
-        // margin-bottom: 32px;   
+        margin-bottom: 22px;   
     }
 }
 
@@ -55,12 +55,12 @@
     margin: 0 auto;
 }
 
-// .button #slick-slide-control103 {
-//     width: 12px;
-//     height: 12px;
-// }
+
+.slick-dots li button:before {
+    font-size: 12px;
+    line-height: 12px;
+}
 
 .slick-dots li.slick-active button:before {
-    color: var(--green-section-background);
-    
+    color: var(--green-section-background);   
 }
