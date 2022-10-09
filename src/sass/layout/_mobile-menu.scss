@@ -14,9 +14,26 @@
   @return 2 * $pi * $r;
 }
 
-// ---------------------------
-// Main Navigation Menu
-// ---------------------------
+
+.header_logo {
+  display: block;
+  width: 40px;
+  height: 37px;
+  top: 12px;
+  margin-left: 31px;
+
+}
+
+.mobile_btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// // ---------------------------
+// // Main Navigation Menu
+// // ---------------------------
 
 .nav {
   // Toggle Button
@@ -60,27 +77,44 @@
     }
   }
 
-  &__link {
-    color: white;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 1.25rem;
-    text-decoration: none;
-    padding: 1rem;
+  // &__link {
+  //   color: white;
+  //   display: block;
+  //   text-align: center;
+  //   text-transform: uppercase;
+  //   letter-spacing: 5px;
+  //   font-size: 1.25rem;
+  //   text-decoration: none;
+  //   padding: 1rem;
 
-    &:hover,
-    &:focus {
-      outline: 0;
-      background-color: rgba(0, 0, 0, 0.2);
+  //   &:hover,
+  //   &:focus {
+  //     outline: 0;
+  //     background-color: rgba(0, 0, 0, 0.2);
+  //   }
+  // }
+    &__link {
+      @include fontHeadingSmall ($line-height: 39px, $font-weight: 700, $font-size: 32px, $text-transform: none);
+      color: white;
+      display: block;
+      margin-bottom: 32px;
+      // padding: 1rem;
+  
+  
+      &:hover,
+      &:focus {
+        outline: 0;
+        color: var(--text-dark);
+      }
+  
     }
-  }
 }
 
-// ---------------------------
-// SVG Menu Icon
-// ---------------------------
+
+
+// // ---------------------------
+// // SVG Menu Icon
+// // ---------------------------
 
 .menuicon {
   display: block;
@@ -109,9 +143,9 @@
   }
 }
 
-// ---------------------------
-// Circular Splash Background
-// ---------------------------
+// // ---------------------------
+// // Circular Splash Background
+// // ---------------------------
 
 .splash {
   position: absolute;
@@ -144,9 +178,9 @@
   }
 }
 
-// ---------------------------
-// Active State
-// ---------------------------
+// // ---------------------------
+// // Active State
+// // ---------------------------
 
 .nav:target,
 .nav--open {
@@ -188,13 +222,13 @@
   }
 }
 
-// ---------------------------
-// Demo Stuff, Ignore
-// ---------------------------
+// // ---------------------------
+// // Demo Stuff, Ignore
+// // ---------------------------
 
 body {
   background-color: #d7d7d7;
-  font-family: 'Roboto';
+  // font-family: 'Roboto';
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -212,7 +246,7 @@ body {
 
 .header {
   height: 5rem;
-  background-color: var(--header-bg-color);
+  background-color: var(--green-section-background);
 }
 
 .main {
@@ -235,3 +269,4 @@ body {
     }
   }
 }
+
