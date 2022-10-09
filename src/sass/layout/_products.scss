@@ -1,6 +1,8 @@
 @media screen and (max-width: 767px) {
     .products {
         background-image: url(../images/images/products/smart/productsfon-smart.png);
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     .products__sub-title {
@@ -19,47 +21,47 @@
         line-height: 1.27;
         text-align: center;
         letter-spacing: 0.04em;
-        margin-bottom: 40px;
+        margin-bottom: 148px;
     }
 
     .elipse {
         background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
         border: 0.67px none;
-        border-radius: 100px/100px;
+        border-radius: 100px;
         box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-        height: 200px;
-        left: 1px;
-        position: absolute;
-        top: 11px;
+        height: 210px;
         width: 200px;
+        transform: translateY(-50%);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+
+        &::before {
+            content: url(../images/images/products/smart/cream-smart.png);
+        }
     }
 
-    .overlap {
-        height: 211px;
-        margin-bottom: 0px;
-        position: relative;
-        width: 201px;
+    
+
+    .products__list__item {
+        background-color: #aec6a5;
+        border-radius: 24px;
+        width: 100%;
     }
 
-    .img-wrapper {
-        display: flex;
-        align-items: flex-end;
-        border: 1px none;
-        height: 211px;
-        justify-content: flex-end;
-        left: 39px;
-        min-width: 201px;
-        position: absolute;
-        top: 0;
+    .products__list__item__title {
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.04em;
     }
 
-    .ice-cream {
-        height: 200px;
-        width: 200px;
-        top: 0;
-        left: 0;
-        position: absolute;
-        z-index: 1;
+    .products__list__item__text {
+        font-weight: 400; 
+        line-height: 1.78;
+        text-align: center;
+        letter-spacing: 0.04em;
     }
 }
 
