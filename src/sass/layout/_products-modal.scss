@@ -83,6 +83,8 @@
 
 // ###### FORM ######
 .products-modal-form {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,10 +178,6 @@
   width: 100%;
   justify-content: space-between;
   @include font($line-height: 25px);
-  // $line-height: 27px,
-  // $font-weight: 400,
-  // $font-size: 14px,
-  // $letter-spacing: 0.04em;
   margin-bottom: 48px;
 }
 
@@ -189,8 +187,49 @@
   align-items: flex-end;
 }
 
-.products-modal-form__input,
+.products-modal-ice-cream-form__ingridients-value-item,
+.products-modal-ice-cream-form__ingridients-name-item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.products-modal-form__field {
+  margin-bottom: 16px;
+}
+
+.products-modal-form__input {
+  display: block;
+  @media screen and (min-width: 480px) {
+    width: 368px;
+  }
+}
 .products-modal-form__comment {
   display: block;
-  width: 100%;
+  resize: none;
+  height: 84px;
+  @media screen and (min-width: 480px) {
+    width: 368px;
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.01em;
+  }
+}
+
+.products-modal-form__check-field {
+  margin-bottom: 32px;
+}
+
+.products-modal-form__send-btn {
+  background: var(--accent-color);
+  border-radius: 10px;
+  border: 0;
+  @include font(17, 600, 14, 0);
+  // $line-height: 27px,
+  // $font-weight: 400,
+  // $font-size: 14px,
+  // $letter-spacing: 0.04em;
+  width: 132px;
+  height: 42px;
 }
