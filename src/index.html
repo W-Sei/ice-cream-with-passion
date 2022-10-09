@@ -1,81 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DevMonkeys team project" />
+    <meta name="keywords" content="team-project" />
+    <meta name="author" content="DevMonkeys" />
+    <title>Ice Cream With Passion</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DevMonkeys team project" />
-  <meta name="keywords" content="team-project" />
-  <meta name="author" content="DevMonkeys" />
-  <title>Ice Cream With Passion</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="icon" type="image/png" href="./favicon/favicon.png" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
-  <link rel="icon" type="image/png" href="./favicon/favicon.png">
+    <!-- slick styles -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
-  <!-- slick styles -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Slick Gallery -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
-  <!-- Slick Gallery -->
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
-    rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="./sass/index.scss" />
+  <body>
+    <!-- Partials -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/mobile-menu.html"></include>
 
-</head>
+    <main>
+      <include src="./partials/buy-now-modal.html"></include>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/products-modal.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/about-modal.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
+      <include src="./partials/locations-modal.html"></include>
+      <include src="./partials/franchise-modal.html"></include>
+    </main>
 
-<body>
-  <!-- Partials -->
-  <include src="./partials/header.html"></include>
-  <include src="./partials/mobile-menu.html"></include>
+    <include src="./partials/footer.html"></include>
 
-  <main>
-    <include src="./partials/buy-now-modal.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/products-modal.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/about-modal.html"></include>
-    <include src="./partials/advantages.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/reviews.html"></include>
-    <include src="./partials/contacts.html"></include>
-    <include src="./partials/locations-modal.html"></include>
-    <include src="./partials/franchise-modal.html"></include>
-  </main>
+    <!-- Slick Gallery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
-  <include src="./partials/footer.html"></include>
+    <!-- slick jquery -->
+    <script
+      type="text/javascript"
+      src="//[code.jquery.com/jquery-1.11.0.min.js](http://code.jquery.com/jquery-1.11.0.min.js)"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//[code.jquery.com/jquery-migrate-1.2.1.min.js](http://code.jquery.com/jquery-migrate-1.2.1.min.js)"
+    ></script>
 
-  <!-- Slick Gallery -->
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slick js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="./scripts-js/slick.js"></script>
 
-  <!-- slick jquery -->
-  <script type="text/javascript"
-    src="//[code.jquery.com/jquery-1.11.0.min.js](http://code.jquery.com/jquery-1.11.0.min.js)"></script>
-  <script type="text/javascript"
-    src="//[code.jquery.com/jquery-migrate-1.2.1.min.js](http://code.jquery.com/jquery-migrate-1.2.1.min.js)"></script>
-
-  <!-- slick js -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script type="module" src="./scripts-js/slick.js"></script>
-
-  <!-- JS Scripts -->
-  <script type="module" src="./scripts-js/mobile-menu.js"></script>
-  <script type="module" src="./scripts-js/modal.js"></script>
-
-</body>
-
+    <!-- JS Scripts -->
+    <script type="module" src="./scripts-js/mobile-menu.js"></script>
+    <script type="module" src="./scripts-js/modal.js"></script>
+  </body>
 </html>
