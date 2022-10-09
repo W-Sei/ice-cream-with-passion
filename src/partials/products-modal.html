@@ -1,50 +1,89 @@
-<div class="backdrop is-hidden" data-modal>
-  <div class="products-modal">
-    <button type="button" class="modal__close-btn" data-modal-close>
+<div
+  class="backdrop products-modal-ice-cream-is-hidden"
+  data-products-modal-ice-cream
+>
+  <!-- START ######## Modal-ice-cream ######## -->
+  <div class="products-modal products-modal-ice-cream">
+    <button
+      type="button"
+      class="products-modal__close-btn"
+      data-products-modal-ice-cream-close
+    >
       <svg class="products-modal__close-icon">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <form class="products-modal-form" autocomplete="off">
-      <p class="products-modal-form__title">Chololate icecream</p>
+    <form
+      class="products-modal-form products-modal-ice-cream-form"
+      autocomplete="off"
+    >
+      <p class="products-modal-ice-cream-form__title">Chololate icecream</p>
       <img
         src="./images/products-modal/products-modal-smart.png"
         alt="Chololate icecream"
-        class="products-modal-form__img"
+        class="products-modal-ice-cream-form__img"
       />
-      <ul class="products-modal-form__calorie-table-name">
-        <li class="products-modal-form_calorie-table-name-item">kcal</li>
-        <li class="products-modal-form_calorie-table-name-item">Protein...</li>
-        <li class="products-modal-form_calorie-table-name-item">Fats</li>
-        <li class="products-modal-form_calorie-table-name-item">Carbs</li>
+      <ul class="products-modal-form__calorie-table-name-list">
+        <li class="products-modal-form__calorie-table-name-item">kcal</li>
+        <li class="products-modal-form__calorie-table-name-item">Protein...</li>
+        <li class="products-modal-form__calorie-table-name-item">Fats</li>
+        <li class="products-modal-form__calorie-table-name-item">Carbs</li>
       </ul>
-      <ul class="products-modal-form__calorie-table-value">
-        <li class="products-modal-form_calorie-table-value-item">320</li>
-        <li class="products-modal-form_calorie-table-value-item">4g</li>
-        <li class="products-modal-form_calorie-table-value-item">8,2g</li>
-        <li class="products-modal-form_calorie-table-value-item">40,4g</li>
+      <ul class="products-modal-ice-cream-form__calorie-table-value-list">
+        <li class="products-modal-ice-cream-form_calorie-table-value-item">
+          320
+        </li>
+        <li class="products-modal-ice-cream-form_calorie-table-value-item">
+          4g
+        </li>
+        <li class="products-modal-ice-cream-form_calorie-table-value-item">
+          8,2g
+        </li>
+        <li class="products-modal-ice-cream-form_calorie-table-value-item">
+          40,4g
+        </li>
       </ul>
-      <p class="products-modal-form__ingridients">Ingredients</p>
-      <ul class="products-modal-form__ingridients-name-list">
-        <li class="products-modal-form__ingridients-name-item">Milk</li>
-        <li class="products-modal-form__ingridients-name-item">
+      <p class="products-modal-ice-cream-form__ingridients">Ingredients</p>
+      <ul class="products-modal-ice-cream-form__ingridients-name-list">
+        <li class="products-modal-ice-cream-form__ingridients-name-item">
+          Milk
+        </li>
+        <li class="products-modal-ice-cream-form__ingridients-name-item">
           Belgian chocolate
         </li>
-        <li class="products-modal-form__ingridients-name-item">Cream</li>
-        <li class="products-modal-form__ingridients-name-item">Cocoa powder</li>
-        <li class="products-modal-form__ingridients-name-item">Sugar</li>
-        <li class="products-modal-form__ingridients-name-item">
+        <li class="products-modal-ice-cream-form__ingridients-name-item">
+          Cream
+        </li>
+        <li class="products-modal-ice-cream-form__ingridients-name-item">
+          Cocoa powder
+        </li>
+        <li class="products-modal-ice-cream-form__ingridients-name-item">
+          Sugar
+        </li>
+        <li class="products-modal-ice-cream-form__ingridients-name-item">
           Vanilla sugar
         </li>
       </ul>
 
       <ul class="products-modal-form__ingridients-value-list">
-        <li class="products-modal-form__ingridients-value-item">100ml</li>
-        <li class="products-modal-form__ingridients-value-item">20g</li>
-        <li class="products-modal-form__ingridients-value-item">150 ml</li>
-        <li class="products-modal-form__ingridients-value-item">30g</li>
-        <li class="products-modal-form__ingridients-value-item">40g</li>
-        <li class="products-modal-form__ingridients-value-item">10g</li>
+        <li class="products-modal-ice-cream-form__ingridients-value-item">
+          100ml
+        </li>
+        <li class="products-modal-ice-cream-form__ingridients-value-item">
+          20g
+        </li>
+        <li class="products-modal-ice-cream-form__ingridients-value-item">
+          150 ml
+        </li>
+        <li class="products-modal-ice-cream-form__ingridients-value-item">
+          30g
+        </li>
+        <li class="products-modal-ice-cream-form__ingridients-value-item">
+          40g
+        </li>
+        <li class="products-modal-ice-cream-form__ingridients-value-item">
+          10g
+        </li>
       </ul>
 
       <label class="products-modal-form__field">
@@ -81,9 +120,19 @@
           ></textarea>
         </label>
       </label>
+      <label class="products-modal-form__check-field">
+        <input
+          class="products-modal-form__check visually-hidden"
+          type="checkbox"
+          name="client_select-ice-cream"
+          checked
+          required
+        />
+      </label>
       <button type="submit" class="products-modal-form__send-btn">
         Submit
       </button>
     </form>
   </div>
+  <!-- END ######## Modal-ice-cream ######## -->
 </div>
