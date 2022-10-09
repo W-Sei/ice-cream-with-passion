@@ -1,5 +1,5 @@
 .contacts {
-background: var(--green-section-background);
+background:var(--green-section-background);
 }
 
 
@@ -176,9 +176,7 @@ margin-bottom: 24px;
     &:hover {
         background-color: var(--button-green);
 
-        // .contact-btn-icon {
-        //     fill: var(--text-light);
-        // }
+      
         }
 
     &:focus {
@@ -197,12 +195,6 @@ margin-bottom: 24px;
         justify-content: space-evenly;
         align-items: center;
 
-        // &:hover {
-        
-        //         .contact-btn-icon {
-        //             fill: var(--text-light);
-        //         }
-        //     }
         
             &:focus {
 
@@ -221,18 +213,7 @@ margin-bottom: 24px;
 }
 
 }
-// // /* 0px - 767px */
 
-// @media screen and (max-width: 480px) {
-//     .container {
-// width: 480px;
-//     margin-left:auto;
-//     margin-right: auto;
-
-//     }
-  
-
-// }
 
 /* 768px + */
 
@@ -290,9 +271,9 @@ margin-bottom: 24px;
       margin-bottom: 32px;
   }
 
-  .schedule__day {
-      font-size: 14px;
-  }
+//   .schedule__day {
+//       font-size: 14px;
+//   }
 
   .schedule__time {
       font-size: 14px;
@@ -328,9 +309,7 @@ margin-bottom: 24px;
       &:hover {
           background-color: var(--button-green);
 
-        //   .contact-btn-icon {
-        //       fill: var(--text-light);
-        //   }
+       
       }
 
       &:focus {
@@ -349,12 +328,7 @@ margin-bottom: 24px;
       justify-content: space-evenly;
       align-items: center;
   
-    //   &:hover {
-
-    //       .contact-btn-icon {
-    //           fill: var(--text-light);
-    //       }
-    //   }
+   
 
       &:focus {
 
