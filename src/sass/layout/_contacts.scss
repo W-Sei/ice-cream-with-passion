@@ -1,0 +1,375 @@
+.contacts {
+    background: var(--green-section-background);
+}
+
+.contact__name {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.83;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    width: max-content;
+
+    color: var(--text-dark);
+
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+.contact__place {
+    line-height: 1.83;
+
+    letter-spacing: 0.04em;
+
+    color: var(--text-dark);
+}
+
+.contact__link {
+    font-weight: 500;
+
+    line-height: 1.83;
+
+    letter-spacing: 0.04em;
+
+    color: #d6936d;
+
+    flex-wrap: wrap;
+
+    &:hover {
+        text-decoration-line: underline;
+    }
+
+    &:focus {
+        text-decoration-line: underline;
+    }
+}
+
+.schedule {
+    border-top: 1px solid rgb(236, 236, 236);
+}
+
+.schedule__day {
+    font-weight: 500;
+    line-height: 1.83;
+
+    color: var(--text-dark);
+}
+
+.schedule__time {
+    font-weight: 500;
+    line-height: 1.83;
+    color: var(--text-grey);
+}
+
+.contact-list {
+    border-top: 1px solid #ececec;
+}
+
+.contact-list__link {
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--text-dark);
+}
+
+@media screen and (max-width: 767px) {
+    .address-container {
+
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-size: contain;
+        padding: 40px 32px;
+        width: 280px;
+        height: 412.1px;
+        margin-bottom: 20px;
+        background: rgb(252, 252, 252);
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+    }
+
+    .address {
+        padding-bottom: 24px;
+    }
+
+    .contact__name {
+        font-size: 12px;
+        height: 16px;
+        margin-bottom: 20px;
+    }
+
+    .contact__place {
+        font-size: 12px;
+
+        margin-bottom: 8px;
+    }
+
+    .contact__link {
+        font-size: 12px;
+        width: 190px;
+    }
+
+    .schedule {
+        padding-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .schedule__day {
+        font-size: 12px;
+    }
+
+    .schedule__time {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .contact-list {
+        padding-top: 24px;
+    }
+
+    .contact-list__link {
+        font-size: 12px;
+    }
+
+    .contact-btn {
+        margin-top: 32px;
+    }
+
+    .contact-btn__item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button__locations {
+        background-color: var(--accent-color);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.28;
+        color: var(--text-dark);
+        padding: 12px 34px;
+        min-width: 196px;
+        border-radius: 10px;
+        margin-bottom: 16px;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &:hover {
+            background-color: var(--button-green);
+        }
+
+        &:focus {
+            background-color: var(--button-green);
+            color: var(--text-light);
+
+            .contact-btn-icon {
+                fill: var(--text-light);
+            }
+        }
+    }
+
+    .button__franchise {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &:focus {
+            .contact-btn-icon {
+                fill: var(--text-light);
+            }
+        }
+    }
+
+    .contact-btn-icon {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* 768px + */
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .shops {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 60px;
+    }
+
+    .address-container {
+        padding: 40px 24px;
+        width: 224px;
+        height: 528px;
+
+        background: rgb(252, 252, 252);
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+    }
+
+    .address {
+        padding-bottom: 26px;
+    }
+
+    .contact__name {
+        font-size: 16px;
+        height: 28px;
+        margin-bottom: 32px;
+    }
+
+    .contact__place {
+        font-size: 14px;
+
+        margin-bottom: 12px;
+    }
+
+    .contact__link {
+        font-size: 14px;
+    }
+
+    .schedule {
+        padding-top: 32px;
+        margin-bottom: 32px;
+    }
+
+      .schedule__day {
+          font-size: 14px;
+      }
+
+    .schedule__time {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .contact-list {
+        padding-top: 32px;
+    }
+
+    .contact-list__link {
+        font-size: 14px;
+    }
+
+    .contact-btn {
+        justify-content: center;
+        display: flex;
+        align-items: baseline;
+        gap: 30px;
+    }
+
+    .contact-btn__item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button__locations {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &:hover {
+            background-color: var(--button-green);
+        }
+
+        &:focus {
+            background-color: var(--button-green);
+            color: var(--text-light);
+
+            .contact-btn-icon {
+                fill: var(--text-light);
+            }
+        }
+    }
+
+    .button__franchise {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &:focus {
+            .contact-btn-icon {
+                fill: var(--text-light);
+            }
+        }
+    }
+
+    .contact-btn-icon {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* 
+1200px +
+*/
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .shops {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+    .address-container {
+        padding: 40px 40px;
+        width: 368px;
+        height: 538px;
+
+        background: rgb(252, 252, 252);
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+    }
+
+    .address {
+        padding-bottom: 32px;
+    }
+
+    .contact__place {
+        font-size: 16px;
+
+        margin-bottom: 8px;
+    }
+
+    .contact__link {
+        font-size: 16px;
+    }
+
+    .schedule {
+        padding-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .schedule__day {
+        font-size: 14px;
+    }
+
+    .schedule__time {
+        font-size: 16px;
+    }
+
+    .contact-list {
+        padding-top: 32px;
+    }
+
+    .contact-list__link {
+        font-size: 16px;
+    }
+}

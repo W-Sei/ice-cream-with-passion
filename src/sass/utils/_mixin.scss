@@ -11,7 +11,7 @@
   $font-size: 14px,
   $letter-spacing: 0.04em
 ) {
-  line-height: $line-height / $font-size;
+  line-height: calc($line-height / $font-size);
   font-weight: $font-weight;
   font-size: $font-size;
   letter-spacing: $letter-spacing;
@@ -28,7 +28,7 @@
   $text-transform: uppercase
 ) {
   font-family: $font-family;
-  line-height: $line-height / $font-size;
+  line-height: calc($line-height / $font-size);
   font-weight: $font-weight;
   font-size: $font-size;
   letter-spacing: $letter-spacing;
@@ -47,7 +47,7 @@
   $text-transform: uppercase
 ) {
   font-family: $font-family;
-  line-height: $line-height / $font-size;
+  line-height: calc($line-height / $font-size);
   font-weight: $font-weight;
   font-size: $font-size;
   letter-spacing: $letter-spacing;
@@ -69,5 +69,5 @@
   font-style: $font-style;
   font-weight: $font-weight;
   font-size: $font-size;
-  line-height: $line-height;
+  line-height: calc($line-height / $font-size);
 }
