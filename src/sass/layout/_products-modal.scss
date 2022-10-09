@@ -116,6 +116,7 @@
 }
 
 .products-modal-form__calorie-table-list {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -149,7 +150,7 @@
   border-radius: 40px;
 }
 
-.products-modal-form_calorie-table-value {
+.products-modal-form__calorie-table-value {
   @include font(28, 500, 10, 0);
   display: flex;
   align-items: center;
@@ -195,26 +196,69 @@
 }
 .products-modal-form__field {
   margin-bottom: 16px;
+  width: 100%;
 }
 
-.products-modal-form__input {
+.products-modal-form__field-comment {
+  width: 100%;
+}
+
+.products-modal-form__input-wrapper {
+  position: relative;
+}
+
+.products-modal-form__input,
+.products-modal-form__comment {
   display: block;
+  height: 42px;
+  width: 100%;
+  padding: 11px 16px;
+  @media screen and (max-width: 319px) {
+    width: 240px;
+  }
+  @media screen and (min-width: 320px) {
+    min-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @media screen and (min-width: 480px) {
     width: 368px;
+    padding: 11px;
+  }
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid var(--green-section-background);
+  border-radius: 10px;
+  transition: border-color var(--easeInBack);
+  &:focus + .products-modal-form__field-description {
+    transform: translateY(-30px);
+  }
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
   }
 }
 .products-modal-form__comment {
   display: block;
   resize: none;
   height: 84px;
+  &:focus + .products-modal-form__field-description {
+    transform: translateY(-50px);
+  }
+}
+
+.products-modal-form__field-description {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  @media screen and (min-width: 320px) {
+    left: 8%;
+  }
   @media screen and (min-width: 480px) {
-    width: 368px;
+    left: 16%;
   }
-  &::placeholder {
-    font-size: 12px;
-    line-height: 1.66;
-    letter-spacing: 0.01em;
-  }
+
+  transform: translateY(-50%);
 }
 
 .products-modal-form__check-field {
@@ -222,9 +266,10 @@
 }
 
 .products-modal-form__send-btn {
-  background: var(--accent-color);
+  background: var(--button-yellow);
   border-radius: 10px;
   border: 0;
+  text-align: center;
   @include font(17, 600, 14, 0);
   // $line-height: 27px,
   // $font-weight: 400,
@@ -232,4 +277,12 @@
   // $letter-spacing: 0.04em;
   width: 132px;
   height: 42px;
+  color: var(--text-dark);
+  transition: background-color var(--easeInBack), color var(--easeInBack);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-green);
+    color: var(--text-light);
+  }
 }

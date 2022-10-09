@@ -55,25 +55,25 @@
       <ul class="products-modal-form__calorie-table-list">
         <li class="products-modal-form__calorie-table-item">
           <div class="products-modal-form__calorie-table-name">
-            <div class="products-modal-form_calorie-table-value">320</div>
+            <div class="products-modal-form__calorie-table-value">320</div>
             kcal
           </div>
         </li>
         <li class="products-modal-form__calorie-table-name-item">
           <div class="products-modal-form__calorie-table-name">
-            <div class="products-modal-form_calorie-table-value">4g</div>
+            <div class="products-modal-form__calorie-table-value">4g</div>
             Prote...
           </div>
         </li>
         <li class="products-modal-form__calorie-table-item">
           <div class="products-modal-form__calorie-table-name">
-            <div class="products-modal-form_calorie-table-value">8,2g</div>
+            <div class="products-modal-form__calorie-table-value">8,2g</div>
             Fats
           </div>
         </li>
         <li class="products-modal-form__calorie-table-item">
           <div class="products-modal-form__calorie-table-name">
-            <div class="products-modal-form_calorie-table-value">40,4g</div>
+            <div class="products-modal-form__calorie-table-value">40,4g</div>
             Carbs
           </div>
         </li>
@@ -124,7 +124,6 @@
         </ul>
       </div>
       <label class="products-modal-form__field">
-        <span class="products-modal-form__field-description">Name</span>
         <span class="products-modal-form__input-wrapper">
           <input
             type="text"
@@ -134,10 +133,10 @@
             minlength="3"
             pattern="[a-zA-Z-а-яА-ЯіІїЇ]+"
           />
+          <span class="products-modal-form__field-description">Name</span>
         </span>
       </label>
       <label class="products-modal-form__field">
-        <span class="products-modal-form__field-description">Phone</span>
         <span class="products-modal-form__input-wrapper">
           <input
             type="tel"
@@ -147,15 +146,17 @@
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
             title="xxx-xxx-xx-xx"
           />
+          <span class="products-modal-form__field-description">Phone</span>
         </span>
       </label>
       <label class="products-modal-form__field-comment">
-        <span class="products-modal-form__field-description">Comment</span>
-        <textarea
-          class="products-modal-form__comment"
-          name="client_comment"
-          placeholder="Comment"
-        ></textarea>
+        <span class="products-modal-form__input-wrapper">
+          <textarea
+            class="products-modal-form__comment"
+            name="client_comment"
+          ></textarea>
+          <span class="products-modal-form__field-description">Comment</span>
+        </span>
       </label>
 
       <label class="button products-modal-form__check-field">
@@ -167,6 +168,7 @@
           required
         />
       </label>
+
       <button type="submit" class="products-modal-form__send-btn">
         Submit
       </button>
