@@ -42,6 +42,41 @@
         }
     }
 
+    .elipse2 {
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+        border: 0.67px none;
+        border-radius: 100px;
+        height: 210px;
+        width: 200px;
+        transform: translateY(-50%);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+
+        &::before {
+            content: url(../images/images/products/smart/coffee-smart.png);
+        }
+    }
+
+    .elipse3 {
+        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+        border: 0.67px none;
+        border-radius: 100px;
+        height: 210px;
+        width: 200px;
+        transform: translateY(-50%);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+
+        &::before {
+            content: url(../images/images/products/smart/milk-smart.png);
+        }
+    }
     
 
     .products__list__item {
@@ -75,7 +110,9 @@
         border: none;
         width: 40px;
         background-color: #aec6a5;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
         display: block;
         margin-bottom: 20px;
     }
@@ -85,7 +122,9 @@
         border: none;
         width: 40px;
         background-color: #EFD478;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
         display: block;
         margin-bottom: 20px;
     }
@@ -95,7 +134,9 @@
         border: none;
         width: 40px;
         background-color: #D6936D;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
         display: block;
         margin-bottom: 20px;
     }
