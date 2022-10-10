@@ -6,9 +6,10 @@
 background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
     
 }
-//max 767px
-@media screen and (max-width: 767px) {
+//max 768px
+@media screen and (max-width: 768px) {
   .cow {
+    width:320px ;
     padding-top: 60px;
     padding-bottom: 21px;
   }
@@ -76,11 +77,13 @@ box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
 text-align: center;
   }
 }
-//min 767px
-@media screen and (min-width:767px){
+//min 768px
+@media screen and (min-width:768px){
   .cow{
-    width:768px ;
-    padding:60px 32px 25px 32px;
+     margin-top: auto;
+     margin-bottom: auto;
+    padding-top:60px; 
+    padding-bottom: 48px; 
   }
 
   .about__subtitle{
@@ -108,7 +111,7 @@ text-align: center;
     object-fit: contain;
     object-position: 0 26px;
     width: 336px;
-    height: 356px;
+    height: 355px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
@@ -119,11 +122,13 @@ text-align: center;
     flex-direction: row;
     justify-content: space-between;
 }
-.about__text{
+.about__text{ 
+  margin-top: 0;
+  text-align: left;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 334px;
+    max-width: 334px;
     padding-top: 7px;
 }
 .about__text-three{
@@ -147,9 +152,13 @@ text-align: center;
 }
 //min 1200px
 @media screen and (min-width:1200px){
+
 .cow{
-    width: 1200px;
-    padding: 60px 16px 30px 16px;
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
   .about__subtitle{
         font-weight: 800;
@@ -174,17 +183,30 @@ text-align: center;
       height: 529px;
       margin-left: auto;
       margin-right: auto;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
         box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
         border-radius: 250px;
 } 
 .about__text {
     max-width: 463px;
     margin-top: 90px;
+
 }
 .about__pic{
     justify-content: flex-start;
     column-gap: 100px;
+}
+.about__text-one{
+    font-size: 16px;
+        line-height:1.75;
+}
+.about__text-two,
+.about__text-three{
+        font-size: 13px;
+        line-height:1.93;     
+}
+.cow-button{
+    margin-top: -140px;
+    margin-left:600px ;
 }
 }
         
