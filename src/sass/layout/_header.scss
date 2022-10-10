@@ -49,6 +49,7 @@
   border: none;
   background-color: transparent;
   padding: 0;
+  margin-left: auto;
 
   &:focus,
   &:hover {
@@ -64,6 +65,10 @@
 
 // 768px - 1200px
 @media screen and (min-width: 768px) {
+  .header-position {
+    justify-content: flex-end;
+  }
+
   .open-mobile-menu-btn {
     line-height: 0;
     border: none;
@@ -83,7 +88,7 @@
   }
 
   .header-nav__logo {
-    margin-right: 88px;
+    // margin-right: 88px;
   }
 
   .pages-nav {
@@ -156,6 +161,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-left: 32px;
 
     &:hover {
       background-color: var(--button-green);
@@ -184,6 +190,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-left: auto;
 
     &:hover {
       background-color: var(--button-green);
