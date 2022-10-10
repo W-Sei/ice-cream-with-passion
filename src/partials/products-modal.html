@@ -1,5 +1,5 @@
 <div
-  class="backdrop-products-modal backdrop-products-modal-ice-cream"
+  class="backdrop-products-modal backdrop-products-modal-ice-cream is-hidden"
   data-modal
 >
   <!-- START ######## Modal-ice-cream ######## -->
@@ -14,44 +14,7 @@
       autocomplete="off"
     >
       <p class="products-modal-ice-cream-form__title">Chololate icecream</p>
-      <picture class="products-modal-ice-cream-form__img">
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/images/products-modal/products-modal-desktop.webp    1x,
-            ./images/images/products-modal/products-modal-desktop@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/images/products-modal/products-modal-desktop.png    1x,
-            ./images/images/products-modal/products-modal-desktop@2x.png 2x
-          "
-          type="image/png"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/images/products-modal/products-modal-smart.webp    1x,
-            ./images/images/products-modal/products-modal-smart@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/images/products-modal/products-modal-smart.png    1x,
-            ./images/images/products-modal/products-modal-smart@2x.png 2x
-          "
-          type="image/png"
-        />
-        <img
-          src="./images/images/products-modal/products-modal-smart.png"
-          alt="Chololate icecream"
-        />
-      </picture>
+      <div class="products-modal-ice-cream-form__img"></div>
       <ul class="products-modal-form__calorie-table-list">
         <li class="products-modal-form__calorie-table-item">
           <div class="products-modal-form__calorie-table-name">
@@ -131,6 +94,7 @@
             name="client_name"
             required
             minlength="3"
+            placeholder=" "
             pattern="[a-zA-Z-а-яА-ЯіІїЇ]+"
           />
           <span class="products-modal-form__field-description">Name</span>
@@ -143,6 +107,7 @@
             class="products-modal-form__input"
             name="client_phone"
             required
+            placeholder=" "
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
             title="xxx-xxx-xx-xx"
           />
@@ -154,8 +119,11 @@
           <textarea
             class="products-modal-form__comment"
             name="client_comment"
+            placeholder=" "
           ></textarea>
-          <span class="products-modal-form__field-description">Comment</span>
+          <span class="products-modal-form__field-description comment"
+            >Comment</span
+          >
         </span>
       </label>
 

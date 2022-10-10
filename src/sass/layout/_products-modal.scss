@@ -17,7 +17,6 @@
   }
   &.backdrop-products-modal-ice-cream {
     background-color: var(--modal-backdrop-green);
-    // background-color: rgba(#0a8817, 0.2);
   }
   &.backdrop-products-modal-ice-coffee {
     background-color: var(--modal-backdrop-yellow);
@@ -85,6 +84,7 @@
 .products-modal-form {
   width: 100%;
   height: 100%;
+  z-index: 51;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,15 +104,27 @@
 }
 
 .products-modal-ice-cream-form__img {
-  margin-bottom: 24px;
+  height: 138px;
+  width: 132px;
+
+  z-index: 52;
   background: linear-gradient(
       0deg,
       rgba(156, 190, 143, 0.7),
       rgba(156, 190, 143, 0.7)
     ),
     #d9d9d9;
-  border-radius: 100%;
+  border-radius: 150px;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  &::before {
+    @media screen and (max-width: 767px) {
+      content: url(../images/images/products-modal/products-modal-smart.png);
+    }
+    @media screen and (min-width: 768px) {
+      content: url(../images/images/products-modal/products-modal-desktop.png);
+    }
+  }
+  margin-bottom: 24px;
 }
 
 .products-modal-form__calorie-table-list {
@@ -209,6 +221,8 @@
 
 .products-modal-form__input,
 .products-modal-form__comment {
+  @include font(20, 400, 14, 0.04);
+
   display: block;
   height: 42px;
   width: 100%;
@@ -230,7 +244,8 @@
   border: 1px solid var(--green-section-background);
   border-radius: 10px;
   transition: border-color var(--easeInBack);
-  &:focus + .products-modal-form__field-description {
+  &:focus + .products-modal-form__field-description,
+  &:not(:placeholder-shown) + .products-modal-form__field-description {
     transform: translateY(-30px);
   }
   &:focus {
@@ -238,12 +253,14 @@
     outline: none;
   }
 }
+
 .products-modal-form__comment {
   display: block;
   resize: none;
   height: 84px;
-  &:focus + .products-modal-form__field-description {
-    transform: translateY(-50px);
+  &:focus + .products-modal-form__field-description,
+  &:not(:placeholder-shown) + .products-modal-form__field-description {
+    transform: translateY(-35px);
   }
 }
 
@@ -257,8 +274,10 @@
   @media screen and (min-width: 480px) {
     left: 16%;
   }
-
   transform: translateY(-50%);
+  &.comment {
+    top: 30%;
+  }
 }
 
 .products-modal-form__check-field {
