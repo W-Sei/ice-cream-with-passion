@@ -1,22 +1,31 @@
-// Remove when Hero is ready
-
 .page-header {
-  background-color: green;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
-// Do not remove! Uncomment when Hero is ready
-
-// .page-header {
-//   background-color: transparent;
-//   border-bottom: transparent;
-// }
+.header-bgc {
+  background-color: rgba(10, 136, 23, 0.65);
+}
 
 .header-position {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 8px;
+  padding-bottom: 28px;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.header-nav {
+  display: flex;
 }
 
 .pages-nav__item {
@@ -29,6 +38,7 @@
 
   display: flex;
   align-items: center;
+  padding-top: 23px;
 
   color: var(--text-light);
 }
