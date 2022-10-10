@@ -1,9 +1,11 @@
-@media screen and (max-width: 480px) {
-  .cow {
+.about{
+    background-color: var(--green-section-background);
     width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .cow {
     padding-top: 60px;
     padding-bottom: 21px;
-    background-color: var(--green-section-background);
   }
 
   .about__subtitle {
@@ -69,4 +71,41 @@
   .cow-button{
 text-align: center;
   }
+}
+//max 768px
+@media screen and (min-width:768px){
+  .cow{
+    width:768px ;
+    padding:60px 32px 24px 32px;
+    background-color: var(--green-section-background);
+  }
+  .about__subtitle{
+    font-weight: 800;
+    font-size: 22px;
+    line-height:1.23;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-light);
+  }
+.about__heading{
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color:var(--text-light);
+}
+.about__img{
+object-fit: contain;
+    object-position: 0 26px;
+    width: 336px;
+    height: 356px;
+    margin-left: auto;
+    margin-right: auto;
+    background:var(--circle-yelow);
+    box-shadow: var(--circle-yelow-shadow);
+    border-radius: 165.879px;
+}
 }
