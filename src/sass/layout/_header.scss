@@ -33,8 +33,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
+  line-height: 1.25;
 
   display: flex;
   align-items: center;
@@ -95,10 +94,6 @@
   .header-nav {
     display: flex;
     align-items: center;
-  }
-
-  .header-nav__logo {
-    // margin-right: 88px;
   }
 
   .pages-nav {
