@@ -67,11 +67,11 @@
   color: var(--text-grey);
 }
 
-.contact-list {
+.contact-list-cont {
   border-top: 1px solid #ececec;
 }
 
-.contact-list__link {
+.contact-list-cont__link {
   font-weight: 500;
   line-height: 1.2;
   color: var(--text-dark);
@@ -134,12 +134,12 @@
     }
   }
 
-  .contact-list {
+  .contact-list-cont {
     padding-top: 24px;
     width: 216px;
   }
 
-  .contact-list__link {
+  .contact-list-cont__link {
     font-size: 12px;
   }
 
@@ -263,11 +263,11 @@
     }
   }
 
-  .contact-list {
+  .contact-list-cont {
     padding-top: 32px;
   }
 
-  .contact-list__link {
+  .contact-list-cont__link {
     font-size: 14px;
   }
 
@@ -378,11 +378,11 @@
     }
   }
 
-  .contact-list {
+  .contact-list-cont {
     padding-top: 32px;
   }
 
-  .contact-list__link {
+  .contact-list-cont__link {
     font-size: 16px;
   }
 }
