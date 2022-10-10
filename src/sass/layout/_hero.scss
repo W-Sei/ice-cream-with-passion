@@ -4,16 +4,16 @@
 @media screen and (min-width: 320px) {
   .hero {
     position: relative;
-    height: 450px;
+    height: 502px;
   }
   .hero__title {
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
-    line-height: 33px;
+    line-height: 1.27;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: var(--text-light);
     width: 247px;
     height: 97px;
     text-align: left;
@@ -21,39 +21,63 @@
   }
   .hero__title__span {
     font-size: 34px;
-    line-height: 28px;
+    line-height: 0.82;
   }
   .hero__menu {
     display: flex;
   }
-
+  // Кнопки
   .hero__btn {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.25;
     display: flex;
     align-items: center;
     text-align: center;
     padding: 4px 10px;
     background-color: inherit;
-   
   }
   .hero__btn--first {
     color: var(--text-dark);
     border: 2px solid #f8d24e;
     border-radius: 8px;
     margin-right: 8px;
-     width: 62px;
+    width: 62px;
     height: 24px;
+    &:hover {
+      border: 2px solid var(--button-green);
+      border-radius: 10px;
+    }
+    &:focus {
+      border: 2px solid var(--button-green);
+      border-radius: 10px;
+      color: var(--text-light);
+    }
+
+    &:disabled {
+      border-color: var(--button-grey);
+      border-radius: 10px;
+    }
   }
   .hero__btn--second {
     color: var(--accent-color);
     border: none;
     padding: 7px 10px;
     text-decoration: underline;
+
+    &:hover {
+      color: var(--button-green);
+    }
+    &:focus {
+      color: var(--text-light);
+    }
+    &:disabled {
+      color: var(--button-grey);
+    }
   }
+  // Абсолютні елементи
   .item__ball {
     position: absolute;
     content: '';
@@ -83,7 +107,10 @@
     left: 100;
     z-index: 4;
   }
-
+  // Відключені елементи для мобілки
+  .hero__svg {
+    display: none;
+  }
   .hero__menu__numbers {
     display: none;
   }
@@ -96,24 +123,25 @@
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: 349px;
+    height: 415px;
   }
   .hero__title {
     font-weight: 400;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 1.28;
     width: 182px;
     height: 80px;
     margin-bottom: 20px;
   }
   .hero__title__span {
     font-size: 24px;
-    line-height: 23px;
+    line-height: 0.96;
   }
   .hero__menu__container {
     display: flex;
     justify-content: space-between;
   }
+  // -----------------ЦИФРИ КАФЕ І ТРАКІВ
   .hero__menu__numbers {
     display: flex;
     flex-direction: column;
@@ -123,7 +151,7 @@
     font-style: normal;
     font-weight: 900;
     font-size: 28px;
-    line-height: 34px;
+    line-height: 1.21;
     text-align: right;
     text-transform: uppercase;
     margin-bottom: 4px;
@@ -133,10 +161,17 @@
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.25;
     text-align: right;
     color: var(--background-main);
   }
+  .item__text--marg {
+    margin-bottom: 20px;
+  }
+  .hero__text__container {
+    display: block;
+  }
+  // ------------------ТЕКСТ ГЕРОЯ І СВГ ДО НЬОГО
   .hero__text {
     display: block;
     width: 151px;
@@ -145,11 +180,21 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 140%;
+    line-height: 1.41;
     color: var(--text-light);
-    margin-left: 217px;
-    margin-top: 56px;
+    margin-left: 190px;
+    margin-top: 100px;
   }
+  .hero__svg {
+    display: block;
+    width: 40px;
+    height: 10px;
+    margin-left: 185px;
+    margin-top: 20px;
+    fill: var(--text-light);
+  }
+
+  // Абсолютні елементи
   .item__plate {
     display: block;
     position: absolute;
@@ -181,5 +226,80 @@
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1200px;
+    height: 664px;
+  }
+  .hero__title {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.26;
+    width: 367px;
+    height: 144px;
+  }
+  .hero__title__span {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+  //--------------------- КНОПКИ
+  .hero__btn {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  .hero__btn--first {
+    padding: 12px 34px;
+    width: 134px;
+    height: 42px;
+    margin-right: 34px;
+  }
+  .hero__btn--second {
+    padding: 10px 0px;
+  }
+
+  // -----------------ЦИФРИ КАФЕ І ТРАКІВ
+  .item__text--first {
+    font-size: 46px;
+    line-height: 1.22;
+  }
+  .item__text--second {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .item__text--marg {
+    margin-bottom: 16px;
+  }
+  // Текс Героя і СВГ до нього
+  .hero__text {
+    margin-left: 240px;
+    margin-top: 170px;
+  }
+  .hero__svg {
+    margin-left: 235px;
+  }
+
+
+  //-------------- Абсолютні елементи
+  .item__plate {
+    bottom: 65;
+    left: 20;
+  }
+
+  .item__ball {
+    bottom: 0;
+    left: 0;
+  }
+
+  .item__shadow {
+    bottom: 350;
+    left: 530;
+  }
+
+  .item__ice {
+    bottom: 0;
+    left: 650;
+    width: 400px;
+  }
+
+  .item__smile {
+    bottom: 120;
+    left: 690;
   }
 }
