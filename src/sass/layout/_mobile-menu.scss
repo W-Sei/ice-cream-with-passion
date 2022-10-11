@@ -1,272 +1,209 @@
-// код для прикладу/орієнтації, підлаштовуємо під своє,
-// видаляємо зайве, змінюємо на потрібне
-
-:root {
-  --screen-width: 320px;
-  --screen-height: 560px;
-  --header-bg-color: #673ab7;
-  --splash-bg-color: #368887;
-}
-
-// calculate a circle's circumference based on radius
-@function circumference($r) {
-  $pi: 3.141592653;
-  @return 2 * $pi * $r;
-}
-
-
-.header_logo {
-  display: block;
-  width: 40px;
-  height: 37px;
-  top: 12px;
-  margin-left: 31px;
-
-}
-
-.mobile_btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-// // ---------------------------
-// // Main Navigation Menu
-// // ---------------------------
-
-.nav {
-  // Toggle Button
-  &__toggle {
-    display: inline-block;
-    position: absolute;
-    z-index: 10;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    outline: 0;
-    right: 15px;
-    top: 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background-color 0.15s linear;
-
-    &:hover,
-    &:focus {
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-  }
-
-  &__menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: var(--screen-height);
-    position: relative;
-    z-index: 5;
-    visibility: hidden;
-  }
-
-  &__item {
-    opacity: 0;
-    transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
-  }
-  @for $i from 1 through 5 {
-    &__item:nth-child(#{$i}) {
-      transform: translateY(-40px * $i);
-    }
-  }
-
-  // &__link {
-  //   color: white;
-  //   display: block;
-  //   text-align: center;
-  //   text-transform: uppercase;
-  //   letter-spacing: 5px;
-  //   font-size: 1.25rem;
-  //   text-decoration: none;
-  //   padding: 1rem;
-
-  //   &:hover,
-  //   &:focus {
-  //     outline: 0;
-  //     background-color: rgba(0, 0, 0, 0.2);
-  //   }
-  // }
-    &__link {
-      @include fontHeadingSmall ($line-height: 39px, $font-weight: 700, $font-size: 32px, $text-transform: none);
-      color: white;
-      display: block;
-      margin-bottom: 32px;
-      // padding: 1rem;
-  
-  
-      &:hover,
-      &:focus {
-        outline: 0;
-        color: var(--text-dark);
-      }
-  
-    }
-}
-
-
-
-// // ---------------------------
-// // SVG Menu Icon
-// // ---------------------------
-
-.menuicon {
-  display: block;
-  cursor: pointer;
-  color: white;
-
-  transform: rotate(0deg);
-  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-
-  &__bar,
-  &__circle {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 3;
-    stroke-linecap: round;
-  }
-  &__bar {
-    transform: rotate(0deg);
-    transform-origin: 50% 50%;
-    transition: transform 0.25s ease-in-out;
-  }
-  &__circle {
-    transition: stroke-dashoffset 0.3s linear 0.1s;
-    stroke-dashoffset: circumference(23); // 23 is the <circle>'s radius
-    stroke-dasharray: circumference(23);
-  }
-}
-
-// // ---------------------------
-// // Circular Splash Background
-// // ---------------------------
-
-.splash {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  width: 1px;
-  height: 1px;
-
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 50%;
+@media screen and (max-width: 1199px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
     background-color: var(--green-section-background);
 
-    // screen diameter can be 142vmax at most,
-    // circle needs to be twice that size to cover it
-    width: 284vmax;
-    height: 284vmax;
-    top: -142vmax;
-    left: -142vmax;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--easeInOutBack), visibility var(--easeInOutBack);
 
-    transform: scale(0);
-    transform-origin: 50% 50%;
-    transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-
-    // will-change tells the browser we plan to
-    // animate this property in the near future
-    will-change: transform;
-  }
-}
-
-// // ---------------------------
-// // Active State
-// // ---------------------------
-
-.nav:target,
-.nav--open {
-  //scale the background circle to full size
-  > .splash::after {
-    transform: scale(1);
-  }
-
-  //animate the menu icon
-  .menuicon {
-    color: white;
-    transform: rotate(180deg);
-
-    &__circle {
-      stroke-dashoffset: 0;
-    }
-    &__bar:nth-child(1),
-    &__bar:nth-child(4) {
-      opacity: 0;
-    }
-    &__bar:nth-child(2) {
-      transform: rotate(45deg);
-    }
-    &__bar:nth-child(3) {
-      transform: rotate(-45deg);
-    }
-  }
-
-  //show the nav items
-  .nav {
-    &__menu {
-      visibility: visible;
-    }
-
-    &__item {
+    &.is-open {
+      transform: translateX(0);
       opacity: 1;
-      transform: translateY(0);
+      visibility: visible;
+      pointer-events: auto;
     }
   }
-}
 
-// // ---------------------------
-// // Demo Stuff, Ignore
-// // ---------------------------
+  .mobile-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
-body {
-  background-color: #d7d7d7;
-  // font-family: 'Roboto';
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  .mobile-menu__container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 
-.viewport {
-  width: var(--screen-width);
-  height: var(--screen-height);
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  background-color: white;
-}
+    @media screen and (min-width: 320px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
-.header {
-  height: 5rem;
-  background-color: var(--green-section-background);
-}
+    @media screen and (min-width: 480px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
 
-.main {
-  padding: 20px;
-}
+  .mobile-menu__close-btn {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    line-height: 0;
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  grid-auto-rows: 130px;
-  grid-gap: 20px;
+    fill: var(--text-light);
 
-  &__item {
-    height: 100%;
-    background-color: #d8d8d8;
+    @media screen and (min-width: 320px) {
+      top: 16px;
+      right: 20px;
+    }
+
+    @media screen and (min-width: 480px) {
+      top: 32px;
+      right: 32px;
+    }
+  }
+
+  .mobile-menu__close-icon {
+    width: 40px;
+    height: 40px;
+
+    transition: fill var(--easeInOutBack), scale var(--easeInOutBack);
 
     &:hover,
     &:focus {
-      background-color: #a4a4a4;
+      fill: var(--accent-color);
+      transform: scale(1.2);
+    }
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 320px) {
+      padding-top: 16px;
+    }
+
+    @media screen and (min-width: 480px) {
+      padding-top: 32px;
+    }
+  }
+
+  .mobile-menu-logo {
+    @media screen and (min-width: 320px) {
+      width: 44.47px;
+      height: 37px;
+    }
+
+    @media screen and (min-width: 480px) {
+      width: 48px;
+      height: 44px;
+    }
+  }
+
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 111px;
+
+    @media screen and (min-width: 320px) {
+      padding-top: 51px;
+    }
+
+    @media screen and (min-width: 480px) {
+      padding-top: 76px;
+    }
+  }
+
+  .mobile-nav-item {
+    display: flex;
+
+    @media screen and (min-width: 320px) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 40px;
+    }
+
+    &::last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .mobile-navigation-link {
+    @media screen and (min-width: 320px) {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1.23;
+    }
+
+    @media screen and (min-width: 480px) {
+      font-size: 48px;
+    }
+
+    color: var(--text-light);
+  }
+
+  .mobile-navigation-link {
+
+    &:focus,
+    &:hover {
+      color: var(--text-dark);
+      transition: color var(--easeInOutBack);
     }
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+// Mobile menu button
+
+@media screen and (max-width: 767px) {
+  .button__buy-now-mobile {
+    @include button();
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    padding: 12px 34px;
+    width: 152px;
+    height: 42px;
+    gap: 7.23px;
+
+    transition: background-color var(--easeOutCirc), color var(--easeOutCirc);
+
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      background-color: var(--button-green);
+    }
+
+    &:focus {
+      background-color: var(--button-green);
+      color: var(--text-light);
+
+      .buy-now-icon {
+        fill: var(--text-light);
+      }
+    }
+  }
+
+  .buy-now-icon {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .button__buy-now-mobile {
+    display: none;
+  }
+}
