@@ -5,15 +5,15 @@
 }
 
 .header-bgc {
-  background-color: rgba(10, 136, 23, 0.65);
+  background: linear-gradient(to bottom, rgba(132, 161, 120, 0.80), rgba(132, 161, 120, 0.40));
 }
 
 .header-position {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 8px;
-  padding-bottom: 28px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .header-buttons {
@@ -21,7 +21,10 @@
   align-items: center;
   justify-content: space-between;
   margin-left: auto;
-  margin-top: 20px;
+}
+
+.logo{
+  cursor: url(../images/images/icon/cow.png), auto;
 }
 
 .header-nav {
@@ -64,6 +67,7 @@
   &:hover {
     fill: var(--accent-text-color);
     transition: fill var(--transition-dur-and-func);
+    cursor: url(../images/images/icon/cow.png), auto;
   }
 }
 
@@ -75,7 +79,9 @@
 // 768px - 1200px
 @media screen and (min-width: 768px) {
   .header-position {
-    justify-content: flex-end;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 10px;
   }
 
   .open-mobile-menu-btn {
@@ -88,6 +94,7 @@
     &:hover {
       fill: var(--accent-text-color);
       transition: fill var(--transition-dur-and-func);
+      cursor: url(../images/images/icon/cow.png), auto;
     }
   }
 
@@ -95,6 +102,10 @@
     display: flex;
     align-items: center;
   }
+    
+  .header-buttons {
+      padding-top: 10px;
+    }
 
   .pages-nav {
     display: none;
@@ -103,6 +114,11 @@
 
 // 1200px - etc.
 @media screen and (min-width: 1200px) {
+
+  .header-position {
+      padding-top: 2px;
+      padding-bottom: 13px;
+    }
   .header-nav {
     display: flex;
     align-items: center;
@@ -117,7 +133,7 @@
     column-gap: 27px;
   }
 
-  .navigation-link {
+    .navigation-link {
     color: var(--text-light);
     text-decoration: none;
     font-weight: 700;
@@ -130,6 +146,7 @@
     &:hover,
     &:focus {
       color: var(--accent-color);
+      cursor: url(../images/images/icon/cow.png), auto;
     }
   }
 
@@ -170,6 +187,7 @@
 
     &:hover {
       background-color: var(--button-green);
+      cursor: url(../images/images/icon/cow.png), auto;
     }
 
     &:focus {
@@ -199,6 +217,7 @@
 
     &:hover {
       background-color: var(--button-green);
+      cursor: url(../images/images/icon/cow.png), auto;
     }
 
     &:focus {
