@@ -1,10 +1,15 @@
 .hero {
   background-color: var(--green-section-background);
 }
+
 @media screen and (min-width: 320px) {
   .hero {
-    position: relative;
     height: 502px;
+  }
+  .con__hero {
+    position: relative;
+    height: 442px;
+    overflow: hidden;
   }
   .hero__title {
     font-family: 'Seymour One';
@@ -38,6 +43,7 @@
     text-align: center;
     padding: 4px 10px;
     background-color: inherit;
+    cursor: pointer;
   }
   .hero__btn--first {
     color: var(--text-dark);
@@ -125,6 +131,9 @@
   .hero {
     height: 415px;
   }
+  .con__hero {
+    height: 357px;
+  }
   .hero__title {
     font-weight: 400;
     font-size: 18px;
@@ -192,7 +201,18 @@
     margin-left: 185px;
     margin-top: 20px;
     fill: var(--text-light);
+    border: 2px;
+    cursor: pointer;
+
+    &:hover {
+      width: 50px;
+    }
+    &:focus {
+      border: 3px;
+      width: 50px;
+    }
   }
+
 
   // Абсолютні елементи
   .item__plate {
@@ -209,7 +229,7 @@
     left: 15;
   }
   .item__shadow {
-    bottom: 130;
+    bottom: 110;
     left: 360;
   }
   .item__ice {
@@ -226,8 +246,11 @@
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1200px;
-    height: 664px;
+    height: 660px;
   }
+    .con__hero {
+      height: 600px;
+    }
   .hero__title {
     font-weight: 400;
     font-size: 38px;
@@ -275,7 +298,6 @@
     margin-left: 235px;
   }
 
-
   //-------------- Абсолютні елементи
   .item__plate {
     bottom: 65;
@@ -288,7 +310,7 @@
   }
 
   .item__shadow {
-    bottom: 350;
+    bottom: 330;
     left: 530;
   }
 

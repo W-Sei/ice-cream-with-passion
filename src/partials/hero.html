@@ -1,5 +1,5 @@
 <section class="section hero">
-  <div class="container">
+  <div class="container con__hero">
     <div class="hero__menu__container">
       <div>
         <h1 class="hero__title">
@@ -7,14 +7,18 @@
         </h1>
         <ul class="hero__menu">
           <li class="menu__item">
-            <button class="hero__btn hero__btn--first" type="button">
-              Products
-            </button>
+            <form action="../partials/products.html">
+              <button class="hero__btn hero__btn--first" type="submit">
+                Products
+              </button>
+            </form>
           </li>
           <li class="menu__item">
-            <button class="hero__btn hero__btn--second" type="button">
-              How it’s made?
-            </button>
+            <form action="../partials/about.html">
+              <button class="hero__btn hero__btn--second" type="submit">
+                How it’s made?
+              </button>
+            </form>
           </li>
         </ul>
       </div>
@@ -39,7 +43,7 @@
         tempor incididunt ut labore et
       </p>
       <svg class="hero__svg">
-        <use href="./images/sprite.svg#icon-arrow-hover"></use>
+        <use class="svg" href="./images/sprite.svg#icon-arrow-hover"></use>
       </svg>
     </div>
     <ul>
