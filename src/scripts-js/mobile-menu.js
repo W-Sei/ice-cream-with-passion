@@ -1,40 +1,28 @@
-const nav = document.querySelector('#nav');
-const menu = document.querySelector('#menu');
-const menuToggle = document.querySelector('.nav__toggle');
-let isMenuOpen = false;
+(() => {
+  const mobileMenu = document.querySelector('.js-menu-container');
+  const openMenuBtn = document.querySelector('.js-open-menu');
+  const closeMenuBtn = document.querySelector('.js-close-menu');
 
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-open');
 
-// TOGGLE MENU ACTIVE STATE
-menuToggle.addEventListener('click', e => {
-  e.preventDefault();
-  isMenuOpen = !isMenuOpen;
-  
-  // toggle a11y attributes and active class
-  menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
-  menu.hidden = !isMenuOpen;
-  nav.classList.toggle('nav--open');
-});
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
+  };
 
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
 
-// TRAP TAB INSIDE NAV WHEN OPEN
-nav.addEventListener('keydown', e => {
-  // abort if menu isn't open or modifier keys are pressed
-  if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
-    return;
-  }
-  
-  // listen for tab press and move focus
-  // if we're on either end of the navigation
-  const menuLinks = menu.querySelectorAll('.nav__link');
-  if (e.keyCode === 9) {
-    if (e.shiftKey) {
-      if (document.activeElement === menuLinks[0]) {
-        menuToggle.focus();
-        e.preventDefault();
-      }
-    } else if (document.activeElement === menuToggle) {
-      menuLinks[0].focus();
-      e.preventDefault();
-    }
-  }
-});
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('is-open');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
+  });
+})();
