@@ -1,0 +1,215 @@
+.page-footer {
+  background-color: var(--green-section-background);
+}
+
+.page-footer__title {
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.page-footer__contact {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-tel {
+  color: var(--text-light);
+}
+
+.page-footer__copyright {
+  border-top: 1px solid #e1e1e1;
+  @include centered-flex($type: flex);
+}
+
+.page-footer__copyright-text {
+  color: var(--footer-text-grey);
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-list__link {
+  display: block;
+  border-radius: 50%;
+  color: var(--green-section-background);
+
+  transform: scale(1);
+  transition-property: transform, color;
+  transition: transform var(--easeInOutBack);
+
+  &:hover,
+  &:focus {
+    color: var(--text-light);
+  }
+
+  &:focus {
+    transform: scale(1.2);
+  }
+}
+
+.icon-github,
+.icon-facebook,
+.icon-telegram {
+  fill: currentColor;
+}
+
+// 0-767px
+@media screen and (max-width: 767px) {
+  .page-footer {
+    padding-bottom: 60px;
+  }
+
+  .page-footer__container {
+    margin-bottom: 40px;
+  }
+
+  .page-footer__title--dubbed {
+    @include font($line-height: 22px, $font-weight: 700, $font-size: 18px);
+    margin-bottom: 16px;
+    max-width: 241px;
+  }
+
+  .page-footer__title--dubbed-passion {
+    @include font($line-height: 41px, $font-weight: 700, $font-size: 34px);
+  }
+
+  .page-footer__wrapper-title {
+    margin-bottom: 42px;
+  }
+
+  .social-list {
+    gap: 28px;
+    margin-bottom: 38px;
+  }
+
+  .icon-github,
+  .icon-facebook,
+  .icon-telegram {
+    width: 32px;
+    height: 32px;
+  }
+
+  .page-footer__contact {
+    gap: 3px;
+  }
+
+  .page-footer__text,
+  .button-tel {
+    @include font($line-height: 22px, $font-weight: 700, $font-size: 12px, $letter-spacing: 0.02em);
+  }
+
+  .page-footer__copyright {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 16px;
+  }
+
+  .page-footer__copyright-text {
+    @include font($line-height: 21px, $font-weight: 700, $letter-spacing: 0.02em);
+  }
+}
+
+
+// 768px - 1199px
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer {
+    padding-bottom: 13px;
+  }
+
+  .page-footer__title--dubbed {
+    @include font($line-height: 32px, $font-weight: 700, $font-size: 26px);
+    margin-bottom: 9px;
+    max-width: 352px;
+  }
+
+  .page-footer__title--dubbed-passion {
+    @include font($line-height: 59px, $font-weight: 700, $font-size: 48px, $letter-spacing: 0.06em);
+    max-width: 340px;
+  }
+
+  .page-footer__text,
+  .button-tel,
+  .page-footer__copyright-text {
+    @include font($line-height: 26px, $font-weight: 700, $letter-spacing: 0.02em);
+  }
+
+  .page-footer__container {
+    margin-bottom: 32px;
+  }
+
+  .page-footer__copyright {
+    padding-top: 14px;
+  }
+
+  .social-list {
+    margin-bottom: 32px;
+  }
+}
+
+// 768px - ~
+@media screen and (min-width: 768px) {
+  .page-footer__contact {
+    gap: 4px;
+  }
+
+  .page-footer__copyright {
+    gap: 4px;
+  }
+
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-list {
+    gap: 30px;
+  }
+
+  .icon-github,
+  .icon-facebook,
+  .icon-telegram {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+// 1200px
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    padding-bottom: 11px;
+  }
+
+  .page-footer__container {
+    margin-bottom: 54px;
+  }
+
+  .page-footer__title--dubbed {
+    @include font($line-height: 37px, $font-size: 30px);
+    margin-bottom: 14px;
+  }
+
+  .page-footer__title--dubbed-passion {
+    @include font($line-height: 71px, $font-weight: 700, $font-size: 58px, $letter-spacing: 0.06em);
+  }
+
+  .social-list {
+    margin-bottom: 40px;
+  }
+
+  .page-footer__text,
+  .button-tel {
+    @include font($line-height: 30px, $font-weight: 700, $font-size: 16px, $letter-spacing: 0.02em);
+  }
+
+  .page-footer__copyright {
+    padding-top: 12px;
+  }
+
+  .page-footer__copyright-text {
+    @include font($line-height: 22px, $font-weight: 700, $font-size: 12px, $letter-spacing: 0.02em);
+  }
+}
