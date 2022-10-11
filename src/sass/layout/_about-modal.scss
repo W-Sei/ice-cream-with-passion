@@ -100,3 +100,33 @@
     margin-bottom: 32px;
   }
 }
+
+.about-modal-form__video {
+  width: 224px;
+  height: 199px;
+  background: var(--text-dark);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (min-width: 480px) {
+    width: 396px;
+    height: auto;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
+  }
+}
+
+.about-modal-form__text {
+  @include font(20, 400, 14, -0.01em);
+
+  @media screen and (min-width: 768px) {
+    @include font(22, 400, 16, 0);
+  }
+}
