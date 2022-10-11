@@ -1,3 +1,19 @@
+.reviews {
+  // padding-bottom: 36px;
+
+  @media screen and (min-width: 320px) {
+    padding-bottom: 393px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 384px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 196px;
+  }
+}
+
 .reviews__testimonials {
   height: 256px;
   padding: 34px 39px;
