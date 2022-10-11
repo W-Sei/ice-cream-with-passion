@@ -1,6 +1,7 @@
 .advantages-section {
     background-color: var(--green-section-background);
     // padding-top: 0;
+    padding-bottom: 120px;
     min-width: 320px;
 }
 .advantages-list {    
@@ -40,12 +41,12 @@
         }    
 }
 
-.title2::before {
+.title-two::before {
     content: "";
     background-image: url(../images/images/icon/weight.png);
 }
 
-.title3::before {
+.title-three::before {
     content: "";
     background-image: url(../images/images/icon/ice-cream.png);
 }
