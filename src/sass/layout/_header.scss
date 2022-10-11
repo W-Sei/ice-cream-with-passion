@@ -2,11 +2,10 @@
   position: fixed;
   width: 100%;
   z-index: 1;
-  background-color: rgba(10, 136, 23);
 }
 
 .header-bgc {
-  background-color: rgba(10, 136, 23, 0.65);
+  background: linear-gradient(to bottom, rgba(132, 161, 120, 0.80), rgba(132, 161, 120, 0.40));
 }
 
 .header-position {
@@ -22,7 +21,10 @@
   align-items: center;
   justify-content: space-between;
   margin-left: auto;
-  // padding-top: 20px;
+}
+
+.logo{
+  cursor: url(../images/images/icon/cow.png), auto;
 }
 
 .header-nav {
@@ -65,6 +67,7 @@
   &:hover {
     fill: var(--accent-text-color);
     transition: fill var(--transition-dur-and-func);
+    cursor: url(../images/images/icon/cow.png), auto;
   }
 }
 
@@ -76,7 +79,6 @@
 // 768px - 1200px
 @media screen and (min-width: 768px) {
   .header-position {
-    // justify-content: flex-end;
     align-items: center;
     padding-top: 2px;
     padding-bottom: 10px;
@@ -92,6 +94,7 @@
     &:hover {
       fill: var(--accent-text-color);
       transition: fill var(--transition-dur-and-func);
+      cursor: url(../images/images/icon/cow.png), auto;
     }
   }
 
@@ -99,11 +102,7 @@
     display: flex;
     align-items: center;
   }
-  
-  // .header-nav__logo{
-  //   padding-top: 10px;
-  // }
-  
+    
   .header-buttons {
       padding-top: 10px;
     }
@@ -147,6 +146,7 @@
     &:hover,
     &:focus {
       color: var(--accent-color);
+      cursor: url(../images/images/icon/cow.png), auto;
     }
   }
 
@@ -187,6 +187,7 @@
 
     &:hover {
       background-color: var(--button-green);
+      cursor: url(../images/images/icon/cow.png), auto;
     }
 
     &:focus {
@@ -216,6 +217,7 @@
 
     &:hover {
       background-color: var(--button-green);
+      cursor: url(../images/images/icon/cow.png), auto;
     }
 
     &:focus {
