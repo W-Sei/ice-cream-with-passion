@@ -1,0 +1,165 @@
+// ************************************************************************************** MOBILE ************************************************************************************
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  padding: 28px 28px;
+  background-color: var(--background-main);
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+}
+
+.backdrop-is-hidden {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+
+  background-color: var(--background-main);
+  border: none;
+}
+
+.modal-title-locations {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  color: var(--text-dark);
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: 199px;
+}
+
+.modal-link {
+  display: block;
+  text-align: center;
+  width: 134px;
+  height: 42px;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  padding: 12px 0;
+  margin: auto;
+  margin-top: 24px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: var(--text-dark);
+}
+
+@media screen and (min-width: 480px) {
+
+  .modal {
+    width: 360px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  .backdrop-is-hidden {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .photo {
+  display: block;
+  width: 224px;
+  height: 199px;
+  margin: auto;
+}
+  
+}
+
+// ************************************************************************************** TABLET ************************************************************************************
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 568px;
+    padding: 32px 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  
+  .backdrop-is-hidden {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .photo {
+    display: block;
+    width: 100%;
+    height: 260px;
+  }
+}
+
+// ************************************************************************************** DESKTOP ************************************************************************************
+
+@media screen and (min-width: 1200px) {
+
+  .modal-close-btn {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal-title-locations {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+
+  .modal-link {
+    display: block;
+    text-align: center;
+    line-height: 17px;
+    font-size: 14px;
+    margin: auto;
+    margin-top: 32px;
+  }
+
+  .photo {
+    display: block;
+    width: 100%;
+    height: 260px;
+  }
+}
