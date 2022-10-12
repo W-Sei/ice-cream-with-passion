@@ -271,7 +271,7 @@
 
   &:focus + .products-modal-form__field-description,
   &:not(:placeholder-shown) + .products-modal-form__field-description {
-    transform: translateY(-30px);
+    transform: translateY(-35px);
   }
 
   &:focus {
@@ -287,8 +287,24 @@
 
   &:focus + .products-modal-form__field-description,
   &:not(:placeholder-shown) + .products-modal-form__field-description {
-    transform: translateY(-35px);
+    transform: translateY(-40px);
   }
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(248, 210, 78, 0.1);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(248, 210, 78, 0.1);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(248, 210, 78, 0.1);
 }
 
 .products-modal-form__field-description {
