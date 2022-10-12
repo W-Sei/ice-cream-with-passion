@@ -1,7 +1,4 @@
-<div
-  class="backdrop-products-modal backdrop-products-modal-ice-cream is-hidden"
-  data-modal
->
+<div class="backdrop-products-modal backdrop-products-modal-ice-cream is-hidden" data-modal>
   <!-- START ######## Modal-ice-cream ######## -->
   <div class="products-modal products-modal-ice-cream">
     <button type="button" class="products-modal__close-btn" data-modal-close>
@@ -9,10 +6,7 @@
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <form
-      class="products-modal-form products-modal-ice-cream-form"
-      autocomplete="off"
-    >
+    <form class="products-modal-form products-modal-ice-cream-form" autocomplete="off">
       <p class="products-modal-ice-cream-form__title">Chololate icecream</p>
       <div class="products-modal-ice-cream-form__img"></div>
       <ul class="products-modal-form__calorie-table-list">
@@ -86,54 +80,27 @@
           </li>
         </ul>
       </div>
-      <label class="products-modal-form__field">
-        <span class="products-modal-form__input-wrapper">
-          <input
-            type="text"
-            class="products-modal-form__input"
-            name="client_name"
-            required
-            minlength="3"
-            placeholder=" "
-            pattern="[a-zA-Z-а-яА-ЯіІїЇ]+"
-          />
-          <span class="products-modal-form__field-description">Name</span>
-        </span>
-      </label>
-      <label class="products-modal-form__field">
-        <span class="products-modal-form__input-wrapper">
-          <input
-            type="tel"
-            class="products-modal-form__input"
-            name="client_phone"
-            required
-            placeholder=" "
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="xxx-xxx-xx-xx"
-          />
-          <span class="products-modal-form__field-description">Phone</span>
-        </span>
-      </label>
-      <label class="products-modal-form__field-comment">
-        <span class="products-modal-form__input-wrapper">
-          <textarea
-            class="products-modal-form__comment"
-            name="client_comment"
-            placeholder=" "
-          ></textarea>
-          <span class="products-modal-form__field-description comment"
-            >Comment</span
-          >
-        </span>
-      </label>
 
-      <input
-        class="products-modal-form__check visually-hidden"
-        type="checkbox"
-        name="client_select-ice-cream"
-        checked
-        required
-      />
+      <div class="products-modal-form__field">
+        <input type="text" class="products-modal-form__input" name="client_name" required minlength="3" placeholder=" "
+          id="name" pattern="[a-zA-Z-а-яА-ЯіІїЇ]+" />
+        <label class="products-modal-form__field-description" for="name">Name</label>
+      </div>
+
+      <div class="products-modal-form__field">
+        <input type="tel" class="products-modal-form__input" name="client_phone" required placeholder=" " id="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+        <label class="products-modal-form__field-description" for="phone">Phone</label>
+      </div>
+
+
+      <div class="products-modal-form__field">
+        <textarea class="products-modal-form__comment" name="client_comment" placeholder=" " id="comment"></textarea>
+        <label class="products-modal-form__field-description comment" for="comment">Comment</label>
+      </div>
+
+      <input class="products-modal-form__check visually-hidden" type="checkbox" name="client_select-ice-cream" checked
+        required />
 
       <button type="submit" class="button products-modal-form__send-btn">
         Submit
