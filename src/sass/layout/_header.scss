@@ -36,9 +36,9 @@
   margin-left: auto;
 }
 
-.logo {
-  cursor: url(../images/images/icon/cow.png), auto;
-}
+// .logo {
+//   cursor: url(../images/images/icon/cow.png), auto;
+// }
 
 .header-nav {
   display: flex;
@@ -80,7 +80,7 @@
   &:hover {
     fill: var(--accent-text-color);
     transition: fill var(--transition-dur-and-func);
-    cursor: url(../images/images/icon/cow.png), auto;
+    // cursor: url(../images/images/icon/cow.png), auto;
   }
 }
 
