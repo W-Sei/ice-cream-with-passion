@@ -32,10 +32,9 @@
         margin-right: auto;
         width: 100%;
 
-        @media screen and (min-width: 320px) {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+
+        padding-left: 20px;
+        padding-right: 20px;
 
         @media screen and (min-width: 480px) {
             padding-left: 32px;
@@ -49,13 +48,10 @@
         border: 0;
         padding: 0;
         line-height: 0;
-
         fill: var(--text-light);
-
-        @media screen and (min-width: 320px) {
-            top: 16px;
-            right: 20px;
-        }
+        top: 16px;
+        right: 20px;
+       
 
         @media screen and (min-width: 480px) {
             top: 32px;
@@ -80,9 +76,9 @@
         display: flex;
         flex-direction: column;
 
-        @media screen and (min-width: 320px) {
-            padding-top: 12px;
-        }
+
+        padding-top: 12px;
+      
 
         @media screen and (min-width: 480px) {
             padding-top: 20px;
@@ -90,10 +86,10 @@
     }
 
     .mobile-menu-logo {
-        @media screen and (min-width: 320px) {
-            width: 44.47px;
-            height: 37px;
-        }
+
+        width: 44.47px;
+        height: 37px;
+      
 
         @media screen and (min-width: 480px) {
             width: 48px;
@@ -107,38 +103,36 @@
         align-items: center;
         margin-bottom: 111px;
 
-        @media screen and (min-width: 320px) {
-            padding-top: 51px;
-        }
+
+        padding-top: 51px;
+      
 
         @media screen and (min-width: 480px) {
             padding-top: 76px;
         }
     }
-
-    .mobile-nav-item {
-        display: flex;
-
-        @media screen and (min-width: 320px) {
-            margin-bottom: 32px;
+ 
+        .mobile-nav-item {
+            display: flex;    
+    
+           &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+               
+            @media screen and (min-width: 480px) {
+                &:not(:last-child) {
+                        margin-bottom: 40px;
+                    }                
+            }
         }
-
-        @media screen and (min-width: 480px) {
-            margin-bottom: 40px;
-        }
-
-        &::last-child {
-            margin-bottom: 0;
-        }
-    }
 
     .mobile-navigation-link {
-        @media screen and (min-width: 320px) {
-            font-family: 'Montserrat';
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 1.23;
-        }
+
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.23;
+
 
         @media screen and (min-width: 480px) {
             font-size: 48px;
