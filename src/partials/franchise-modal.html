@@ -1,7 +1,7 @@
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal backdrop-is-hidden">
+<div class="backdrop is-hidden">
+    <div class="modal-franchise backdrop-is-hidden" data-modal>
         <button type="button" class="modal-close-btn" data-modal-close>
-            <svg class="modal-close-icon" width="20px" height="20px">
+            <svg class="modal-close-icon">
                 <use href="./images/sprite.svg#icon-close"></use>
             </svg>
         </button>
@@ -13,19 +13,19 @@
             below and we will reach out for additional information. We appreciate your patience.</p>
         <form class="modal-form">
             <label class="modal-form__field">
-                <input type="text" class="modal-form__input" required pattern="[a-zA-Zа-яА-ЯіІїЇ]+" name="user_name"
+                <input type="text" class="modal-form__input" required pattern="[a-zA-Zа-яА-ЯіІїЇ]+" name="client_name"
                     placeholder="Name" />
             </label>
             <label class="modal-form__field">
                 <input type="tel" class="modal-form__input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                    title="xxx-xxx-xx-xx" name="user_phone" placeholder="Phone" />
+                    title="xxx-xxx-xx-xx" name="client_phone" placeholder="Phone" />
             </label>
             <label class="modal-form__field">
                 <input type="email" class="modal-form__input" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                    name="user_email" placeholder="Email" />
+                    name="client_email" placeholder="Email" />
             </label>
             <label class="modal-form__field">
-                <textarea class="modal-form__message" name="user_message" placeholder="Comment"></textarea>
+                <textarea class="modal-form__message" name="client_message" placeholder="Comment"></textarea>
             </label>
             <button type="submit" class="modal-form-submit">Submit</button>
         </form>
