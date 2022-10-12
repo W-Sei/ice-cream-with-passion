@@ -58,6 +58,10 @@
   display: block;
   width: 100%;
   height: 130px;
+
+  @media screen and (min-width: 480px) {
+    height: 256px;
+  }
 }
 
 .gallery__img {
@@ -86,6 +90,7 @@
 
     &:hover,
     &:focus {
+
       .slick-prev:before,
       .slick-next:before {
         visibility: visible;
