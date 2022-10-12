@@ -8,7 +8,7 @@
   opacity: 1;
   background-color: rgba(#f8d24e, 0.2);
   transition: opacity var(--easeOutCirc), visibility var(--easeOutCirc);
-  display: flex;
+  // display: flex;
 }
 
 .is-hidden {
@@ -20,7 +20,7 @@
 .modal-franchise {
   position: absolute;
   // position: relative;
-  overflow-y: auto;
+  // overflow-y: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
@@ -50,6 +50,11 @@
 
   border: none;
   background-color: var(--text-light);
+}
+
+.modal-close-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .modal-franchise__title {
@@ -143,6 +148,16 @@
 
   border-radius: 10px;
   border: none;
+
+  &:hover {
+    color: var(--text-dark);
+    background-color: var(--button-green);
+  }
+
+  &:focus {
+    color: var(--text-light);
+    background-color: var(--button-green);
+  }
 }
 
 @media screen and (max-width: 319px) {
@@ -214,6 +229,11 @@
   .modal-close-btn {
     top: 20px;
     right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal-close-icon {
     width: 20px;
     height: 20px;
   }
