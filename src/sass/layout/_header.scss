@@ -4,21 +4,12 @@
   z-index: 99;
 }
 
-// .header-bgc {
-//   background: linear-gradient(
-//     to bottom,
-//     rgba(132, 161, 120, 0.8),
-//     rgba(132, 161, 120, 0.4)
-//   );
-// }
-
 .header-bgc {
-
-  background-image: linear-gradient(
-    to bottom,
-    rgba(132, 161, 120, 0.8),
-    rgba(132, 161, 120, 0.4)
-  );
+  background-image: linear-gradient(to right,
+      #84a178 15%,
+      rgba(161, 120, 132, 0.7) 40%,
+      rgba(132, 161, 120, 0.6) 75%,
+      rgba(213, 117, 63, 0.7));
 }
 
 .header-position {
@@ -217,7 +208,6 @@
     width: 12px;
     height: 12px;
     margin-left: 6px;
-    // margin-right: -6%;
   }
 }
 
