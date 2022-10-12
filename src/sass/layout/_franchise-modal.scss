@@ -52,7 +52,7 @@
   background-color: var(--text-light);
 }
 
-.modal-title {
+.modal-franchise__title {
   font-family: 'Seymour One';
   font-weight: 400;
   font-size: 16px;
@@ -64,7 +64,7 @@
   color: var(--text-dark);
 }
 
-.modal-info {
+.modal-franchise__info {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
@@ -126,7 +126,7 @@
   }
 }
 
-.modal-form-submit {
+.modal-form__submit {
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -218,14 +218,14 @@
     height: 20px;
   }
 
-  .modal-title {
+  .modal-franchise__title {
     font-size: 20px;
     line-height: 28px;
     width: 322px;
     margin-bottom: 24px;
   }
 
-  .modal-info {
+  .modal-franchise__info {
     font-size: 16px;
     margin-bottom: 32px;
     letter-spacing: 0;
@@ -253,7 +253,7 @@
     }
   }
 
-  .modal-form-submit {
+  .modal-form__submit {
     font-size: 14px;
     line-height: 1.21;
   }
