@@ -13,13 +13,11 @@
 // }
 
 .header-bgc {
+
   background-image: linear-gradient(
-    to right,
-    // rgba(132, 161, 120, 0.4) 1%,
-    rgba(132, 161, 120, 0.9) 15%,
-    rgba(132, 161, 120, 0.6) 40%,
-    rgba(132, 161, 120, 0.4) 65%,
-    rgba(132, 161, 120, 0.8)
+    to bottom,
+    rgba(132, 161, 120, 0.8),
+    rgba(132, 161, 120, 0.4)
   );
 }
 
@@ -187,6 +185,7 @@
     line-height: 1.28;
     color: var(--text-dark);
     padding: 12px 34px;
+    padding-right: 28px;
     min-width: 152px;
     height: 42px;
     border-radius: 10px;
@@ -217,6 +216,8 @@
   .buy-now-icon {
     width: 12px;
     height: 12px;
+    margin-left: 6px;
+    // margin-right: -6%;
   }
 }
 
