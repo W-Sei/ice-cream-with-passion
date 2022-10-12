@@ -6,9 +6,8 @@
   width: 100%;
   height: 100%;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(#f8d24e, 0.2);
+  transition: opacity var(--easeOutCirc), visibility var(--easeOutCirc);
 }
 
 .is-hidden {
@@ -17,7 +16,7 @@
   pointer-events: none;
 }
 
-.modal {
+.modal-locations {
   position: absolute;
   padding: 28px 28px;
   background-color: var(--background-main);
@@ -31,8 +30,8 @@
 }
 
 .backdrop-is-hidden {
-    transform: translate(-50%, -50%) scale(1);
-  }
+  transform: translate(-50%, -50%) scale(1);
+}
 
 .modal-close-btn {
   position: absolute;
@@ -53,7 +52,7 @@
   font-family: 'Seymour One';
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   /* identical to box height, or 150% */
   margin-bottom: 20px;
 
@@ -62,13 +61,13 @@
   color: var(--text-dark);
 }
 
-.photo {
+.photo-locations {
   display: block;
-  width: 100%;
   height: 199px;
+  margin: 0 auto;
 }
 
-.modal-link {
+.modal-link-locations {
   display: block;
   text-align: center;
   width: 134px;
@@ -82,14 +81,21 @@
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
 
   color: var(--text-dark);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (min-width: 479px) {
+  .photo-locations {
+    width: auto;
+    height: 199px;
+    margin: 0 auto;
+  }
+}
 
-  .modal {
+@media screen and (min-width: 480px) {
+  .modal-locations {
     width: 360px;
     left: 50%;
     top: 50%;
@@ -100,31 +106,30 @@
     transform: translate(-50%, -50%) scale(1);
   }
 
-  .photo {
-  display: block;
-  width: 224px;
-  height: 199px;
-  margin: auto;
-}
-  
+  .photo-locations {
+    display: block;
+    width: 224px;
+    height: 199px;
+    margin: auto;
+  }
 }
 
 // ************************************************************************************** TABLET ************************************************************************************
 
 @media screen and (min-width: 768px) {
-  .modal {
+  .modal-locations {
     width: 568px;
     padding: 32px 60px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0);
   }
-  
+
   .backdrop-is-hidden {
     transform: translate(-50%, -50%) scale(1);
   }
 
-  .photo {
+  .photo-locations {
     display: block;
     width: 100%;
     height: 260px;
@@ -134,7 +139,6 @@
 // ************************************************************************************** DESKTOP ************************************************************************************
 
 @media screen and (min-width: 1200px) {
-
   .modal-close-btn {
     top: 20px;
     right: 20px;
@@ -144,20 +148,20 @@
 
   .modal-title-locations {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     margin-bottom: 32px;
   }
 
-  .modal-link {
+  .modal-link-locations {
     display: block;
     text-align: center;
-    line-height: 17px;
+    line-height: 1.21;
     font-size: 14px;
     margin: auto;
     margin-top: 32px;
   }
 
-  .photo {
+  .photo-locations {
     display: block;
     width: 100%;
     height: 260px;
