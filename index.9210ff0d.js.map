@@ -1,1 +1,0 @@
-{"mappings":"AAAAA,EAAE,gBAAgBC,MACd,CACIC,UAAU,EACVC,cAAe","sources":["src/scripts-js/slick-gallery.js"],"sourcesContent":["$('.single-item').slick(\n    {\n        autoplay: true,\n        autoplaySpeed: 2000,\n\n    }\n);"],"names":["$","slick","autoplay","autoplaySpeed"],"version":3,"file":"index.9210ff0d.js.map"}
