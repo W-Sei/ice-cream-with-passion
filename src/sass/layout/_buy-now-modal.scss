@@ -63,21 +63,26 @@
     justify-content: space-between;
 }
 
-.order-form__menu-item{
+.order-form__item{
+    background-color: #96AF8C;
+    display: flex;
+    justify-content: center;
+    width: 132px;
     height: 135px;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
     border-radius: 15.7808px;
-    input:checked~& {
-     background: #EFD478;
-     border: #EFD478;
-        }
+   input:checked~&{
+       background-color: #F8D24E;
+   }
 
     &--one{
         border: 2px solid #96AF8C;
     }
+
     &--two{
         border: 2px solid #EFD478;
     }
+
     &--three{
         border: 2px solid #D6936D;
     }
@@ -87,36 +92,54 @@
     width: 131.13px;
     height: 130.6px;
     text-align: center;
-    border: 0.67px;
     border-radius: 150px;
     margin-left: auto;
     margin-right: auto;
     transform: translateY(-50%);
+//    input {
+//             appearance: none;
+//             position: absolute;
+//         }
+
     &::before{
         position: relative;
         z-index: 3;
+        bottom: 8px;
     }
 }
 
 .order-form__product--cream{
-    background: linear-gradient(0deg, #d5753fb3, #d5753fb3),
-            #d9d9d9;
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);;
     &::before{
         content: url(../images/images/modal-buy/buycream-desctop.png) ;
     }
 }
 
 .order-form__product--coffee {
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
     &::before {
         content: url(../images/images/modal-buy/buycoffee-desctop.png);
     }
 }
 
 .order-form__product--shake {
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
     &::before {
         content: url(../images/images/modal-buy/buymilk-desctop.png);
     }
+}
+
+.order-form__product-name{    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;    
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 20px;
 }
 
 .submit-button{
@@ -126,7 +149,10 @@
  border-radius: 10px;
  border: none;
  padding: 12px;
+ font-family: 'Montserrat';
+ font-style: normal;
  font-weight: 600;
+ font-size: 14px;
  line-height: 1.22;
  text-align: center;
  color: #131313;
