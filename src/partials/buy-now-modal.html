@@ -7,9 +7,30 @@
         </button>
         <form class="order-form" name="order" autocomplete="on">
             <p class="order-form__title">Buy now</p>
-            <input class="order-form__field" type="text" name="client_name" id="client_name" placeholder="Name">
-            <input class="order-form__field" type="text" name="client_phone" id="client_phone" placeholder="Phone">
-            <textarea class="order-form__comment" name="client_comment" id="client_comment" rows="10"
+            <ul class="order-form__menu">
+                <li class="order-form__menu-item order-form__menu-item--one"><input type="checkbox" name="ice-cream"
+                        id="ice-cream">
+                    <div class="order-form__product order-form__product--cream">
+                        <p class="order-form__product-name">ice cream</p>
+                    </div>
+                </li>
+                <li class="order-form__menu-item order-form__menu-item--two"><input class="order-form__check"
+                        type="checkbox" name="ice-coffee" id="ice-coffee">
+                    <div class="order-form__product order-form__product--coffee">
+                        <p class="order-form__product-name">ice coffee</p>
+                    </div>
+                </li>
+                <li class="order-form__menu-item order-form__menu-item--three"><input class="order-form__check"
+                        type="checkbox" name="milkshake" id="milkshake">
+                    <div class="order-form__product order-form__product--shake">
+                        <p class="order-form__product-name">milkshake</p>
+                    </div>
+                </li>
+            </ul>
+            <input class="order-form__input-field" type="text" name="client_name" id="client_name" placeholder="Name">
+            <input class="order-form__input-field" type="text" name="client_phone" id="client_phone"
+                placeholder="Phone">
+            <textarea class="order-form__comment-field" name="client_comment" id="client_comment" rows="10"
                 placeholder="Comment"></textarea>
             <button class="submit-button" type="submit">Submit</button>
         </form>

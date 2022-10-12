@@ -14,11 +14,11 @@
 }
 
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-}
+// .backdrop.is-hidden {
+//     opacity: 0;
+//     pointer-events: none;
+//     visibility: hidden;
+// }
 
 .modal{
     position: relative;
@@ -30,4 +30,104 @@
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
+    padding: 32px 54px;
+}
+
+.close-button{
+    position: absolute;
+    z-index: 4;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+// .order-form{
+//     margin-top: 100px;
+// }
+
+.order-form__title{
+    margin-bottom: 103px;
+    font-family: 'Seymour One';
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.order-form__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-form__menu-item{
+    height: 135px;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15.7808px;
+    input:checked~& {
+     background: #EFD478;
+     border: #EFD478;
+        }
+
+    &--one{
+        border: 2px solid #96AF8C;
+    }
+    &--two{
+        border: 2px solid #EFD478;
+    }
+    &--three{
+        border: 2px solid #D6936D;
+    }
+}
+
+.order-form__product{
+    width: 131.13px;
+    height: 130.6px;
+    text-align: center;
+    border: 0.67px;
+    border-radius: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);
+    &::before{
+        position: relative;
+        z-index: 3;
+    }
+}
+
+.order-form__product--cream{
+    background: linear-gradient(0deg, #d5753fb3, #d5753fb3),
+            #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    &::before{
+        content: url(../images/images/modal-buy/buycream-desctop.png) ;
+    }
+}
+
+.order-form__product--coffee {
+    &::before {
+        content: url(../images/images/modal-buy/buycoffee-desctop.png);
+    }
+}
+
+.order-form__product--shake {
+    &::before {
+        content: url(../images/images/modal-buy/buymilk-desctop.png);
+    }
+}
+
+.submit-button{
+ width: 121px;
+ height: 42px;
+ background: #F8D24E;
+ border-radius: 10px;
+ border: none;
+ padding: 12px;
+ font-weight: 600;
+ line-height: 1.22;
+ text-align: center;
+ color: #131313;
 }
