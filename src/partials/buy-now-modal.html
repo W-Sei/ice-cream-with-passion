@@ -7,26 +7,34 @@
         </button>
         <form class="order-form" name="order" autocomplete="on">
             <p class="order-form__title">Buy now</p>
-            <ul class="order-form__menu">
-                <li class="order-form__item order-form__item--one">
-                    <input class="order-form__check" type="checkbox" name="ice-cream" id="ice-cream">
-                    <div class="order-form__product order-form__product--cream">
-                        <p class="order-form__product-name">ice cream</p>
+            <div class="order-form__menu">
+                <label>
+                    <input class="order-form__check visually-hidden" type="checkbox" name="ice-cream" id="ice-cream">
+                    <div class="order-form__item order-form__item--one">
+                        <div class="order-form__product order-form__product--cream">
+                            <p class="order-form__product-name">ice cream</p>
+                        </div>
                     </div>
-                </li>
-                <li class="order-form__item order-form__item--two">
-                    <input class="order-form__check" type="checkbox" name="ice-coffee" id="ice-coffee">
-                    <div class="order-form__product order-form__product--coffee">
-                        <p class="order-form__product-name">ice coffee</p>
+                </label>
+                <label>
+                    <input class="order-form__check visually-hidden" type="checkbox" name="ice-coffee" id="ice-coffee">
+                    <div class="order-form__item order-form__item--two">
+                        <div class="order-form__product order-form__product--coffee">
+                            <p class="order-form__product-name">ice coffee</p>
+                        </div>
                     </div>
-                </li>
-                <li class="order-form__item order-form__item--three">
-                    <input class="order-form__check" type="checkbox" name="milkshake" id="milkshake">
-                    <div class="order-form__product order-form__product--shake">
-                        <p class="order-form__product-name">milkshake</p>
+                    </input>
+                </label>
+                <label>
+                    <input class="order-form__check visually-hidden" type="checkbox" name="milkshake" id="milkshake">
+                    <div class="order-form__item order-form__item--three">
+                        <div class="order-form__product order-form__product--shake">
+                            <p class="order-form__product-name">milkshake</p>
+                        </div>
                     </div>
-                </li>
-            </ul>
+                    </input>
+                </label>
+            </div>
             <input class="order-form__input-field" type="text" name="client_name" id="client_name" placeholder="Name">
             <input class="order-form__input-field" type="text" name="client_phone" id="client_phone"
                 placeholder="Phone">

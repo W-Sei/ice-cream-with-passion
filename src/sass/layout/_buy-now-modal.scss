@@ -1,6 +1,6 @@
 .backdrop {
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -13,12 +13,11 @@
     overflow-x: scroll;
 }
 
-
-// .backdrop.is-hidden {
-//     opacity: 0;
-//     pointer-events: none;
-//     visibility: hidden;
-// }
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
 
 .modal{
     position: relative;
@@ -43,11 +42,20 @@
     background: transparent;
     border: none;
     padding: 0;
+    &:hover,
+    &:focus {
+    cursor: url(../images/images/icon/cow.png), auto;
+    }
 }
 
-// .order-form{
-//     margin-top: 100px;
-// }
+.order-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
 
 .order-form__title{
     margin-bottom: 103px;
@@ -60,21 +68,18 @@
 .order-form__menu{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 40px;
 }
 
 .order-form__item{
-    background-color: #96AF8C;
     display: flex;
     justify-content: center;
     width: 132px;
     height: 135px;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
     border-radius: 15.7808px;
-   input:checked~&{
-       background-color: #F8D24E;
-   }
-
+   
     &--one{
         border: 2px solid #96AF8C;
     }
@@ -86,6 +91,22 @@
     &--three{
         border: 2px solid #D6936D;
     }
+    &:hover,
+    &:focus{
+        cursor: url(../images/images/icon/cow.png), auto;
+    }
+}
+
+.order-form__check:checked~.order-form__item--one{
+background-color: #96AF8C;
+}
+
+.order-form__check:checked~.order-form__item--two {
+    background-color: #EFD478;
+}
+
+.order-form__check:checked~.order-form__item--three {
+    background-color: #D6936D;
 }
 
 .order-form__product{
@@ -96,11 +117,6 @@
     margin-left: auto;
     margin-right: auto;
     transform: translateY(-50%);
-//    input {
-//             appearance: none;
-//             position: absolute;
-//         }
-
     &::before{
         position: relative;
         z-index: 3;
@@ -132,6 +148,50 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .order-form__product--cream::before {
+        content: url(../images/images/modal-buy/buycream-smart.webp);
+    }
+
+    .order-form__product--coffee::before {
+        content: url(../images/images/modal-buy/buycoffee-smart.webp);
+    }
+
+    .order-form__product--shake::before {
+        content: url(../images/images/modal-buy/buymilk-smart.webp);
+    }
+}
+
+// @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+// screen and (max-width: 768px) and (min-resolution: 192dpi),
+// screen and (max-width: 768px) and (min-resolution: 2dppx) {
+// .order-form__product--cream::before {
+//             content: url(../images/images/modal-buy/buycream-smart@2x.webp);
+//         }
+// .order-form__product--coffee::before {
+//             content: url(../images/images/modal-buy/buycoffee-smart@2x.webp);
+//         }
+// .order-form__product--shake::before {
+//             content: url(../images/images/modal-buy/buymilk-smart@2x.webp);
+//         }
+// }
+
+// @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+// screen and (min-width: 1200px) and (min-resolution: 192dpi),
+// screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+//     .order-form__product--cream::before {
+//         content: url(../images/images/modal-buy/buycream-desctop@2x.webp);        
+//     }
+
+//     .order-form__product--coffee::before {
+//         content: url(../images/images/modal-buy/buycoffee-desctop@2x.webp);
+//     }
+
+//     .order-form__product--shake::before {
+//         content: url(../images/images/modal-buy/buymilk-desctop@2x.webp);
+//     }
+// }
+
 .order-form__product-name{    
     font-weight: 700;
     font-size: 16px;
@@ -142,6 +202,38 @@
     margin-top: 20px;
 }
 
+.order-form__input-field::placeholder, 
+.order-form__comment-field::placeholder,
+.order-form__input-field,
+.order-form__comment-field{    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #131313;
+}
+
+.order-form__input-field{
+    padding: 11px 16px;
+    width: 368px;
+    height: 42px;    
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.order-form__comment-field{
+    padding: 11px 16px;
+    resize: none;
+    width: 368px;
+    height: 84px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+}
+
 .submit-button{
  width: 121px;
  height: 42px;
@@ -149,11 +241,13 @@
  border-radius: 10px;
  border: none;
  padding: 12px;
- font-family: 'Montserrat';
- font-style: normal;
  font-weight: 600;
- font-size: 14px;
  line-height: 1.22;
  text-align: center;
- color: #131313;
+ margin-top: auto;
+ &:hover,
+ &:focus{
+    background-color: var(--button-green);
+    cursor: url(../images/images/icon/cow.png), auto;
+ }
 }
