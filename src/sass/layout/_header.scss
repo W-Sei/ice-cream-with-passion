@@ -5,7 +5,11 @@
 }
 
 .header-bgc {
-  background: linear-gradient(to bottom, rgba(132, 161, 120, 0.80), rgba(132, 161, 120, 0.40));
+  background: linear-gradient(
+    to bottom,
+    rgba(132, 161, 120, 0.8),
+    rgba(132, 161, 120, 0.4)
+  );
 }
 
 .header-position {
@@ -23,7 +27,7 @@
   margin-left: auto;
 }
 
-.logo{
+.logo {
   cursor: url(../images/images/icon/cow.png), auto;
 }
 
@@ -102,10 +106,10 @@
     display: flex;
     align-items: center;
   }
-    
+
   .header-buttons {
-      padding-top: 10px;
-    }
+    padding-top: 10px;
+  }
 
   .pages-nav {
     display: none;
@@ -114,11 +118,10 @@
 
 // 1200px - etc.
 @media screen and (min-width: 1200px) {
-
   .header-position {
-      padding-top: 2px;
-      padding-bottom: 13px;
-    }
+    padding-top: 2px;
+    padding-bottom: 13px;
+  }
   .header-nav {
     display: flex;
     align-items: center;
@@ -133,7 +136,7 @@
     column-gap: 27px;
   }
 
-    .navigation-link {
+  .navigation-link {
     color: var(--text-light);
     text-decoration: none;
     font-weight: 700;
@@ -173,6 +176,7 @@
     line-height: 1.28;
     color: var(--text-dark);
     padding: 12px 34px;
+    padding-right: 28px;
     min-width: 152px;
     height: 42px;
     border-radius: 10px;
@@ -203,6 +207,8 @@
   .buy-now-icon {
     width: 12px;
     height: 12px;
+    margin-left: 6px;
+    // margin-right: -6%;
   }
 }
 
