@@ -1,0 +1,363 @@
+.hero {
+  background-color: var(--green-section-background);
+}
+
+// @media screen and (min-width: 320px) {
+.hero {
+  height: 502px;
+}
+.con__hero {
+  padding-top: 50px;
+  position: relative;
+  height: 442px;
+  overflow: hidden;
+}
+.hero__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  text-transform: uppercase;
+  color: var(--text-light);
+  width: 247px;
+  height: 97px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.hero__title__span {
+  font-size: 34px;
+  line-height: 0.82;
+}
+.hero__menu {
+  display: flex;
+}
+// Кнопки
+.hero__btn {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 4px 10px;
+  background-color: inherit;
+  cursor: pointer;
+}
+.hero__btn--first {
+  color: var(--text-dark);
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  margin-right: 8px;
+  width: 62px;
+  height: 24px;
+  &:hover {
+    border: 2px solid var(--button-green);
+    border-radius: 10px;
+  }
+  &:focus {
+    border: 2px solid var(--button-green);
+    border-radius: 10px;
+    color: var(--text-light);
+  }
+
+  &:disabled {
+    border-color: var(--button-grey);
+    border-radius: 10px;
+  }
+}
+.hero__btn--second {
+  color: var(--accent-color);
+  border: none;
+  padding: 7px 10px;
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--button-green);
+  }
+  &:focus {
+    color: var(--text-light);
+  }
+  &:disabled {
+    color: var(--button-grey);
+  }
+}
+// Абсолютні елементи
+.item__ball {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.item__shadow {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 25;
+  z-index: 2;
+  height: 270px;
+}
+.item__ice {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 85;
+  z-index: 3;
+}
+.item__smile {
+  position: absolute;
+  content: '';
+  bottom: 50;
+  left: 100;
+  z-index: 4;
+}
+// Відключені елементи для мобілки
+.hero__svg {
+  display: none;
+}
+.hero__menu__numbers {
+  display: none;
+}
+.hero__text {
+  display: none;
+}
+.item__plate {
+  display: none;
+}
+// }
+@media screen and (max-width: 319px) {
+  .hero {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+.hero__title__container {
+  padding-left: 20px;
+}
+ 
+  .item__ball {
+    bottom: 0;
+    left: 100;
+  }
+
+  .item__shadow {
+    bottom: 0;
+    left: 125;
+  }
+
+  .item__ice {
+    bottom: 0;
+    left: 185;
+  }
+
+  .item__smile {
+    bottom: 50;
+    left: 200;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 415px;
+  }
+  .con__hero {
+    padding-top: 44px;
+    height: 357px;
+  }
+  .hero__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+    width: 182px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .hero__title__span {
+    font-size: 24px;
+    line-height: 0.96;
+  }
+  .hero__menu__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  // -----------------ЦИФРИ КАФЕ І ТРАКІВ
+  .hero__menu__numbers {
+    display: flex;
+    flex-direction: column;
+  }
+  .item__text--first {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .item__text--second {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: var(--background-main);
+  }
+  .item__text--marg {
+    margin-bottom: 20px;
+  }
+  .hero__text__container {
+    display: block;
+  }
+  // ------------------ТЕКСТ ГЕРОЯ І СВГ ДО НЬОГО
+  .hero__text {
+    display: block;
+    width: 151px;
+    height: 85px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.41;
+    color: var(--text-light);
+    margin-left: 190px;
+    margin-top: 56px;
+  }
+  .hero__svg {
+    display: block;
+    width: 40px;
+    height: 10px;
+    margin-left: 185px;
+    margin-top: 20px;
+    fill: var(--text-light);
+    border: 2px;
+    cursor: pointer;
+
+    &:hover {
+      width: 50px;
+    }
+    &:focus {
+      border: 3px;
+      width: 50px;
+    }
+  }
+
+  // Абсолютні елементи
+  .item__plate {
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: 13;
+    left: 32;
+    z-index: 2;
+  }
+
+  .item__ball {
+    bottom: 0;
+    left: 15;
+  }
+  .item__shadow {
+    bottom: 110;
+    left: 360;
+  }
+  .item__ice {
+    bottom: 0;
+    left: 415;
+    width: 300px;
+  }
+  .item__smile {
+    bottom: 5;
+    left: 420;
+    z-index: 4;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 660px;
+  }
+  .con__hero {
+    padding-top: 58px;
+    height: 600px;
+  }
+  .hero__title {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.26;
+    width: 367px;
+    height: 144px;
+  }
+  .hero__title__span {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+  //--------------------- КНОПКИ
+  .hero__btn {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  .hero__btn--first {
+    padding: 12px 34px;
+    width: 134px;
+    height: 42px;
+    margin-right: 34px;
+  }
+  .hero__btn--second {
+    padding: 10px 0px;
+  }
+
+  // -----------------ЦИФРИ КАФЕ І ТРАКІВ
+  .item__text--first {
+    font-size: 46px;
+    line-height: 1.22;
+  }
+  .item__text--second {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .item__text--marg {
+    margin-bottom: 16px;
+  }
+  // Текс Героя і СВГ до нього
+  .hero__text {
+    width: 200px;
+    height: 70px;
+    margin-left: 240px;
+    margin-top: 120px;
+    text-align: left;
+  }
+  .hero__svg {
+    margin-left: 239px;
+    height: 15px;
+  }
+
+  //-------------- Абсолютні елементи
+  .item__plate {
+    bottom: 65;
+    left: 20;
+  }
+
+  .item__ball {
+    bottom: 0;
+    left: 0;
+  }
+
+  .item__shadow {
+    bottom: 330;
+    left: 530;
+  }
+
+  .item__ice {
+    bottom: 0;
+    left: 650;
+    width: 400px;
+  }
+
+  .item__smile {
+    bottom: 120;
+    left: 690;
+  }
+}
