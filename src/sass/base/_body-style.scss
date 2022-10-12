@@ -5,16 +5,3 @@ body {
   letter-spacing: 0.04em;
   font-size: 14px;
 }
-
-* {
-  cursor: url(../images/images/icon/cow.png), auto;
-}
-
-.open-mobile-menu-btn,
-.button__locations,
-.button__franchise {
-  &:hover,
-  &:focus {
-    cursor: url(../images/images/icon/cow.png), auto;
-  }
-}
