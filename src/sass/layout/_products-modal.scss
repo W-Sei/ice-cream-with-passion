@@ -102,7 +102,7 @@
   align-items: center;
 }
 
-.products-modal-ice-cream-form__title {
+.products-modal-form__title {
   @include fontHeading($line-height: 28px,
     $font-size: 20px,
     $letter-spacing: 0,
@@ -115,7 +115,7 @@
   margin-bottom: 24px;
 }
 
-.products-modal-ice-cream-form__img {
+.products-modal-form__img {
   height: 138px;
   width: 132px;
 
@@ -199,12 +199,12 @@
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 }
 
-.products-modal-ice-cream-form__ingridients {
+.products-modal-form__ingridients {
   @include font(28, 500, 20, 0);
   margin-bottom: 24px;
 }
 
-.products-modal-ice-cream-form__ingridients-box {
+.products-modal-form__ingridients-box {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -218,8 +218,8 @@
   align-items: flex-end;
 }
 
-.products-modal-ice-cream-form__ingridients-value-item,
-.products-modal-ice-cream-form__ingridients-name-item {
+.products-modal-for__ingridients-value-item,
+.products-modal-for__ingridients-name-item {
   &:not(:last-child) {
     margin-bottom: 16px;
   }
