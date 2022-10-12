@@ -1,0 +1,2 @@
+!function(){var e,c,o,t;e=document.querySelector(".js-modal-ice-cream"),c=document.querySelector(".js-modal-ice-cream-open"),o=document.querySelector(".js-modal-ice-cream-close"),t=function(){var o="true"===c.getAttribute("aria-expanded")||!1;c.setAttribute("aria-expanded",!o),e.classList.toggle("is-open"),bodyScrollLock[o?"enableBodyScroll":"disableBodyScroll"](document.body)},c.addEventListener("click",t),o.addEventListener("click",t)}();
+//# sourceMappingURL=index.d6355761.js.map

@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector(".js-modal-milkshakes"),o=document.querySelector(".js-modal-milkshakes-open"),t=document.querySelector(".js-modal-milkshakes-close"),l=()=>{const t="true"===o.getAttribute("aria-expanded")||!1;o.setAttribute("aria-expanded",!t),e.classList.toggle("is-open");bodyScrollLock[t?"enableBodyScroll":"disableBodyScroll"](document.body)};o.addEventListener("click",l),t.addEventListener("click",l)})();
+//# sourceMappingURL=index.4e9bde3f.js.map
