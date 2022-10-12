@@ -44,7 +44,7 @@
     padding: 0;
     &:hover,
     &:focus {
-    cursor: url(../images/images/icon/cow.png), auto;
+    cursor: none !important;
     }
 }
 
@@ -93,7 +93,7 @@
     }
     &:hover,
     &:focus{
-        cursor: url(../images/images/icon/cow.png), auto;
+        cursor: none !important;
     }
 }
 
@@ -248,6 +248,6 @@ background-color: #96AF8C;
  &:hover,
  &:focus{
     background-color: var(--button-green);
-    cursor: url(../images/images/icon/cow.png), auto;
+    cursor: none !important;
  }
 }
