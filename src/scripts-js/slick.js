@@ -7,7 +7,7 @@ $('.slick-js').slick({
     slidesToShow: 1,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 6500,
     pauseOnHover: true,
     pauseOnFocus: true,
     pauseOnDotsHover: true
