@@ -1,0 +1,249 @@
+.about{
+    background-color: var(--green-section-background);
+    width: 100%;
+    padding-bottom: 0;
+  
+}
+ .cow{
+  width: 100%;
+}
+  .about__subtitle {
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    color: var(--text-light);
+  }
+  .about__heading {
+    width:200px ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:54px;
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-light);
+  }
+    .cow-pic{
+      width: 279px;
+      margin-left: auto;
+      margin-right: auto;
+    }  
+  .about__img {
+    width: 279px;
+    height:279px;
+    box-shadow:
+     0px -21px 0px 0px rgb(217, 217, 217, 0.07),
+      0px -21px 0px 0px rgba(153, 114, 23, 0.07),
+      0px -21px 0px 0px rgb(248, 210, 78, 1);
+  border-radius: 140.182px;
+  }
+
+  .about__text-three {
+    display: none;
+  }
+
+  .about__text {
+    width: 220px;
+    margin: 40px auto 0;
+    color: var(--text-light);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    
+  }
+
+  .about__text-one {
+    line-height: 1.75;
+    margin-bottom: 4px;
+  }
+
+  .about__text-two {
+    font-size: 12px;
+    line-height: 162%;
+    margin-bottom: 20px;
+    letter-spacing: initial;
+  }
+  .cow-button{
+    width: 164px;
+    height:42px ;
+    border-width: inherit;
+  }
+  //min 480 - max 768
+@media screen and (min-width: 480px) and (max-width: 768px){
+  .about__heading{
+    width: auto;
+  }
+  
+}
+ //min-width 768 - max 1200        
+@media screen and (min-width: 768px) //and (max-width: 1200px)
+{
+  .about{
+    padding-top:60px;
+    padding-bottom:0 ;
+  }
+  .cow{
+     margin-top: auto;
+     margin-bottom: auto;
+    padding-left:32px;
+    padding-right:32px;  
+  }
+
+  .about__subtitle{
+    font-weight: 800;
+    font-size: 22px;
+    line-height:1.23;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 12px;
+  }
+
+.about__heading{
+    width:auto;
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.26;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color:var(--text-light);
+    margin-bottom: 79px;
+}
+.cow-pic{
+  width:335px;
+  margin-top:19px ;
+}
+.about__img{
+    width: 334px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 
+    0px -26px 0px 0px rgb(217, 217, 217, 0.07),
+      0px -26px 0px 0px rgba(153, 114, 23, 0.07),
+      0px -26px 0px 0px rgb(248, 210, 78, 1);
+    border-radius: 165.879px;
+    
+}
+.about__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}
+.about__text{ 
+  margin-top: 0;
+  text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+    height:254px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.about__text-three{
+    display: block;
+}
+.about__text-three {
+  width: 260px;
+  letter-spacing:0.04em ;
+    line-height: 1.92;
+    color: var(--text-light);
+    margin-bottom: 48px;
+}
+.about__text-one,
+.about__text-two{
+        width: 334px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height:1.75;
+         color: var(--text-light);
+         margin-bottom: 8px;
+}
+.about__text-two{
+  letter-spacing:0.04em;
+}
+
+}
+//min 1200px
+@media screen and (min-width: 1200px){
+  .about{
+    padding-bottom: 0px;
+  }
+.cow{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 16px;
+    padding-right: 16px;  
+}
+  .about__subtitle{
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 1.23;
+        text-align: center;
+  } 
+  .about__heading{
+    width:auto ;
+        font-family: 'Seymour One';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.25;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 121px;
+  } 
+  .cow-pic{
+    width: 500px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about__img { 
+      width: 490px;
+      height: 490px;
+      margin-left: auto;
+      margin-right: auto;
+        box-shadow: 
+        0px -39px 0px 0px rgb(217, 217, 217, 0.07),
+          0px -39px 0px 0px rgba(153, 114, 23, 0.07),
+          0px -39px 0px 0px rgb(248, 210, 78, 1);
+        border-radius: 250px;
+} 
+
+.about__info{
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 100px;
+}
+.about__text {
+  width: 463px;
+  margin-top: 51px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.about__text-one{
+  width: 463px;
+    font-size: 16px;
+        line-height:1.75;
+}
+.about__text-two,
+.about__text-three{
+  width: 463px;
+        font-size: 14px;
+        line-height:1.93;     
+}
+}
+        
