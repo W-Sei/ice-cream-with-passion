@@ -105,12 +105,10 @@
 }
 
 .products-modal-form__title {
-  @include fontHeading(
-    $line-height: 28px,
+  @include fontHeading($line-height: 28px,
     $font-size: 20px,
     $letter-spacing: 0,
-    $text-transform: none
-  );
+    $text-transform: none);
 
   @media screen and (max-width: 479px) {
     width: 142px;
@@ -124,31 +122,25 @@
   width: 132px;
 
   &.products-modal-ice-cream-form__img {
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
+        rgba(156, 190, 143, 0.7)),
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   }
 
   &.products-modal-ice-coffee-form__img {
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
+        rgba(248, 210, 78, 0.7)),
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
   }
 
   &.products-modal-milkshakes-form__img {
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
+        rgba(213, 117, 63, 0.7)),
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   }
@@ -173,21 +165,25 @@
       @media screen and (max-width: 767px) {
         content: url(../images/images/products-modal/products-modal-ice-coffee-smart.png);
       }
+
       @media screen and (min-width: 768px) {
         content: url(../images/images/products-modal/products-modal-ice-coffee-desktop.png);
       }
     }
   }
+
   &.products-modal-milkshakes-form__img {
     &::before {
       @media screen and (max-width: 767px) {
         content: url(../images/images/products-modal/products-modal-ice-milkshake-smart.png);
       }
+
       @media screen and (min-width: 768px) {
         content: url(../images/images/products-modal/products-modal-ice-milkshake-desktop.png);
       }
     }
   }
+
   margin-bottom: 24px;
 }
 
@@ -224,15 +220,19 @@
     height: 90px;
     @include font(15, 400, 12, 0);
   }
+
   &.calorie-ice-cream-name {
     border: var(--border-green);
   }
+
   &.calorie-ice-coffee-name {
     border: var(--border-yellow);
   }
+
   &.calorie-milkshakes-name {
     border: var(--border-brown);
   }
+
   border-radius: 40px;
 }
 
@@ -256,16 +256,19 @@
     border: var(--border-green);
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   }
+
   &.calorie-ice-coffee-value {
     background: var(--product-yellow);
     border: var(--border-yellow);
     box-shadow: 0px 6px 20px rgba(239, 212, 120, 0.25);
   }
+
   &.calorie-milkshakes-value {
     background: var(--product-brown);
     border: var(--border-brown);
     box-shadow: 0px 6px 20px rgba(214, 147, 109, 0.25);
   }
+
   border-radius: 50%;
 }
 
@@ -332,9 +335,11 @@
   &.modal-ice-cream-input {
     border: 1px solid var(--green-section-background);
   }
+
   &.modal-ice-coffee-input {
     border: 1px solid var(--product-yellow);
   }
+
   &.modal-milkshakes-input {
     border: 1px solid var(--product-brown);
   }
@@ -343,8 +348,8 @@
   border-radius: 10px;
   transition: border-color var(--easeInBack);
 
-  &:focus + .products-modal-form__field-description,
-  &:not(:placeholder-shown) + .products-modal-form__field-description {
+  &:focus+.products-modal-form__field-description,
+  &:not(:placeholder-shown)+.products-modal-form__field-description {
     transform: translateY(-35px);
   }
 
@@ -353,12 +358,15 @@
     &.modal-ice-cream-input {
       border-color: var(--accent-color);
     }
+
     &.modal-ice-coffee-input {
       border: 1px solid var(--product-green);
     }
+
     &.modal-milkshakes-input {
       border-color: var(--accent-color);
     }
+
     cursor: pointer;
     outline: none;
   }
@@ -369,8 +377,8 @@
   resize: none;
   height: 84px;
 
-  &:focus + .products-modal-form__field-description,
-  &:not(:placeholder-shown) + .products-modal-form__field-description {
+  &:focus+.products-modal-form__field-description,
+  &:not(:placeholder-shown)+.products-modal-form__field-description {
     transform: translateY(-40px);
   }
 }
@@ -378,7 +386,8 @@
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgba(248, 210, 78, 0.1);
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
 :-ms-input-placeholder {
