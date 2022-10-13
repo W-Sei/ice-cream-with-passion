@@ -119,6 +119,11 @@
     text-transform: uppercase;
     color: var(--text-light);
     margin-bottom: 79px;
+    transition: transform 500ms linear;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   .cow-pic {
     width: 335px;
