@@ -79,6 +79,7 @@
   width: 20px;
   height: 20px;
   border: 0;
+  cursor: none !important;
   background-color: var(--background-main);
 }
 
@@ -105,10 +106,12 @@
 }
 
 .products-modal-form__title {
-  @include fontHeading($line-height: 28px,
+  @include fontHeading(
+    $line-height: 28px,
     $font-size: 20px,
     $letter-spacing: 0,
-    $text-transform: none);
+    $text-transform: none
+  );
 
   @media screen and (max-width: 479px) {
     width: 142px;
@@ -122,25 +125,31 @@
   width: 132px;
 
   &.products-modal-ice-cream-form__img {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)),
+        rgba(156, 190, 143, 0.7)
+      ),
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   }
 
   &.products-modal-ice-coffee-form__img {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)),
+        rgba(248, 210, 78, 0.7)
+      ),
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
   }
 
   &.products-modal-milkshakes-form__img {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)),
+        rgba(213, 117, 63, 0.7)
+      ),
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   }
@@ -348,8 +357,8 @@
   border-radius: 10px;
   transition: border-color var(--easeInBack);
 
-  &:focus+.products-modal-form__field-description,
-  &:not(:placeholder-shown)+.products-modal-form__field-description {
+  &:focus + .products-modal-form__field-description,
+  &:not(:placeholder-shown) + .products-modal-form__field-description {
     transform: translateY(-35px);
   }
 
@@ -377,8 +386,8 @@
   resize: none;
   height: 84px;
 
-  &:focus+.products-modal-form__field-description,
-  &:not(:placeholder-shown)+.products-modal-form__field-description {
+  &:focus + .products-modal-form__field-description,
+  &:not(:placeholder-shown) + .products-modal-form__field-description {
     transform: translateY(-40px);
   }
 }

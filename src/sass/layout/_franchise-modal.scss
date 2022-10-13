@@ -13,7 +13,6 @@
   pointer-events: auto;
 }
 
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -50,6 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: none !important;
 
   border: none;
   background-color: var(--text-light);
@@ -170,7 +170,6 @@
 }
 
 @media screen and (min-width: 320px) {
-
   .modal-form__input,
   .modal-form__message {
     width: 100%;
