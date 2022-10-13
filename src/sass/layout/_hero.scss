@@ -2,6 +2,10 @@
   background-color: var(--green-section-background);
 }
 
+.menu-item {
+  z-index: 5;
+}
+
 // @media screen and (min-width: 320px) {
 .hero {
   height: 502px;
