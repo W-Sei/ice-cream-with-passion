@@ -44,7 +44,7 @@
   text-align: center;
   padding: 4px 10px;
   background-color: inherit;
-  cursor: pointer;
+  cursor: none !important;
 }
 .hero__btn--first {
   color: var(--text-dark);
@@ -134,11 +134,10 @@
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero__title__container {
+    padding-left: 20px;
+  }
 
-.hero__title__container {
-  padding-left: 20px;
-}
- 
   .item__ball {
     bottom: 0;
     left: 100;
@@ -235,7 +234,7 @@
     margin-top: 20px;
     fill: var(--text-light);
     border: 2px;
-    cursor: pointer;
+    cursor: none !important;
 
     &:hover {
       width: 50px;

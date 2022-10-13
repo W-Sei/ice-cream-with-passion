@@ -3,7 +3,7 @@
   border: transparent;
   background-color: transparent;
   font-family: inherit;
-  cursor: pointer;
+  cursor: none !important;
 }
 
 .button__products {
@@ -37,13 +37,14 @@
 }
 
 .button__read-more {
-  display:inline-flex;
+  display: inline-flex;
   align-items: center;
   text-align: center;
   min-width: 164px;
   height: 42px;
   padding: 12px 34px;
-  column-gap: 5px;
+  padding-right: 28px;
+  column-gap: 11px;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -51,20 +52,17 @@
   background-color: var(--accent-color);
   border-radius: 10px;
   border-color: var(--accent-color);
-  
-} 
-   .button__read-more:hover {
+}
+.button__read-more:hover {
   background-color: var(--button-green);
   border-color: var(--button-green);
-  cursor: pointer;
+  cursor: none !important;
 }
-    .button__read-more:focus {
-    background-color: var(--button-green);
-    color: var(--text-light);
-    fill: var(--text-light);
-    }
- 
-
+.button__read-more:focus {
+  background-color: var(--button-green);
+  color: var(--text-light);
+  fill: var(--text-light);
+}
 
 .button__how-made {
   font-style: normal;
