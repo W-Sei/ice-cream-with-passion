@@ -1,0 +1,46 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="close-button" type="button" data-modal-close>
+            <svg class="close-button__icon" width="20" height="20">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="order-form" name="order" autocomplete="on">
+            <p class="order-form__title">Buy now</p>
+            <div class="order-form__menu">
+                <label>
+                    <input class="order-form__check visually-hidden" type="checkbox" name="ice-cream" id="ice-cream">
+                    <div class="order-form__item order-form__item--one">
+                        <div class="order-form__product order-form__product--cream">
+                            <p class="order-form__product-name">ice cream</p>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    <input class="order-form__check visually-hidden" type="checkbox" name="ice-coffee" id="ice-coffee">
+                    <div class="order-form__item order-form__item--two">
+                        <div class="order-form__product order-form__product--coffee">
+                            <p class="order-form__product-name">ice coffee</p>
+                        </div>
+                    </div>
+                    </input>
+                </label>
+                <label>
+                    <input class="order-form__check visually-hidden" type="checkbox" name="milkshake" id="milkshake">
+                    <div class="order-form__item order-form__item--three">
+                        <div class="order-form__product order-form__product--shake">
+                            <p class="order-form__product-name">milkshake</p>
+                        </div>
+                    </div>
+                    </input>
+                </label>
+            </div>
+            <input class="order-form__input-field" type="text" name="client_name" id="client_name" placeholder="Name">
+            <input class="order-form__input-field" type="text" name="client_phone" id="client_phone"
+                placeholder="Phone">
+            <textarea class="order-form__comment-field" name="client_comment" id="client_comment" rows="10"
+                placeholder="Comment"></textarea>
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
