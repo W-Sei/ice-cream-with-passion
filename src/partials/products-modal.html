@@ -1,10 +1,12 @@
 <div
-  class="backdrop-products-modal backdrop-products-modal-ice-cream is-hidden"
-  data-modal
+  class="backdrop-products-modal backdrop-products-modal-ice-cream js-modal-ice-cream"
 >
   <!-- START ######## Modal-ice-cream ######## -->
   <div class="products-modal products-modal-ice-cream">
-    <button type="button" class="products-modal__close-btn" data-modal-close>
+    <button
+      type="button"
+      class="products-modal__close-btn js-modal-ice-cream-close"
+    >
       <svg class="products-modal__close-icon">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
@@ -13,8 +15,10 @@
       class="products-modal-form products-modal-ice-cream-form"
       autocomplete="off"
     >
-      <p class="products-modal-ice-cream-form__title">Chololate icecream</p>
-      <div class="products-modal-ice-cream-form__img"></div>
+      <p class="products-modal-form__title">Chololate icecream</p>
+      <div
+        class="products-modal-form__img products-modal-ice-cream-form__img"
+      ></div>
       <ul class="products-modal-form__calorie-table-list">
         <li class="products-modal-form__calorie-table-item">
           <div class="products-modal-form__calorie-table-name">
@@ -42,90 +46,78 @@
         </li>
       </ul>
 
-      <p class="products-modal-ice-cream-form__ingridients">Ingredients</p>
-      <div class="products-modal-ice-cream-form__ingridients-box">
-        <ul class="products-modal-ice-cream-form__ingridients-name-list">
-          <li class="products-modal-ice-cream-form__ingridients-name-item">
-            Milk
-          </li>
-          <li class="products-modal-ice-cream-form__ingridients-name-item">
+      <p class="products-modal-form__ingridients">Ingredients</p>
+      <div class="products-modal-form__ingridients-box">
+        <ul class="products-modal-form__ingridients-name-list">
+          <li class="products-modal-form__ingridients-name-item">Milk</li>
+          <li class="products-modal-form__ingridients-name-item">
             Belgian chocolate
           </li>
-          <li class="products-modal-ice-cream-form__ingridients-name-item">
-            Cream
-          </li>
-          <li class="products-modal-ice-cream-form__ingridients-name-item">
+          <li class="products-modal-form__ingridients-name-item">Cream</li>
+          <li class="products-modal-form__ingridients-name-item">
             Cocoa powder
           </li>
-          <li class="products-modal-ice-cream-form__ingridients-name-item">
-            Sugar
-          </li>
-          <li class="products-modal-ice-cream-form__ingridients-name-item">
+          <li class="products-modal-form__ingridients-name-item">Sugar</li>
+          <li class="products-modal-form__ingridients-name-item">
             Vanilla sugar
           </li>
         </ul>
 
         <ul class="products-modal-form__ingridients-value-list">
-          <li class="products-modal-ice-cream-form__ingridients-value-item">
-            100ml
-          </li>
-          <li class="products-modal-ice-cream-form__ingridients-value-item">
-            20g
-          </li>
-          <li class="products-modal-ice-cream-form__ingridients-value-item">
-            150 ml
-          </li>
-          <li class="products-modal-ice-cream-form__ingridients-value-item">
-            30g
-          </li>
-          <li class="products-modal-ice-cream-form__ingridients-value-item">
-            40g
-          </li>
-          <li class="products-modal-ice-cream-form__ingridients-value-item">
-            10g
-          </li>
+          <li class="products-modal-form__ingridients-value-item">100ml</li>
+          <li class="products-modal-form__ingridients-value-item">20g</li>
+          <li class="products-modal-form__ingridients-value-item">150 ml</li>
+          <li class="products-modal-form__ingridients-value-item">30g</li>
+          <li class="products-modal-form__ingridients-value-item">40g</li>
+          <li class="products-modal-form__ingridients-value-item">10g</li>
         </ul>
       </div>
-      <label class="products-modal-form__field">
-        <span class="products-modal-form__input-wrapper">
-          <input
-            type="text"
-            class="products-modal-form__input"
-            name="client_name"
-            required
-            minlength="3"
-            placeholder=" "
-            pattern="[a-zA-Z-а-яА-ЯіІїЇ]+"
-          />
-          <span class="products-modal-form__field-description">Name</span>
-        </span>
-      </label>
-      <label class="products-modal-form__field">
-        <span class="products-modal-form__input-wrapper">
-          <input
-            type="tel"
-            class="products-modal-form__input"
-            name="client_phone"
-            required
-            placeholder=" "
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="xxx-xxx-xx-xx"
-          />
-          <span class="products-modal-form__field-description">Phone</span>
-        </span>
-      </label>
-      <label class="products-modal-form__field-comment">
-        <span class="products-modal-form__input-wrapper">
-          <textarea
-            class="products-modal-form__comment"
-            name="client_comment"
-            placeholder=" "
-          ></textarea>
-          <span class="products-modal-form__field-description comment"
-            >Comment</span
-          >
-        </span>
-      </label>
+
+      <div class="products-modal-form__field">
+        <input
+          type="text"
+          class="products-modal-form__input"
+          name="client_name"
+          required
+          minlength="3"
+          placeholder="Name"
+          id="name"
+          pattern="[a-zA-Z-а-яА-ЯіІїЇ]+"
+        />
+        <label class="products-modal-form__field-description" for="name"
+          >Name</label
+        >
+      </div>
+
+      <div class="products-modal-form__field">
+        <input
+          type="tel"
+          class="products-modal-form__input"
+          name="client_phone"
+          required
+          placeholder="Phone"
+          id="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+        />
+        <label class="products-modal-form__field-description" for="phone"
+          >Phone</label
+        >
+      </div>
+
+      <div class="products-modal-form__field">
+        <textarea
+          class="products-modal-form__comment"
+          name="client_comment"
+          placeholder="Comment"
+          id="comment"
+        ></textarea>
+        <label
+          class="products-modal-form__field-description comment"
+          for="comment"
+          >Comment</label
+        >
+      </div>
 
       <input
         class="products-modal-form__check visually-hidden"
@@ -141,4 +133,278 @@
     </form>
   </div>
   <!-- END ######## Modal-ice-cream ######## -->
+</div>
+
+<div
+  class="backdrop-products-modal backdrop-products-modal-ice-coffee js-modal-ice-coffee"
+>
+  <!-- START ######## Modal-ice-coffee ######## -->
+  <div class="products-modal products-modal-ice-coffee">
+    <button
+      type="button"
+      class="products-modal__close-btn js-modal-ice-coffee-close"
+    >
+      <svg class="products-modal__close-icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form
+      class="products-modal-form products-modal-ice-coffee-form"
+      autocomplete="off"
+    >
+      <p class="products-modal-form__title">Ice coffee</p>
+      <div
+        class="products-modal-form__img products-modal-ice-coffee-form__img"
+      ></div>
+      <ul class="products-modal-form__calorie-table-list">
+        <li class="products-modal-form__calorie-table-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form__calorie-table-value">320</div>
+            kcal
+          </div>
+        </li>
+        <li class="products-modal-form__calorie-table-name-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form__calorie-table-value">4g</div>
+            Prote...
+          </div>
+        </li>
+        <li class="products-modal-form__calorie-table-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form__calorie-table-value">8,2g</div>
+            Fats
+          </div>
+        </li>
+        <li class="products-modal-form__calorie-table-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form__calorie-table-value">40,4g</div>
+            Carbs
+          </div>
+        </li>
+      </ul>
+
+      <p class="products-modal-form__ingridients">Ingredients</p>
+      <div class="products-modal-form__ingridients-box">
+        <ul class="products-modal-form__ingridients-name-list">
+          <li class="products-modal-form__ingridients-name-item">Milk</li>
+          <li class="products-modal-form__ingridients-name-item">
+            Belgian chocolate
+          </li>
+          <li class="products-modal-form__ingridients-name-item">Cream</li>
+          <li class="products-modal-form__ingridients-name-item">
+            Cocoa powder
+          </li>
+          <li class="products-modal-form__ingridients-name-item">Sugar</li>
+          <li class="products-modal-form__ingridients-name-item">
+            Vanilla sugar
+          </li>
+        </ul>
+
+        <ul class="products-modal-form__ingridients-value-list">
+          <li class="products-modal-form__ingridients-value-item">100ml</li>
+          <li class="products-modal-form__ingridients-value-item">20g</li>
+          <li class="products-modal-form__ingridients-value-item">150 ml</li>
+          <li class="products-modal-form__ingridients-value-item">30g</li>
+          <li class="products-modal-form__ingridients-value-item">40g</li>
+          <li class="products-modal-form__ingridients-value-item">10g</li>
+        </ul>
+      </div>
+
+      <div class="products-modal-form__field">
+        <input
+          type="text"
+          class="products-modal-form__input"
+          name="client_name"
+          required
+          minlength="3"
+          placeholder="Name"
+          id="name"
+          pattern="[a-zA-Z-а-яА-ЯіІїЇ]+"
+        />
+        <label class="products-modal-form__field-description" for="name"
+          >Name</label
+        >
+      </div>
+
+      <div class="products-modal-form__field">
+        <input
+          type="tel"
+          class="products-modal-form__input"
+          name="client_phone"
+          required
+          placeholder="Phone"
+          id="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+        />
+        <label class="products-modal-form__field-description" for="phone"
+          >Phone</label
+        >
+      </div>
+
+      <div class="products-modal-form__field">
+        <textarea
+          class="products-modal-form__comment"
+          name="client_comment"
+          placeholder="Comment"
+          id="comment"
+        ></textarea>
+        <label
+          class="products-modal-form__field-description comment"
+          for="comment"
+          >Comment</label
+        >
+      </div>
+
+      <input
+        class="products-modal-form__check visually-hidden"
+        type="checkbox"
+        name="client_select-ice-coffee"
+        checked
+        required
+      />
+
+      <button type="submit" class="button products-modal-form__send-btn">
+        Submit
+      </button>
+    </form>
+  </div>
+  <!-- END ######## Modal-ice-coffee ######## -->
+</div>
+
+<div
+  class="backdrop-products-modal backdrop-products-modal-milkshakes js-modal-milkshakes"
+>
+  <!-- START ######## Modal-milkshakes ######## -->
+  <div class="products-modal products-modal-milkshakes">
+    <button
+      type="button"
+      class="products-modal__close-btn js-modal-milkshakes-close"
+    >
+      <svg class="products-modal__close-icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form
+      class="products-modal-form products-modal-milkshakes-form"
+      autocomplete="off"
+    >
+      <p class="products-modal-form__title">Milkshakes</p>
+      <div
+        class="products-modal-form__img products-modal-milkshakes-form__img"
+      ></div>
+      <ul class="products-modal-form__calorie-table-list">
+        <li class="products-modal-form__calorie-table-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form__calorie-table-value">320</div>
+            kcal
+          </div>
+        </li>
+        <li class="products-modal-form__calorie-table-name-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form__calorie-table-value">4g</div>
+            Prote...
+          </div>
+        </li>
+        <li class="products-modal-form__calorie-table-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form__calorie-table-value">8,2g</div>
+            Fats
+          </div>
+        </li>
+        <li class="products-modal-form__calorie-table-item">
+          <div class="products-modal-form__calorie-table-name">
+            <div class="products-modal-form__calorie-table-value">40,4g</div>
+            Carbs
+          </div>
+        </li>
+      </ul>
+
+      <p class="products-modal-form__ingridients">Ingredients</p>
+      <div class="products-modal-form__ingridients-box">
+        <ul class="products-modal-form__ingridients-name-list">
+          <li class="products-modal-form__ingridients-name-item">Milk</li>
+          <li class="products-modal-form__ingridients-name-item">
+            Belgian chocolate
+          </li>
+          <li class="products-modal-form__ingridients-name-item">Cream</li>
+          <li class="products-modal-form__ingridients-name-item">
+            Cocoa powder
+          </li>
+          <li class="products-modal-form__ingridients-name-item">Sugar</li>
+          <li class="products-modal-form__ingridients-name-item">
+            Vanilla sugar
+          </li>
+        </ul>
+
+        <ul class="products-modal-form__ingridients-value-list">
+          <li class="products-modal-form__ingridients-value-item">100ml</li>
+          <li class="products-modal-form__ingridients-value-item">20g</li>
+          <li class="products-modal-form__ingridients-value-item">150 ml</li>
+          <li class="products-modal-form__ingridients-value-item">30g</li>
+          <li class="products-modal-form__ingridients-value-item">40g</li>
+          <li class="products-modal-form__ingridients-value-item">10g</li>
+        </ul>
+      </div>
+
+      <div class="products-modal-form__field">
+        <input
+          type="text"
+          class="products-modal-form__input"
+          name="client_name"
+          required
+          minlength="3"
+          placeholder="Name"
+          id="name"
+          pattern="[a-zA-Z-а-яА-ЯіІїЇ]+"
+        />
+        <label class="products-modal-form__field-description" for="name"
+          >Name</label
+        >
+      </div>
+
+      <div class="products-modal-form__field">
+        <input
+          type="tel"
+          class="products-modal-form__input"
+          name="client_phone"
+          required
+          placeholder="Phone"
+          id="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+        />
+        <label class="products-modal-form__field-description" for="phone"
+          >Phone</label
+        >
+      </div>
+
+      <div class="products-modal-form__field">
+        <textarea
+          class="products-modal-form__comment"
+          name="client_comment"
+          placeholder="Comment"
+          id="comment"
+        ></textarea>
+        <label
+          class="products-modal-form__field-description comment"
+          for="comment"
+          >Comment</label
+        >
+      </div>
+
+      <input
+        class="products-modal-form__check visually-hidden"
+        type="checkbox"
+        name="client_select-milkshakes"
+        checked
+        required
+      />
+
+      <button type="submit" class="button products-modal-form__send-btn">
+        Submit
+      </button>
+    </form>
+  </div>
+  <!-- END ######## Modal-milkshakes ######## -->
 </div>
