@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector(".js-modal-about"),o=document.querySelector(".js-modal-about-open"),t=document.querySelector(".js-modal-about-close"),d=()=>{const t="true"===o.getAttribute("aria-expanded")||!1;o.setAttribute("aria-expanded",!t),e.classList.toggle("is-open");bodyScrollLock[t?"enableBodyScroll":"disableBodyScroll"](document.body)};o.addEventListener("click",d),t.addEventListener("click",d)})();
+//# sourceMappingURL=index.73264a62.js.map
