@@ -2,18 +2,18 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 115;
   width: 100%;
   height: 100%;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: 0;
   transition: opacity var(--easeInBack), visibility var(--easeInBack);
 
-  &.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   background-color: var(--modal-backdrop-green);
@@ -59,6 +59,7 @@
   width: 20px;
   height: 20px;
   border: 0;
+  background-color: var(--background-main);
 }
 
 .about-modal__close-icon {
@@ -76,7 +77,7 @@
 .about-modal-form {
   width: 100%;
   height: 100%;
-  z-index: 55;
+  z-index: 116;
   display: flex;
   flex-direction: column;
   align-items: center;
