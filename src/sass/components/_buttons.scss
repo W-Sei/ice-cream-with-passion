@@ -39,15 +39,15 @@
 .button__read-more {
   display: inline-flex;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
   min-width: 164px;
   height: 42px;
   padding: 12px 34px;
-  padding-right: 28px;
-  column-gap: 11px;
+  padding-right: 22px;
   font-style: normal;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.28;
   background-color: var(--accent-color);
   border-radius: 10px;

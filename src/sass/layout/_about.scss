@@ -1,7 +1,7 @@
 .about {
   background-color: var(--green-section-background);
   width: 100%;
-  padding-bottom: 0;
+  padding-bottom: 1px;
 }
 .cow {
   width: 100%;
@@ -69,10 +69,15 @@
   margin-bottom: 20px;
   letter-spacing: initial;
 }
+
 .cow-button {
-  width: 164px;
-  // height: 42px;
+  min-width: 164px;
+  margin-right: auto;
   border-width: inherit;
+}
+
+.read-more_icon {
+  margin-left: 6px;
 }
 
 //min 480 - max 768
@@ -82,7 +87,7 @@
   }
 }
 //min-width 768 - max 1200
-@media screen and (min-width: 768px) //and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .about {
     padding-top: 60px;
     padding-bottom: 0;
@@ -168,6 +173,7 @@
     letter-spacing: 0.04em;
   }
 }
+
 //min 1200px
 @media screen and (min-width: 1200px) {
   .about {
