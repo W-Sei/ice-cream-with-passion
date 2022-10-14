@@ -1,12 +1,73 @@
+.products {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.products__sub-title,
+.products__title,
+.products__item--title {
+  text-transform: uppercase;
+}
+
+.elipse {
+  border: 0.67px none;
+  transform: translateY(-50%);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.elipse--one {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+}
+
+.elipse--two {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+}
+
+.elipse--three {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+}
+
+.products__icecream-button,
+.products__icecoffee-button,
+.products__milkshakes-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 10px 0;
+  line-height: 0;
+  border: none;
+  background-color: transparent;
+  cursor: none !important;
+
+  transform: scale(1);
+  transition-property: transform;
+  transition: transform var(--easeInOutBack);
+
+  &:hover {
+    transform: scaleX(1.2);
+  }
+
+  &:focus {
+    transform: scale(2);
+  }
+}
+
+.icon-long-arrow {
+  width: 40px;
+  height: 20px;
+}
+
+.products__item {
+  border-radius: 24px;
+}
+
+// 0-767px
 @media screen and (max-width: 767px) {
   .products {
     background-image: url(../images/images/products/smart/productsfon-smart.png);
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .products__list {
-    padding-bottom: 60px;
   }
 
   .products__sub-title {
@@ -14,12 +75,11 @@
     font-size: 18px;
     line-height: 1.23;
     text-align: center;
-    padding-top: 60px;
     margin-bottom: 12px;
   }
 
   .products__title {
-    font-family: 'Seymour One';
+    font-family: "Seymour One";
     font-weight: 400;
     font-size: 30px;
     line-height: 1.27;
@@ -27,85 +87,30 @@
     margin-bottom: 148px;
   }
 
-  .elipse {
-    background: linear-gradient(
-        0deg,
-        rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
-      #d9d9d9;
-    border: 0.67px none;
-    border-radius: 100px;
-    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-    height: 210px;
-    width: 200px;
-    transform: translateY(-50%);
-    text-align: center;
+  .products__item {
+    max-width: 280px;
+    padding: 0 40px 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
 
-    &::before {
-      content: url(../images/images/products/smart/cream-smart.png);
+    &:not(:last-child) {
+      margin-bottom: 164px;
     }
   }
 
-  .elipse-two {
-    background: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-    border: 0.67px none;
-    border-radius: 100px;
-    height: 210px;
-    width: 200px;
-    transform: translateY(-50%);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-
-    &::before {
-      content: url(../images/images/products/smart/coffee-smart.png);
-    }
-  }
-
-  .elipse-three {
-    background: linear-gradient(
-        0deg,
-        rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-    border: 0.67px none;
-    border-radius: 100px;
-    height: 210px;
-    width: 200px;
-    transform: translateY(-50%);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-
-    &::before {
-      content: url(../images/images/products/smart/milk-smart.png);
-    }
-  }
-
-  .products__list__item {
+  .products__item--one {
     background-color: #aec6a5;
-    border-radius: 24px;
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 164px;
   }
 
-  .products__list__item__title {
+  .products__item--two {
+    background-color: #efd478;
+  }
+
+  .products__item--three {
+    background-color: #d6936d;
+  }
+
+  .products__item--title {
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
@@ -113,56 +118,41 @@
     margin-top: -110px;
   }
 
-  .products__list__item__text {
-    font-weight: 400;
+  .products__item--text {
     line-height: 1.78;
     text-align: center;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 90px;
   }
 
-  .products__icecream-button,
-  .products__icecoffee-button,
-  .products__milkshakes-button {
-    cursor: pointer;
-    border: none;
-    width: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    display: block;
+  .elipse {
+    border-radius: 100px;
+    height: 210px;
+    width: 200px;
     margin-bottom: 20px;
   }
 
-  .products__icecream-button {
-    background-color: #aec6a5;
+  .elipse--one {
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+    &::before {
+      content: url(../images/images/products/smart/cream-smart.png);
+    }
   }
 
-  .products__icecoffee-button {
-    background-color: #efd478;
+  .elipse--two {
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+
+    &::before {
+      content: url(../images/images/products/smart/coffee-smart.png);
+    }
   }
 
-  .products__milkshakes-button {
-    background-color: #d6936d;
-  }
+  .elipse--three {
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 
-  .products__list__item-two {
-    background-color: #efd478;
-    border-radius: 24px;
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 164px;
-  }
-
-  .products__list__item-three {
-    background-color: #d6936d;
-    border-radius: 24px;
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+    &::before {
+      content: url(../images/images/products/smart/milk-smart.png);
+    }
   }
 }
 
@@ -174,20 +164,58 @@
   }
 }
 
+// 0-1199px
+@media screen and (max-width: 1199px) {
+  .elipse {
+    border-radius: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+// 768px - 1199px
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .elipse {
+    height: 208px;
+    width: 200px;
+  }
+
+  .elipse--one {
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+    &::before {
+      content: url(../images/images/products/tablet/cream-tablet.png);
+    }
+  }
+
+  .elipse--two {
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+
+    &::before {
+      content: url(../images/images/products/tablet/coffee-tablet.png);
+    }
+  }
+
+  .elipse--three {
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+
+    &::before {
+      content: url(../images/images/products/tablet/milk-tablet.png);
+    }
+  }
+}
+
+
+// 768px +
 @media screen and (min-width: 768px) {
   .products {
     background-image: url(../images/images/products/tablet/productsfon-tablet.png);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 32px;
-    padding-right: 32px;
-    width: 100%;
+       padding-bottom: 82px;
   }
 
   .products__list {
-    padding-bottom: 82px;
-    display: flex;
+     display: flex;
     justify-content: center;
+    gap: 16px;
   }
 
   .products__sub-title {
@@ -195,12 +223,11 @@
     font-size: 22px;
     line-height: 1.23;
     text-align: center;
-    padding-top: 60px;
     margin-bottom: 12px;
   }
 
   .products__title {
-    font-family: 'Seymour One';
+    font-family: "Seymour One";
     font-weight: 400;
     font-size: 34px;
     line-height: 1.27;
@@ -209,83 +236,27 @@
     margin-bottom: 303px;
   }
 
-  .elipse {
-    background: linear-gradient(
-        0deg,
-        rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
-      #d9d9d9;
-    border: 0.67px none;
-    border-radius: 100px;
-    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-    height: 210px;
-    width: 200px;
-    transform: translateY(-50%);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+.products__item-wrapper {
+  padding: 0 26px 20px;
+}
 
-    &::before {
-      content: url(../images/images/products/smart/cream-smart.png);
-    }
+  .products__item {
+    min-width: 224px;
   }
 
-  .elipse-two {
-    background: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-    border: 0.67px none;
-    border-radius: 100px;
-    height: 210px;
-    width: 200px;
-    transform: translateY(-50%);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-
-    &::before {
-      content: url(../images/images/products/smart/coffee-smart.png);
-    }
-  }
-
-  .elipse-three {
-    background: linear-gradient(
-        0deg,
-        rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-    border: 0.67px none;
-    border-radius: 100px;
-    height: 210px;
-    width: 200px;
-    transform: translateY(-50%);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-
-    &::before {
-      content: url(../images/images/products/smart/milk-smart.png);
-    }
-  }
-
-  .products__list__item {
+  .products__item--one {
     background-color: #aec6a5;
-    border-radius: 24px;
-    width: 224px;
-    margin-right: 16px;
   }
 
-  .products__list__item__title {
+  .products__item--two {
+    background-color: #efd478;
+  }
+
+  .products__item--three {
+    background-color: #d6936d;
+  }
+
+  .products__item--title {
     font-size: 22px;
     line-height: 1.2;
     text-align: center;
@@ -293,55 +264,24 @@
     margin-top: -98px;
   }
 
-  .products__list__item__text {
-    font-weight: 400;
+  .products__item--text {
     line-height: 1.78;
     text-align: center;
-    width: 172px;
-    height: 143px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+
+  .products__item--text.one {
+    margin-bottom: 140px;
+  }
+
+  .products__item--text.two {
     margin-bottom: 90px;
   }
 
-  .products__icecream-button,
-  .products__icecoffee-button,
-  .products__milkshakes-button {
-    cursor: pointer;
-    border: none;
-    width: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .products__icecream-button {
-    background-color: #aec6a5;
-  }
-
-  .products__icecoffee-button {
-    background-color: #efd478;
-  }
-
-  .products__milkshakes-button {
-    background-color: #d6936d;
-  }
-
-  .products__list__item-two {
-    background-color: #efd478;
-    border-radius: 24px;
-    width: 224px;
-    margin-right: 16px;
-  }
-
-  .products__list__item-three {
-    background-color: #d6936d;
-    border-radius: 24px;
-    width: 224px;
+  .products__item--text.three {
+    margin-bottom: 115px;
   }
 }
+
 
 @media screen and (min-device-pixelratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -351,175 +291,85 @@
   }
 }
 
+// 1200px +
 @media screen and (min-width: 1200px) {
   .products {
     background-image: url(../images/images/products/desctop/productsfon-desctop.png);
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 13px;
     padding-right: 13px;
-    width: 100%;
+  }
+
+  .products__item-wrapper {
+    padding: 0 65px 60px;
   }
 
   .products__list {
-    padding-bottom: 60px;
-    display: flex;
-    justify-content: center;
-  }
+   gap: 32px;
+ }
+
 
   .products__sub-title {
-    font-weight: 800;
     font-size: 30px;
-    line-height: 1.23;
-    text-align: center;
-    padding-top: 60px;
-    margin-bottom: 12px;
   }
 
   .products__title {
-    font-family: 'Seymour One';
-    font-weight: 400;
     font-size: 36px;
-    line-height: 1.27;
-    text-align: center;
-    letter-spacing: 0.06em;
-    margin-bottom: 303px;
   }
 
+
   .elipse {
-    background: linear-gradient(
-        0deg,
-        rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
-      #d9d9d9;
-    border: 0.67px none;
     border-radius: 150px;
-    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-    height: 310px;
+    height: 315px;
     width: 300px;
-    transform: translateY(-50%);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  .elipse--one {
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
 
     &::before {
       content: url(../images/images/products/desctop/cream-desctop.png);
     }
   }
 
-  .elipse-two {
-    background: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-    border: 0.67px none;
-    border-radius: 150px;
-    height: 310px;
-    width: 300px;
-    transform: translateY(-50%);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+  .elipse--two {
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
 
     &::before {
       content: url(../images/images/products/desctop/coffee-desctop.png);
     }
   }
 
-  .elipse-three {
-    background: linear-gradient(
-        0deg,
-        rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-    border: 0.67px none;
-    border-radius: 150px;
-    height: 310px;
-    width: 300px;
-    transform: translateY(-50%);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+  .elipse--three {
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 
     &::before {
       content: url(../images/images/products/desctop/milk-desctop.png);
     }
   }
 
-  .products__list__item {
-    background-color: #aec6a5;
-    border-radius: 24px;
-    width: 370px;
-    margin-right: 32px;
+  .products__item {
+    max-width: 370px;
   }
 
-  .products__list__item__title {
+  .products__item--title {
     font-size: 30px;
-    line-height: 1.2;
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: -98px;
   }
 
-  .products__list__item__text {
-    font-weight: 400;
-    line-height: 1.78;
-    text-align: center;
-    width: 246px;
-    height: 145px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 90px;
+
+  .products__item--text {
     font-size: 16px;
   }
 
-  .products__icecream-button,
-  .products__icecoffee-button,
-  .products__milkshakes-button {
-    cursor: none !important;
-    border: none;
-    width: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    display: block;
-    margin-bottom: 20px;
+  .products__item--text.one {
+    margin-bottom: 85px;
   }
 
-  .products__icecream-button {
-    background-color: #aec6a5;
-  }
-
-  .products__icecoffee-button {
-    background-color: #efd478;
-  }
-
-  .products__milkshakes-button {
-    background-color: #d6936d;
-  }
-
-  .products__list__item-two {
-    background-color: #efd478;
-    border-radius: 24px;
-    width: 370px;
-    margin-right: 32px;
-  }
-
-  .products__list__item-three {
-    background-color: #d6936d;
-    border-radius: 24px;
-    width: 370px;
+  .products__item--text.two, .products__item--text.three {
+    margin-bottom: 60px;
   }
 }
+
 
 @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
