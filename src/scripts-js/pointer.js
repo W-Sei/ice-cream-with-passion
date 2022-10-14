@@ -76,7 +76,7 @@ const init_pointer = (options) => {
 }
 
  init_pointer({
-      pointerColor: "green", // Css color
+     pointerColor: "purple", // Css color
       ringSize: 15, // Pixels
       ringClickSize: 10 // Pixels when clicking
     })
