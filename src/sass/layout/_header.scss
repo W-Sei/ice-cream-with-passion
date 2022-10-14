@@ -5,11 +5,13 @@
 }
 
 .header-bgc {
-  background-image: linear-gradient(to right,
-      #84a178 15%,
-      rgba(161, 120, 132, 0.7) 40%,
-      rgba(132, 161, 120, 0.6) 75%,
-      rgba(213, 117, 63, 0.7));
+  background-image: linear-gradient(
+    to right,
+    #84a178 15%,
+    rgba(161, 120, 132, 0.7) 40%,
+    rgba(132, 161, 120, 0.6) 75%,
+    rgba(213, 117, 63, 0.7)
+  );
 }
 
 .header-position {
@@ -201,6 +203,12 @@
       .buy-now-icon {
         fill: var(--text-light);
       }
+    }
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
     }
   }
 
