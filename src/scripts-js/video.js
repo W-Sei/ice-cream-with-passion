@@ -1,11 +1,10 @@
-(() => {
-function onYouTubePlayerAPIReady() {
-  player = new YT.Player('Youtube', {
-    events: {'onReady': onPlayerReady}
+(() => {  
+  $('.about-modal__close-btn').on("click", function () {
+        // this == the link that was clicked
+    // var href = $(this).attr("href");
+    // alert("You're trying to go to " + href);
+  $('.about-modal-form__video').each(function(){
+    this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
   });
-}
-function onPlayerReady(event) {
-  document.getElementById("playYoutube").addEventListener("click", function() {player.playVideo();});
-  document.getElementById("pauseYoutube").addEventListener("click", function() {player.pauseVideo();});
-}
+});
 })();
