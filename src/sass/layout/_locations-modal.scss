@@ -10,6 +10,12 @@
   visibility: visible;
   pointer-events: auto;
   transition: opacity var(--easeOutCirc), visibility var(--easeOutCirc);
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
 
 // .is-hidden {
