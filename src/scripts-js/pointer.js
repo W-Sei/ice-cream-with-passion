@@ -74,3 +74,9 @@ const init_pointer = (options) => {
     }
     requestAnimationFrame(render)
 }
+
+ init_pointer({
+      pointerColor: "green", // Css color
+      ringSize: 15, // Pixels
+      ringClickSize: 10 // Pixels when clicking
+    })
