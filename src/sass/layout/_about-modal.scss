@@ -41,6 +41,7 @@
   @media screen and (min-width: 320px) and (max-width: 479px) {
     width: 95%;
   }
+
   @media screen and (min-width: 480px) {
     width: 456px;
   }
@@ -85,20 +86,17 @@
 }
 
 .about-modal-form__title {
-  @include fontHeading(
-    $line-height: 24px,
+  @include fontHeading($line-height: 24px,
     $font-size: 16px,
     $letter-spacing: 0,
-    $text-transform: none
-  );
+    $text-transform: none);
   margin-bottom: 20px;
+
   @media screen and (min-width: 768px) {
-    @include fontHeading(
-      $line-height: 28px,
+    @include fontHeading($line-height: 28px,
       $font-size: 20px,
       $letter-spacing: 0,
-      $text-transform: none
-    );
+      $text-transform: none);
     margin-bottom: 32px;
   }
 }
@@ -109,15 +107,18 @@
   background: var(--text-dark);
   border-radius: 10px;
   margin-bottom: 20px;
+
   @media screen and (min-width: 320px) and (max-width: 479px) {
     width: 100%;
-    height: auto;
+    height: 199px;
   }
+
   @media screen and (min-width: 480px) {
     width: 396px;
-    height: auto;
+    height: 205px;
     margin-bottom: 32px;
   }
+
   @media screen and (min-width: 768px) {
     width: 448px;
     height: 205px;
