@@ -2,14 +2,14 @@
   background-color: var(--green-section-background);
 }
 
-.menu__item {
+.buttons-menu__item{
   z-index: 5;
 }
 
-// @media screen and (min-width: 320px) {
 .hero {
   height: 502px;
 }
+
 .con__hero {
   padding-top: 50px;
   position: relative;
@@ -29,66 +29,20 @@
   text-align: left;
   margin-bottom: 30px;
 }
-.hero__title__span {
+.hero__title--span {
   font-size: 34px;
   line-height: 0.82;
 }
-.hero__menu {
+.buttons-menu {
   display: flex;
-}
-// Кнопки
-.hero__btn {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 8px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 4px 10px;
-  background-color: inherit;
-  cursor: none !important;
-}
-.hero__btn--first {
-  color: var(--text-dark);
-  border: 2px solid #f8d24e;
-  border-radius: 8px;
-  margin-right: 8px;
-  width: 62px;
-  height: 24px;
-  &:hover {
-    border: 2px solid var(--button-green);
-    border-radius: 10px;
+  gap: 8px;
+  @media screen and (min-width: 1200px) {
+    gap: 12px;
   }
-  &:focus {
-    border: 2px solid var(--button-green);
-    border-radius: 10px;
-    color: var(--text-light);
-  }
+}
 
-  &:disabled {
-    border-color: var(--button-grey);
-    border-radius: 10px;
-  }
-}
-.hero__btn--second {
-  color: var(--accent-color);
-  border: none;
-  padding: 7px 10px;
-  text-decoration: underline;
 
-  &:hover {
-    color: var(--button-green);
-  }
-  &:focus {
-    color: var(--text-light);
-  }
-  &:disabled {
-    color: var(--button-grey);
-  }
-}
-// Абсолютні елементи
+// Absolute elements
 .item__ball {
   position: absolute;
   content: '';
@@ -118,11 +72,13 @@
   left: 100;
   z-index: 4;
 }
-// Відключені елементи для мобілки
+
+
+// Mobile phone features are disabled
 .hero__svg {
   display: none;
 }
-.hero__menu__numbers {
+.hero__menu--numbers {
   display: none;
 }
 .hero__text {
@@ -131,14 +87,16 @@
 .item__plate {
   display: none;
 }
-// }
+
+
+
 @media screen and (max-width: 319px) {
   .hero {
     width: 320px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .hero__title__container {
+  .hero__title--container {
     padding-left: 20px;
   }
 
@@ -178,16 +136,18 @@
     height: 80px;
     margin-bottom: 20px;
   }
-  .hero__title__span {
+  .hero__title--span {
     font-size: 24px;
     line-height: 0.96;
   }
-  .hero__menu__container {
+  .hero__container {
     display: flex;
     justify-content: space-between;
   }
-  // -----------------ЦИФРИ КАФЕ І ТРАКІВ
-  .hero__menu__numbers {
+
+
+  // menu numbers
+  .hero__menu--numbers {
     display: flex;
     flex-direction: column;
   }
@@ -213,10 +173,12 @@
   .item__text--marg {
     margin-bottom: 20px;
   }
-  .hero__text__container {
+  .hero__text--container {
     display: block;
   }
-  // ------------------ТЕКСТ ГЕРОЯ І СВГ ДО НЬОГО
+
+
+  // hero text
   .hero__text {
     display: block;
     width: 151px;
@@ -249,7 +211,7 @@
     }
   }
 
-  // Абсолютні елементи
+  // Absolute elements
   .item__plate {
     display: block;
     position: absolute;
@@ -278,6 +240,8 @@
     z-index: 4;
   }
 }
+
+
 @media screen and (min-width: 1200px) {
   .hero {
     height: 660px;
@@ -293,26 +257,12 @@
     width: 367px;
     height: 144px;
   }
-  .hero__title__span {
+  .hero__title--span {
     font-size: 38px;
     line-height: 1.26;
   }
-  //--------------------- КНОПКИ
-  .hero__btn {
-    font-size: 14px;
-    line-height: 1.28;
-  }
-  .hero__btn--first {
-    padding: 12px 34px;
-    width: 134px;
-    height: 42px;
-    margin-right: 34px;
-  }
-  .hero__btn--second {
-    padding: 10px 0px;
-  }
 
-  // -----------------ЦИФРИ КАФЕ І ТРАКІВ
+  // menu numbers
   .item__text--first {
     font-size: 46px;
     line-height: 1.22;
@@ -324,7 +274,7 @@
   .item__text--marg {
     margin-bottom: 16px;
   }
-  // Текс Героя і СВГ до нього
+  // hero text
   .hero__text {
     width: 200px;
     height: 70px;
@@ -337,7 +287,7 @@
     height: 15px;
   }
 
-  //-------------- Абсолютні елементи
+  // Absolute elements
   .item__plate {
     bottom: 65;
     left: 20;

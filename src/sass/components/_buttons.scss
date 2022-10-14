@@ -11,8 +11,6 @@
   font-style: normal;
   font-weight: 600;
   color: var(--text-dark);
-  padding: 12px 34px;
-  min-width: 134px;
 
   &:hover {
     border-color: var(--button-green);
@@ -27,49 +25,65 @@
     font-size: 8px;
     line-height: 1.25;
     border-radius: 8px;
+    padding: 4px 9px;
+    min-width: 62px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.28;
     border-radius: 10px;
+    padding: 12px 34px;
+    min-width: 134px;
   }
 }
 
 .button__read-more {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
   min-width: 164px;
-  height: 42px;
   padding: 12px 34px;
-  padding-right: 22px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.28;
   background-color: var(--accent-color);
   border-radius: 10px;
-  border-color: var(--accent-color);
+
+  &:hover {
+    background-color: var(--button-green);
+  }
+
+  &:focus {
+    background-color: var(--button-green);
+    color: var(--text-light);
+  }
 }
-.button__read-more:hover {
-  background-color: var(--button-green);
-  border-color: var(--button-green);
-  cursor: none !important;
+
+.button__buy-now {
+  background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--text-dark);
+  padding: 12px 34px;
+  min-width: 152px;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: var(--button-green);
+  }
+
+  &:focus {
+    background-color: var(--button-green);
+    color: var(--text-light);
+  }
 }
-.button__read-more:focus {
-  background-color: var(--button-green);
-  color: var(--text-light);
-  fill: var(--text-light);
-}
+
 
 .button__how-made {
   font-style: normal;
   font-weight: 600;
   color: var(--accent-color);
-  padding: 12px 22px;
-  min-width: 154px;
 
   &:hover {
     color: var(--button-green);
@@ -83,12 +97,16 @@
     font-size: 8px;
     line-height: 10px;
     border-radius: 8px;
+    padding: 4px 10px;
+  min-width: 83px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.28;
     border-radius: 10px;
+    padding: 12px 22px;
+  min-width: 154px;
   }
 }
 
@@ -134,23 +152,3 @@
   }
 }
 
-.button__buy-now {
-  background-color: var(--accent-color);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.28;
-  color: var(--text-dark);
-  padding: 12px 34px;
-  min-width: 152px;
-  border-radius: 10px;
-
-  &:hover {
-    background-color: var(--button-green);
-  }
-
-  &:focus {
-    background-color: var(--button-green);
-    color: var(--text-light);
-  }
-}

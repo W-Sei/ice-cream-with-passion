@@ -1,16 +1,66 @@
 .gallery-reviews-background {
-  @media screen and (min-width: 320px) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 767px) {
+  .gallery-reviews-background {
     background-image: url(../images/images/products/smart/productsfon-smart.png);
   }
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-device-pixelratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .gallery-reviews-background {
+    background-image: url(../images/images/products/smart/productsfon-smart@2x.png);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .gallery-reviews-background {
     background-image: url(../images/images/products/tablet/productsfon-tablet.png);
   }
 
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/images/products/desctop/productsfon-desctop.png);
+@media screen and (min-device-pixelratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 7680px) {
+  .gallery-reviews-background {
+    background-image: url(../images/images/products/tablet/productsfon-tablet@2x.png);
   }
 }
+
+
+@media screen and (min-width: 1200px) {
+  .gallery-reviews-background {
+    background-image: url(../images/images/products/desctop/productsfon-desctop.png);
+  }
+
+  @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .gallery-reviews-background {
+    background-image: url(../images/images/products/desctop/productsfon-desctop@2x.png);
+  }
+}
+
+
+
+// .gallery-reviews-background {
+//   @media screen and (min-width: 320px) {
+//     background-image: url(../images/images/products/smart/productsfon-smart.png);
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     background-image: url(../images/images/products/tablet/productsfon-tablet.png);
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     background-image: url(../images/images/products/desctop/productsfon-desctop.png);
+//   }
+// }
 
 .container.gallery-container {
   @media screen and (min-width: 320px) {

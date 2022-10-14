@@ -165,39 +165,17 @@
   }
 }
 
-/* 768px + */
-
+// 768px +
 @media screen and (min-width: 768px) {
   .button__buy-now {
-    background-color: var(--accent-color);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.28;
-    color: var(--text-dark);
-    padding: 12px 34px;
-    padding-right: 28px;
-    min-width: 152px;
-    height: 42px;
-    border-radius: 10px;
-    gap: 7.23px;
-
-    transition: background-color var(--easeOutCirc), color var(--easeOutCirc);
 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-left: 32px;
-
-    &:hover {
-      background-color: var(--button-green);
-      cursor: none !important;
-    }
+    transition: background-color var(--easeOutCirc), color var(--easeOutCirc), fill var(--easeOutCirc);
 
     &:focus {
-      background-color: var(--button-green);
-      color: var(--text-light);
-
       .buy-now-icon {
         fill: var(--text-light);
       }
@@ -211,32 +189,9 @@
   }
 }
 
-/* 1200px +*/
-
+// 1200px
 @media screen and (min-width: 1200px) {
   .button__buy-now {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     margin-left: auto;
-
-    &:hover {
-      background-color: var(--button-green);
-      cursor: none !important;
-    }
-
-    &:focus {
-      background-color: var(--button-green);
-      color: var(--text-light);
-
-      .buy-now-icon {
-        fill: var(--text-light);
-      }
-    }
-  }
-
-  .buy-now-icon {
-    width: 12px;
-    height: 12px;
   }
 }
