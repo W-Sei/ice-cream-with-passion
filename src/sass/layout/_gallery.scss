@@ -1,4 +1,8 @@
 .gallery-reviews-background {
+  background-color: #fff;
+}
+
+.gallery-reviews-background {
   @media screen and (min-width: 320px) {
     background-image: url(../images/images/products/smart/productsfon-smart.png);
   }
@@ -90,7 +94,6 @@
 
     &:hover,
     &:focus {
-
       .slick-prev:before,
       .slick-next:before {
         visibility: visible;

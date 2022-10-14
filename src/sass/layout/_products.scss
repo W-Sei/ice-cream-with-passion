@@ -6,7 +6,6 @@
   }
 }
 
-
 .products__title {
   transition: transform 500ms linear;
 
@@ -15,6 +14,9 @@
   }
 }
 
+.products {
+  background-color: #fff;
+}
 
 @media screen and (max-width: 767px) {
   .products {
@@ -56,9 +58,11 @@
   }
 
   .elipse {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)),
+        rgba(156, 190, 143, 0.7)
+      ),
       #d9d9d9;
     border: 0.67px none;
     border-radius: 100px;
@@ -77,9 +81,11 @@
   }
 
   .elipse-two {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)),
+        rgba(248, 210, 78, 0.7)
+      ),
       #d9d9d9;
     box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
     border: 0.67px none;
@@ -98,9 +104,11 @@
   }
 
   .elipse-three {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)),
+        rgba(213, 117, 63, 0.7)
+      ),
       #d9d9d9;
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
     border: 0.67px none;
@@ -189,8 +197,8 @@
 }
 
 @media screen and (min-device-pixelratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .products {
     background-image: url(../images/images/products/smart/productsfon-smart@2x.png);
   }
@@ -232,9 +240,11 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   }
 
   .elipse {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)),
+        rgba(156, 190, 143, 0.7)
+      ),
       #d9d9d9;
     border: 0.67px none;
     border-radius: 100px;
@@ -253,9 +263,11 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   }
 
   .elipse-two {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)),
+        rgba(248, 210, 78, 0.7)
+      ),
       #d9d9d9;
     box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
     border: 0.67px none;
@@ -274,9 +286,11 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   }
 
   .elipse-three {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)),
+        rgba(213, 117, 63, 0.7)
+      ),
       #d9d9d9;
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
     border: 0.67px none;
@@ -360,8 +374,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 @media screen and (min-device-pixelratio: 2) and (min-width: 768px),
-screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 7680px) {
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 7680px) {
   .products {
     background-image: url(../images/images/products/tablet/productsfon-tablet@2x.png);
   }
@@ -403,9 +417,11 @@ screen and (min-resolution: 2dppx) and (min-width: 7680px) {
   }
 
   .elipse {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)),
+        rgba(156, 190, 143, 0.7)
+      ),
       #d9d9d9;
     border: 0.67px none;
     border-radius: 150px;
@@ -424,9 +440,11 @@ screen and (min-resolution: 2dppx) and (min-width: 7680px) {
   }
 
   .elipse-two {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)),
+        rgba(248, 210, 78, 0.7)
+      ),
       #d9d9d9;
     box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
     border: 0.67px none;
@@ -445,9 +463,11 @@ screen and (min-resolution: 2dppx) and (min-width: 7680px) {
   }
 
   .elipse-three {
-    background: linear-gradient(0deg,
+    background: linear-gradient(
+        0deg,
         rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)),
+        rgba(213, 117, 63, 0.7)
+      ),
       #d9d9d9;
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
     border: 0.67px none;
@@ -532,8 +552,8 @@ screen and (min-resolution: 2dppx) and (min-width: 7680px) {
 }
 
 @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
-screen and (min-resolution: 192dpi) and (min-width: 1200px),
-screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .products {
     background-image: url(../images/images/products/desctop/productsfon-desctop@2x.png);
   }
