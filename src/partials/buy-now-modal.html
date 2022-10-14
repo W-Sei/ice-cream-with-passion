@@ -35,9 +35,10 @@
                     </input>
                 </label>
             </div>
-            <input class="order-form__input-field" type="text" name="client_name" id="client_name" placeholder="Name">
-            <input class="order-form__input-field" type="text" name="client_phone" id="client_phone"
-                placeholder="Phone">
+            <input class="order-form__input-field" type="text" name="client_name" id="client_name" placeholder="Name"
+                required minlength="3" pattern="[a-zA-Z-а-яА-ЯіІїЇ]+">
+            <input class="order-form__input-field" type="text" name="client_phone" id="client_phone" required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Phone">
             <textarea class="order-form__comment-field" name="client_comment" id="client_comment" rows="10"
                 placeholder="Comment"></textarea>
             <button class="submit-button" type="submit">Submit</button>
