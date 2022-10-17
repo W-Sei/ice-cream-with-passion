@@ -24,12 +24,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 568px;
-  height: 644px;
+  max-width: 280px;
+  height: 986px;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  padding: 32px 54px;
+  padding: 28px 28px;
 }
 
 .close-button {
@@ -58,7 +58,7 @@
 }
 
 .order-form__title {
-  margin-bottom: 103px;
+  margin-bottom: 83px;
   font-family: 'Seymour One';
   font-size: 20px;
   line-height: 1.4;
@@ -67,9 +67,10 @@
 
 .order-form__menu {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 32px;
-  margin-bottom: 40px;
+  gap: 86px;
+  margin-bottom: 24px;
 }
 
 .order-form__item {
@@ -163,7 +164,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .order-form__product--cream::before {
     content: url(../images/images/modal-buy/buycream-smart.webp);
   }
@@ -176,36 +177,6 @@
     content: url(../images/images/modal-buy/buymilk-smart.webp);
   }
 }
-
-// @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
-// screen and (max-width: 768px) and (min-resolution: 192dpi),
-// screen and (max-width: 768px) and (min-resolution: 2dppx) {
-// .order-form__product--cream::before {
-//             content: url(../images/images/modal-buy/buycream-smart@2x.webp);
-//         }
-// .order-form__product--coffee::before {
-//             content: url(../images/images/modal-buy/buycoffee-smart@2x.webp);
-//         }
-// .order-form__product--shake::before {
-//             content: url(../images/images/modal-buy/buymilk-smart@2x.webp);
-//         }
-// }
-
-// @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-// screen and (min-width: 1200px) and (min-resolution: 192dpi),
-// screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-//     .order-form__product--cream::before {
-//         content: url(../images/images/modal-buy/buycream-desctop@2x.webp);
-//     }
-
-//     .order-form__product--coffee::before {
-//         content: url(../images/images/modal-buy/buycoffee-desctop@2x.webp);
-//     }
-
-//     .order-form__product--shake::before {
-//         content: url(../images/images/modal-buy/buymilk-desctop@2x.webp);
-//     }
-// }
 
 .order-form__product-name {
   font-weight: 700;
@@ -231,8 +202,8 @@
 
 .order-form__input-field {
   padding: 11px 16px;
-  width: 368px;
-  height: 42px;
+  width: 100%;
+  height: 32px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
@@ -242,8 +213,8 @@
 .order-form__comment-field {
   padding: 11px 16px;
   resize: none;
-  width: 368px;
-  height: 84px;
+  width: 100%;
+  height: 65px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
@@ -264,5 +235,43 @@
   &:focus {
     background-color: var(--button-green);
     cursor: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 568px;
+    height: 644px;
+    padding: 32px 54px;
+  }
+
+  .order-form__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  .order-form__input-field {
+    height: 42px;
+  }
+
+  .order-form__comment-field {
+    height: 84px;
+  }
+  .order-form__title {
+    margin-bottom: 113px;
+  }
+
+  .order-form__product--cream::before {
+    content: url(../images/images/modal-buy/buycream-desctop.webp);
+  }
+
+  .order-form__product--coffee::before {
+    content: url(../images/images/modal-buy/buycoffee-desctop.webp);
+  }
+
+  .order-form__product--shake::before {
+    content: url(../images/images/modal-buy/buymilk-desctop.webp);
   }
 }
