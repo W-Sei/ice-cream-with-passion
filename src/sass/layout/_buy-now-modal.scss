@@ -10,7 +10,8 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
-  overflow-x: scroll;
+  // overflow-x: scroll;
+  // overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -20,16 +21,20 @@
 }
 
 .modal {
-  position: relative;
+  // position: relative;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 280px;
-  height: 986px;
+  min-width: 280px;
+  // max-width: 80vh;
+  // height: 986px;
+  height: 100vh;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  padding: 28px 28px;
+  padding: 0px 0px;
+  // overflow-y: scroll;
 }
 
 .close-button {
@@ -52,17 +57,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   height: 100%;
   width: 100%;
+  padding: 28px;
+  overflow: scroll;
 }
 
 .order-form__title {
-  margin-bottom: 83px;
+  margin-bottom: 53px;
   font-family: 'Seymour One';
   font-size: 20px;
   line-height: 1.4;
   text-align: center;
+
+  @media screen and (min-width: 320px) {
+    margin-bottom: 113px;
+  }
 }
 
 .order-form__menu {
@@ -70,14 +81,24 @@
   flex-direction: column;
   align-items: center;
   gap: 86px;
-  margin-bottom: 24px;
+  // margin-bottom: 4px;
+  transform: scale(1);
+
+  @media screen and (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
 }
 
 .order-form__item {
   display: flex;
   justify-content: center;
   width: 132px;
-  height: 135px;
+  // height: 135px;
+  // width: 100%;
+
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15.7808px;
 
@@ -195,6 +216,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
+  resize: none;
   font-size: 14px;
   line-height: 1.4;
   color: #131313;
@@ -214,7 +236,8 @@
   padding: 11px 16px;
   resize: none;
   width: 100%;
-  height: 65px;
+  min-height: 65px;
+  // margin-bottom: 10px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
@@ -230,7 +253,7 @@
   font-weight: 600;
   line-height: 1.22;
   text-align: center;
-  margin-top: auto;
+  margin-top: 24px;
   &:hover,
   &:focus {
     background-color: var(--button-green);
@@ -242,14 +265,26 @@
   .modal {
     max-width: 568px;
     height: 644px;
-    padding: 32px 54px;
+    padding: 0px 0px;
+  }
+
+  .order-form {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 54px;
+    padding-left: 54px;
   }
 
   .order-form__menu {
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 30px;
     margin-bottom: 40px;
+    transform: scale(1);
+  }
+
+  .submit-button {
+    margin-top: 32px;
   }
 
   .order-form__input-field {
@@ -258,9 +293,6 @@
 
   .order-form__comment-field {
     height: 84px;
-  }
-  .order-form__title {
-    margin-bottom: 113px;
   }
 
   .order-form__product--cream::before {
