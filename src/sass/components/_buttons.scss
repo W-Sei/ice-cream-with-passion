@@ -135,15 +135,11 @@
 }
 
 .button__buy-now {
+  @include button();
   background-color: var(--accent-color);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.28;
   color: var(--text-dark);
   padding: 12px 34px;
   min-width: 152px;
-  border-radius: 10px;
 
   &:hover {
     background-color: var(--button-green);

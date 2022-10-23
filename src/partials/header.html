@@ -1,51 +1,68 @@
 <header class="page-header" id="header">
-    <div class="container header-position">
-        <nav class="header-nav">
-            <a href="./index.html" title="To main page"
-                class="logo header-nav__logo animate__animated animate__flash animate__repeat-2">
-                <picture>
-                    <source
-                        srcset="./images/images/icon/logo-desktop.png 1x, ./images/images/icon/logo-desktop@2x.png 2x"
-                        media="(min-width:1200px)">
-                    <source srcset="./images/images/icon/logo-tablet.png 1x, ./images/images/icon/logo-tablet@2x.png 2x"
-                        media="(min-width:768px)">
-                    <source srcset="./images/images/icon/logo-mobile.png 1x, ./images/images/icon/logo-mobile@2x.png 2x"
-                        media="(max-width:767px)">
-                    <img src="./images/images/icon/logo-desktop.png" alt="Ice Cream Logo">
-                </picture>
-            </a>
-            <ul class="pages-nav">
-                <li class="page-nav-icecream pages-nav__item">
-                    <a href="#home" class="navigation-link current">Home</a>
-                </li>
-                <li class="page-nav-about pages-nav__item">
-                    <a href="#how-its-made" class="navigation-link">How it’s made?</a>
-                </li>
-                <li class="page-nav-products pages-nav__item">
-                    <a href="#our-products" class="navigation-link">Our products</a>
-                </li>
-                <li class="page-nav-contacts pages-nav__item">
-                    <a href="#contacts" class="navigation-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
+  <div class="container header__container">
+    <nav class="header-nav">
+      <a href="./index.html" title="To main page"
+        class="logo header-nav__logo animate__animated animate__flash animate__repeat-2">
+        <picture>
+          <source srcset="
+              ./images/images/icon/logo-desktop.webp 1x,
+              ./images/images/icon/logo-desktop@2x.webp 2x
+            " media="(min-width: 1200px)" type="image/webp" />
+          <source srcset="
+              ./images/images/icon/logo-desktop.png 1x,
+              ./images/images/icon/logo-desktop@2x.png 2x
+            " media="(min-width: 1200px)" />
 
-        <div class="header-buttons">
-            <button type="button" class="open-mobile-menu-btn js-open-menu" aria-expanded="false"
-                aria-controls="mobile-menu">
-                <svg class="open-mobile-menu-btn__icon">
-                    <use href="../src/images/sprite.svg#icon-burger-menu"></use>
-                </svg>
-            </button>
+          <source srcset="
+              ./images/images/icon/logo-tablet.webp 1x,
+              ./images/images/icon/logo-tablet@2x.webp 2x
+            " media="(min-width: 768px)" type="image/webp" />
+          <source srcset="
+              ./images/images/icon/logo-tablet.png 1x,
+              ./images/images/icon/logo-tablet@2x.png 2x
+            " media="(min-width: 768px)" />
 
-            <button type="button" class="button__buy-now button" data-modal-open>
-                Buy now
-                <svg class="buy-now-icon">
-                    <use href="../src/images/sprite.svg#icon-short-arrow"></use>
-                </svg>
-            </button>
-        </div>
+          <source srcset="
+              ./images/images/icon/logo-mobile.webp 1x,
+              ./images/images/icon/logo-mobile@2x.webp 2x
+            " media="(max-width: 767px)" type="image/webp" />
+          <source srcset="
+              ./images/images/icon/logo-mobile.png 1x,
+              ./images/images/icon/logo-mobile@2x.png 2x
+            " media="(max-width: 767px)" />
 
+          <img src="./images/images/icon/logo-mobile.png" alt="Ice Cream Logo" />
+        </picture>
+      </a>
+      <ul class="pages-nav">
+        <li class="page-nav-icecream pages-nav__item">
+          <a href="#home" class="navigation-link current">Home</a>
+        </li>
+        <li class="page-nav-about pages-nav__item">
+          <a href="#how-its-made" class="navigation-link">How it’s made?</a>
+        </li>
+        <li class="page-nav-products pages-nav__item">
+          <a href="#our-products" class="navigation-link">Our products</a>
+        </li>
+        <li class="page-nav-contacts pages-nav__item">
+          <a href="#contacts" class="navigation-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-buttons">
+      <button type="button" class="open-mobile-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="open-mobile-menu-btn__icon">
+          <use href="./images/sprite.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+
+      <button type="button" class="button__buy-now button" data-modal-open>
+        Buy now
+        <svg class="buy-now-icon">
+          <use href="./images/sprite.svg#icon-short-arrow"></use>
+        </svg>
+      </button>
     </div>
-
+  </div>
 </header>
