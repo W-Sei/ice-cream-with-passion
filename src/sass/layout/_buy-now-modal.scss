@@ -155,7 +155,7 @@
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   &::before {
-    content: url(../images/images/modal-buy/buycream-desctop.png);
+    content: url(../images/images/modal-buy/buycream-smart.png);
   }
 }
 
@@ -168,7 +168,7 @@
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
   &::before {
-    content: url(../images/images/modal-buy/buycoffee-desctop.png);
+    content: url(../images/images/modal-buy/buycoffee-smart.png);
   }
 }
 
@@ -181,7 +181,7 @@
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   &::before {
-    content: url(../images/images/modal-buy/buymilk-desctop.png);
+    content: url(../images/images/modal-buy/buymilk-smart.png);
   }
 }
 
@@ -263,9 +263,11 @@
 
 @media screen and (min-width: 768px) {
   .modal {
-    max-width: 568px;
+    // max-width: 570px;
+    min-width: 568px;
     height: 644px;
     padding: 0px 0px;
+    overflow-y: hidden;
   }
 
   .order-form {
@@ -273,6 +275,7 @@
     padding-bottom: 32px;
     padding-right: 54px;
     padding-left: 54px;
+    overflow: hidden;
   }
 
   .order-form__menu {
