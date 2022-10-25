@@ -8,11 +8,7 @@
 
 .button__products {
   border: 2px solid var(--accent-color);
-  font-style: normal;
-  font-weight: 600;
   color: var(--text-dark);
-  padding: 12px 34px;
-  min-width: 134px;
 
   &:hover {
     border-color: var(--button-green);
@@ -24,52 +20,21 @@
   }
 
   @media screen and (max-width: 1199px) {
-    font-size: 8px;
-    line-height: 1.25;
-    border-radius: 8px;
+    @include button($border-radius: 8px, $font-weight: 600, $font-size: 8px, $line-height: 10px);
+    min-width: 62px;
+    padding: 4px 10px;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.28;
-    border-radius: 10px;
+    @include button();
+    min-width: 134px;
+    padding: 12px 34px;
   }
 }
 
-.button__read-more {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  min-width: 164px;
-  height: 42px;
-  padding: 12px 34px;
-  padding-right: 22px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.28;
-  background-color: var(--accent-color);
-  border-radius: 10px;
-  border-color: var(--accent-color);
-}
-.button__read-more:hover {
-  background-color: var(--button-green);
-  border-color: var(--button-green);
-  cursor: none !important;
-}
-.button__read-more:focus {
-  background-color: var(--button-green);
-  color: var(--text-light);
-  fill: var(--text-light);
-}
-
 .button__how-made {
-  font-style: normal;
-  font-weight: 600;
   color: var(--accent-color);
-  padding: 12px 22px;
-  min-width: 154px;
+  text-decoration: underline;
 
   &:hover {
     color: var(--button-green);
@@ -80,28 +45,48 @@
   }
 
   @media screen and (max-width: 1199px) {
-    font-size: 8px;
-    line-height: 10px;
-    border-radius: 8px;
+    @include button($border-radius: 8px, $font-weight: 600, $font-size: 8px, $line-height: 10px);
+    min-width: 83px;
+    padding: 4px 10px;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.28;
-    border-radius: 10px;
+    @include button();
+    min-width: 154px;
+    padding: 12px 21px;
   }
 }
 
-.button__locations {
+.button__read-more {
+  @include button();
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  min-width: 164px;
+  // height: 42px;
+  padding: 12px 34px;
+  padding-right: 22px;
   background-color: var(--accent-color);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.28;
+  border-color: var(--accent-color);
+}
+.button__read-more:hover {
+  background-color: var(--button-green);
+  border-color: var(--button-green);
+  // cursor: none !important;
+}
+.button__read-more:focus {
+  background-color: var(--button-green);
+  color: var(--text-light);
+  fill: var(--text-light);
+}
+
+.button__locations {
+  @include button();
+  background-color: var(--accent-color);
   color: var(--text-dark);
   padding: 12px 34px;
   min-width: 196px;
-  border-radius: 10px;
 
   &:hover {
     background-color: var(--button-green);
@@ -114,15 +99,11 @@
 }
 
 .button__franchise {
+  @include button();
   border: 2px solid var(--accent-color);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.28;
   color: var(--text-dark);
   padding: 12px 46px;
   min-width: 196px;
-  border-radius: 10px;
 
   &:hover {
     border-color: var(--button-green);

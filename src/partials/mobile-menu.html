@@ -9,31 +9,39 @@
     <div class="mobile-wrapper">
       <nav id="nav" class="nav mobile-nav">
         <picture class="mobile-menu-logo">
-          <source srcset="./images/images/icon/logo-tablet.webp" type="image/webp">
           <source srcset="
-              ./images/images/icon/logo-tablet.png    1x,
-              ./images/images/icon/logo-tablet@2x.png 2x
-            " type="image/png">
-          <source srcset="./images/images/icon/logo-mobile.webp" type="image/webp">
+                                  ./images/images/icon/logo-tablet.webp 1x,
+                                  ./images/images/icon/logo-tablet@2x.webp 2x
+                                " media="(min-width: 768px)" type="image/webp" />
           <source srcset="
-              ./images/images/icon/logo-mobile.png    1x,
-              ./images/images/icon/logo-mobile@2x.png 2x
-            " type="image/png">
-          <img src="./images/images/icon/logo-desktop.png" alt="Ice Cream Logo" height="294" loading="lazy">
+                                  ./images/images/icon/logo-tablet.png 1x,
+                                  ./images/images/icon/logo-tablet@2x.png 2x
+                                " media="(min-width: 768px)" />
+
+          <source srcset="
+                                  ./images/images/icon/logo-mobile.webp 1x,
+                                  ./images/images/icon/logo-mobile@2x.webp 2x
+                                " media="(max-width: 767px)" type="image/webp" />
+          <source srcset="
+                                  ./images/images/icon/logo-mobile.png 1x,
+                                  ./images/images/icon/logo-mobile@2x.png 2x
+                                " media="(max-width: 767px)" />
+
+          <img src="./images/images/icon/logo-mobile.png" alt="Ice Cream Logo" loading="lazy" />
         </picture>
 
-        <ul class="mobile-nav-list">
-          <li class="mobile-nav-item">
-            <a href="#home" class="mobile-navigation-link current">Home</a>
+        <ul class="mobile-nav-menu">
+          <li class="mobile-nav-menu__item">
+            <a href="#home" class="mobile-nav-menu__link mobile-nav-menu__link--current">Home</a>
           </li>
-          <li class="mobile-nav-item">
-            <a href="#how-its-made" class="mobile-navigation-link">How it’s made?</a>
+          <li class="mobile-nav-menu__item">
+            <a href="#how-its-made" class="mobile-nav-menu__link">How it’s made?</a>
           </li>
-          <li class="mobile-nav-item">
-            <a href="#our-products" class="mobile-navigation-link">Our products</a>
+          <li class="mobile-nav-menu__item">
+            <a href="#our-products" class="mobile-nav-menu__link">Our products</a>
           </li>
-          <li class="mobile-nav-item">
-            <a href="#contacts" class="mobile-navigation-link">Contact</a>
+          <li class="mobile-nav-menu__item">
+            <a href="#contacts" class="mobile-nav-menu__link">Contact</a>
           </li>
         </ul>
       </nav>

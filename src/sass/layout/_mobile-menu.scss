@@ -10,15 +10,17 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(100%);
+  // transform: translateX(100%);
 
-  transition: opacity var(--easeInOutBack), visibility var(--easeInOutBack), transform var(--easeInOutBack);
+  transition: opacity var(--easeInOutBack), visibility var(--easeInOutBack);
+
+  // transform var(--easeInOutBack)
 
   &.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateX(0);
+    // transform: translateX(0);
   }
 }
 
@@ -52,7 +54,7 @@
   cursor: none !important;
 
   transform: scale(1);
-  transition-property: fill, transform;
+  transition-property: transform, fill;
   transition: transform var(--easeInOutBack), fill var(--easeInOutBack);
 
   &:hover,
@@ -78,17 +80,7 @@
   flex-grow: 1;
 }
 
-// .mobile-menu-logo {
-//   width: 44.47px;
-//   height: 37px;
-
-//   @media screen and (min-width: 480px) {
-//     width: 48px;
-//     height: 44px;
-//   }
-// }
-
-.mobile-nav-list {
+.mobile-nav-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,7 +94,7 @@
   }
 }
 
-.mobile-navigation-link {
+.mobile-nav-menu__link {
   @include font($line-height: 39px, $font-weight: 700, $font-size: 32px);
   color: var(--text-light);
   transition: color var(--easeOutCirc);
@@ -113,13 +105,13 @@
     cursor: none !important;
   }
 
-  // .mobile-navigation-link--current {
-  //   color: var(--text-dark);
-  // }
-
   @media screen and (min-width: 768px) {
     @include font($line-height: 59px, $font-weight: 700, $font-size: 48px);
   }
+}
+
+.mobile-nav-menu__link--current {
+  color: var(--text-dark);
 }
 
 @media screen and (min-width: 1200px) {
@@ -128,8 +120,7 @@
   }
 }
 
-// Mobile menu button
-
+// BUTTON BUY NOW
 .button__buy-now--mobile {
   transition: background-color var(--easeOutCirc), color var(--easeOutCirc);
   display: flex;
@@ -138,6 +129,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .buy-now-icon-mobile {
   width: 12px;
   height: 12px;

@@ -2,6 +2,21 @@
   position: fixed;
   width: 100%;
   z-index: 99;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 
 .header-bgc {
@@ -36,7 +51,7 @@
 
 // 0px - 1199px
 @media screen and (max-width: 1199px) {
-  .pages-nav {
+  .pages-nav-menu {
     display: none;
   }
 
@@ -45,11 +60,12 @@
     background-color: transparent;
     padding: 0;
     line-height: 0;
+    transition-property: fill;
+    transition: fill var(--transition-dur-and-func);
 
     &:focus,
     &:hover {
       fill: var(--accent-text-color);
-      transition: fill var(--transition-dur-and-func);
       cursor: none !important;
     }
   }
@@ -60,23 +76,10 @@
   }
 }
 
-// 0px - 767px
+// 0 - 767px
 @media screen and (max-width: 767px) {
-  .header__container {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-
   .button__buy-now {
     display: none;
-  }
-}
-
-// 768px - 1199px
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header__container {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
 
@@ -102,21 +105,16 @@
 
 // 1200px +
 @media screen and (min-width: 1200px) {
-  .header__container {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
   .header-nav__logo {
     margin-right: 269px;
   }
 
-  .pages-nav {
+  .pages-nav-menu {
     display: flex;
     column-gap: 27px;
   }
 
-  .navigation-link {
+  .pages-nav-menu__link {
     @include font($line-height: 20px, $font-weight: 700, $font-size: 16px);
     color: var(--text-light);
     padding-top: 10px;
@@ -129,6 +127,10 @@
       color: var(--accent-color);
       cursor: none !important;
     }
+  }
+
+  .pages-nav-menu__link--current {
+    color: var(--accent-color);
   }
 
   .open-mobile-menu-btn {

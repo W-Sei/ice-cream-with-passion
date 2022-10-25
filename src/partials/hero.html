@@ -1,186 +1,323 @@
-<section class="section hero" id="home">
-  <div class="container con__hero">
-    <div class="hero__menu__container">
-      <div class="hero__title__container">
-        <h1 class="hero__title animate__animated animate__bounce">
-          ice cream made with <span class="hero__title__span">passion</span>
+<section class="section hero-section" id="home">
+  <div class="container hero-container">
+    <div class="hero-section__menu">
+      <div class="hero-section-wrapper">
+        <h1 class="hero-section__title animate__animated animate__bounce">
+          ice cream made with
+          <span class="hero-section__title--span">passion</span>
         </h1>
 
-        <ul class="hero__menu">
-          <li class="menu__item">
-            <a class="hero__btn hero__btn--first" href="#our-products">Products</a>
+        <ul class="buttons-menu">
+          <li class="buttons-menu__item">
+            <a class="button__products button" href="#our-products">Products</a>
           </li>
-          <li class="menu__item">
-            <a class="hero__btn hero__btn--second" href="#how-its-made">How it’s made?</a>
+          <li class="buttons-menu__item">
+            <a class="button__how-made button" href="#how-its-made"
+              >How it’s made?</a
+            >
           </li>
         </ul>
-
       </div>
-      <ul class="hero__menu__numbers">
-        <li class="menu__item__numbers">
-          <p class="item__text--first">16</p>
+
+      <ul class="hero-section-numbers-menu">
+        <li class="hero-section-numbers__item">
+          <p class="hero-section-numbers__text-first">16</p>
+          <p class="hero-section-numbers__text-second">Cafes</p>
         </li>
-        <li class="menu__item__numbers">
-          <p class="item__text--second item__text--marg">Cafes</p>
-        </li>
-        <li class="menu__item__numbers">
-          <p class="item__text--first">23</p>
-        </li>
-        <li class="menu__item__numbers">
-          <p class="item__text--second">Food trucks</p>
+
+        <li class="hero-section-numbers__item">
+          <p class="hero-section-numbers__text-first">23</p>
+          <p class="hero-section-numbers__text-second">Food trucks</p>
         </li>
       </ul>
     </div>
-    <div class="hero__text__container">
-      <p class="hero__text">
+    <div class="hero__description">
+      <p class="hero__description--text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
       </p>
-      <svg class="hero__svg">
-        <use href="./images/sprite.svg#icon-long-arrow"></use>
-      </svg>
+      <button type="button" class="hero__description-button">
+        <svg class="hero__svg">
+          <use href="./images/sprite.svg#icon-long-arrow"></use>
+        </svg>
+      </button>
     </div>
     <ul>
-      <!-- Тарілка морозива -->
       <li>
         <picture class="item__plate">
-          <source srcset="
-              ./images/images/hero/desctop/moreice-desctop.png    1x,
-              ./images/images/hero/desctop/moreice-desctop@2x.png 2x
-            " media="(min-width: 1200px)">
-          <source srcset="
+          <source
+            srcset="
               ./images/images/hero/desctop/moreice-desctop.webp    1x,
               ./images/images/hero/desctop/moreice-desctop@2x.webp 2x
-            " media="(min-width: 1200px)" type="image/webp">
-          <source srcset="
-              ./images/images/hero/tablet/moreice-tablet.png    1x,
-              ./images/images/hero/tablet/moreice-tablet@2x.png 2x
-            " media="(min-width: 768px)">
-          <source srcset="
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/desctop/moreice-desctop.png    1x,
+              ./images/images/hero/desctop/moreice-desctop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <source
+            srcset="
               ./images/images/hero/tablet/moreice-tablet.webp    1x,
               ./images/images/hero/tablet/moreice-tablet@2x.webp 2x
-            " media="(min-width: 768px)" type="image/webp">
-          <img src="./images/images/hero/tablet/moreice-tablet.png" alt="Plate of ice cream">
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/tablet/moreice-tablet.png    1x,
+              ./images/images/hero/tablet/moreice-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <img
+            src="./images/images/hero/tablet/moreice-tablet.png"
+            alt="Plate of ice cream"
+            loading="lazy"
+          />
         </picture>
       </li>
-      <!-- Багато КУЛЬОК -->
+
       <li>
         <picture class="item__ball">
-          <source srcset="
-              ./images/images/hero/desctop/dot-desctop.png    1x,
-              ./images/images/hero/desctop/dot-desctop@2x.png 2x
-            " media="(min-width: 1200px)">
-          <source srcset="
+          <source
+            srcset="
               ./images/images/hero/desctop/dot-desctop.webp    1x,
               ./images/images/hero/desctop/dot-desctop@2x.webp 2x
-            " media="(min-width: 1200px)" type="image/webp">
-          <source srcset="
-              ./images/images/hero/tablet/dot-tablet.png    1x,
-              ./images/images/hero/tablet/dot-tablet@2x.png 2x
-            " media="(min-width: 768px)">
-          <source srcset="
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/desctop/dot-desctop.png    1x,
+              ./images/images/hero/desctop/dot-desctop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <source
+            srcset="
               ./images/images/hero/tablet/dot-tablet.webp    1x,
               ./images/images/hero/tablet/dot-tablet@2x.webp 2x
-            " media="(min-width: 768px)" type="image/webp">
-          <source srcset="
-              ./images/images/hero/smart/dot-smart.png    1x,
-              ./images/images/hero/smart/dot-smart@2x.png 2x
-            " media="(max-width: 767px)">
-          <source srcset="
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="
+              ./images/images/hero/tablet/dot-tablet.png    1x,
+              ./images/images/hero/tablet/dot-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
               ./images/images/hero/smart/dot-smart.webp    1x,
               ./images/images/hero/smart/dot-smart@2x.webp 2x
-            " media="(max-width: 767px)" type="image/webp">
-          <img src="./images/images/hero/smart/dot-smart.png" alt="Many balls">
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="
+              ./images/images/hero/smart/dot-smart.png    1x,
+              ./images/images/hero/smart/dot-smart@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            src="./images/images/hero/smart/dot-smart.png"
+            alt="Many balls"
+            loading="lazy"
+          />
         </picture>
       </li>
-      <!-- ТІІІІІІІІІІННННННННННЬЬЬ -->
+
       <li>
         <picture class="item__shadow">
-          <source srcset="
-              ./images/images/hero/desctop/iceshadow-desctop.png    1x,
-              ./images/images/hero/desctop/iceshadow-desctop@2x.png 2x
-            " media="(min-width: 1200px)">
-          <source srcset="
+          <source
+            srcset="
               ./images/images/hero/desctop/iceshadow-desctop.webp    1x,
               ./images/images/hero/desctop/iceshadow-desctop@2x.webp 2x
-            " media="(min-width: 1200px)" type="image/webp">
-          <source srcset="
-              ./images/images/hero/tablet/iceshadow-tablet.png    1x,
-              ./images/images/hero/tablet/iceshadow-tablet@2x.png 2x
-            " media="(min-width: 768px)">
-          <source srcset="
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/desctop/iceshadow-desctop.png    1x,
+              ./images/images/hero/desctop/iceshadow-desctop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <source
+            srcset="
               ./images/images/hero/tablet/iceshadow-tablet.webp    1x,
               ./images/images/hero/tablet/iceshadow-tablet@2x.webp 2x
-            " media="(min-width: 768px)" type="image/webp">
-          <source srcset="
-              ./images/images/hero/smart/iceshadow-smart.png    1x,
-              ./images/images/hero/smart/iceshadow-smart@2x.png 2x
-            " media="(max-width: 767px)">
-          <source srcset="
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/tablet/iceshadow-tablet.png    1x,
+              ./images/images/hero/tablet/iceshadow-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
               ./images/images/hero/smart/iceshadow-smart.webp    1x,
               ./images/images/hero/smart/iceshadow-smart@2x.webp 2x
-            " media="(max-width: 767px)" type="image/webp">
-          <img src="./images/images/hero/smart/iceshadow-smart.png" alt="Shadow">
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/smart/iceshadow-smart.png    1x,
+              ./images/images/hero/smart/iceshadow-smart@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            src="./images/images/hero/smart/iceshadow-smart.png"
+            alt="Shadow"
+            loading="lazy"
+          />
         </picture>
       </li>
-      <!-- РіЖОК -->
+
       <li>
         <picture class="item__ice">
-          <source srcset="
-              ./images/images/hero/desctop/ice-desctop.png    1x,
-              ./images/images/hero/desctop/ice-desctop@2x.png 2x
-            " media="(min-width: 1200px)">
-          <source srcset="
+          <source
+            srcset="
               ./images/images/hero/desctop/ice-desctop.webp    1x,
               ./images/images/hero/desctop/ice-desctop@2x.webp 2x
-            " media="(min-width: 1200px)" type="image/webp">
-          <source srcset="
-              ./images/images/hero/tablet/ice-tablet.png    1x,
-              ./images/images/hero/tablet/ice-tablet@2x.png 2x
-            " media="(min-width: 768px)">
-          <source srcset="
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/desctop/ice-desctop.png    1x,
+              ./images/images/hero/desctop/ice-desctop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <source
+            srcset="
               ./images/images/hero/tablet/ice-tablet.webp    1x,
               ./images/images/hero/tablet/ice-tablet@2x.webp 2x
-            " media="(min-width: 768px)" type="image/webp">
-          <source srcset="
-              ./images/images/hero/smart/ice-smart.png    1x,
-              ./images/images/hero/smart/ice-smart@2x.png 2x
-            " media="(max-width: 767px)">
-          <source srcset="
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/tablet/ice-tablet.png    1x,
+              ./images/images/hero/tablet/ice-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
               ./images/images/hero/smart/ice-smart.webp    1x,
               ./images/images/hero/smart/ice-smart@2x.webp 2x
-            " media="(max-width: 767px)" type="image/webp">
-          <img src="./images/images/hero/smart/ice-smart.png" alt="Ice">
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/smart/ice-smart.png    1x,
+              ./images/images/hero/smart/ice-smart@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            src="./images/images/hero/smart/ice-smart.png"
+            alt="Ice"
+            loading="lazy"
+          />
         </picture>
       </li>
-      <!-- Смайлики -->
+
       <li>
-        <picture class="item__smile animate__animated animate__shakeY animate__delay-1s">
-          <source srcset="
-              ./images/images/hero/desctop/icesmile-desctop.png    1x,
-              ./images/images/hero/desctop/icesmile-desctop@2x.png 2x
-            " media="(min-width: 1200px)">
-          <source srcset="
+        <picture
+          class="item__smile animate__animated animate__shakeY animate__delay-1s"
+        >
+          <source
+            srcset="
               ./images/images/hero/desctop/icesmile-desctop.webp    1x,
               ./images/images/hero/desctop/icesmile-desctop@2x.webp 2x
-            " media="(min-width: 1200px)" type="image/webp">
-          <source srcset="
-              ./images/images/hero/tablet/icesmile-tablet.png    1x,
-              ./images/images/hero/tablet/icesmile-tablet@2x.png 2x
-            " media="(min-width: 768px)">
-          <source srcset="
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/desctop/icesmile-desctop.png    1x,
+              ./images/images/hero/desctop/icesmile-desctop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <source
+            srcset="
               ./images/images/hero/tablet/icesmile-tablet.webp    1x,
               ./images/images/hero/tablet/icesmile-tablet@2x.webp 2x
-            " media="(min-width: 768px)" type="image/webp">
-          <source srcset="
-              ./images/images/hero/smart/icesmile-smart.png    1x,
-              ./images/images/hero/smart/icesmile-smart@2x.png 2x
-            " media="(max-width: 767px)">
-          <source srcset="
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/tablet/icesmile-tablet.png    1x,
+              ./images/images/hero/tablet/icesmile-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
               ./images/images/hero/smart/icesmile-smart.webp    1x,
               ./images/images/hero/smart/icesmile-smart@2x.webp 2x
-            " media="(max-width: 767px)" type="image/webp">
-          <img src="./images/images/hero/smart/icesmile-smart.png" alt="Smile">
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/images/hero/smart/icesmile-smart.png    1x,
+              ./images/images/hero/smart/icesmile-smart@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            src="./images/images/hero/smart/icesmile-smart.png"
+            alt="Smile"
+            loading="lazy"
+          />
         </picture>
       </li>
     </ul>
