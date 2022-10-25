@@ -64,7 +64,6 @@
   justify-content: space-between;
   text-align: center;
   min-width: 164px;
-  // height: 42px;
   padding: 12px 34px;
   padding-right: 22px;
   background-color: var(--accent-color);
@@ -73,7 +72,6 @@
 .button__read-more:hover {
   background-color: var(--button-green);
   border-color: var(--button-green);
-  // cursor: none !important;
 }
 .button__read-more:focus {
   background-color: var(--button-green);
