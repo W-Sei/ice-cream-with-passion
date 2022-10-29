@@ -1,4 +1,10 @@
 .products {
+  background-color: var(--background-main);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
   @media screen and (max-width: 767px) {
     background-image: url(../images/images/products/smart/productsfon-smart.png);
   }
@@ -41,14 +47,6 @@
   &:hover {
     transform: scale(1.2);
   }
-}
-
-.products {
-  background-color: var(--background-main);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .products__item--title {
