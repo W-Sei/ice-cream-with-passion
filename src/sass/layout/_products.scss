@@ -1,3 +1,32 @@
+.products {
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/images/products/smart/productsfon-smart.png);
+  }
+  @media screen and (min-device-pixelratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(../images/images/products/smart/productsfon-smart@2x.png);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: url(../images/images/products/tablet/productsfon-tablet.png);
+  }
+  @media screen and (min-device-pixelratio: 2) and (min-width: 768px) and (max-width: 1199px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+    background-image: url(../images/images/products/tablet/productsfon-tablet@2x.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/images/products/desctop/productsfon-desctop.png);
+  }
+  @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(../images/images/products/desctop/productsfon-desctop@2x.png);
+  }
+}
+
 .products__sub-title {
   transition: transform 500ms linear;
 
@@ -19,6 +48,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .products__item--title {
@@ -31,15 +61,15 @@
   border-radius: 24px;
 }
 
-.products__item--one {
+.products__item--cream {
   background-color: var(--product-green);
 }
 
-.products__item--two {
+.products__item--coffee {
   background-color: var(--product-yellow);
 }
 
-.products__item--three {
+.products__item--milk {
   background-color: var(--product-brown);
 }
 
@@ -47,8 +77,320 @@
   @include font($line-height: 25px);
   text-align: center;
 }
-
 // ======== /PRODUCTS ITEM ===========
+
+// 0-767px
+@media screen and (max-width: 767px) {
+  .products__sub-title {
+    @include fontHeadingSmall($line-height: 22px, $font-size: 18px);
+    margin-bottom: 12px;
+  }
+
+  .products__title {
+    @include fontHeading($line-height: 38px, $font-size: 30px, $letter-spacing: 0.04em);
+    margin-bottom: 148px;
+  }
+
+  .products__item {
+    max-width: 280px;
+    padding: 0 40px 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 164px;
+    }
+  }
+
+  .products__item--title {
+    @include font($line-height: 24px, $font-weight: 700, $font-size: 20px);
+    margin-bottom: 40px;
+  }
+
+  .products__item--text {
+    margin-bottom: 90px;
+  }
+}
+
+// 768px +
+@media screen and (min-width: 768px) {
+  .products {
+    padding-bottom: 82px;
+  }
+
+  .products__list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .products__sub-title {
+    @include fontHeadingSmall($line-height: 27px, $font-size: 22px);
+    margin-bottom: 12px;
+  }
+
+  .products__title {
+    @include fontHeading($line-height: 43px, $font-size: 34px, $letter-spacing: 0.04em);
+    margin-bottom: 200px;
+  }
+
+  .products__item-wrapper {
+    padding: 0 26px 20px;
+  }
+
+  .products__item {
+    min-width: 224px;
+  }
+
+  .products__item--title {
+    @include font($line-height: 27px, $font-weight: 700, $font-size: 22px);
+    margin-bottom: 40px;
+  }
+
+  .products__item--text.cream {
+    margin-bottom: 140px;
+  }
+
+  .products__item--text.coffee {
+    margin-bottom: 90px;
+  }
+
+  .products__item--text.milk {
+    margin-bottom: 115px;
+  }
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+  .products__item-wrapper {
+    padding: 0 65px 60px;
+  }
+
+  .products__list {
+    gap: 32px;
+  }
+
+  .products__sub-title {
+    @include fontHeadingSmall();
+  }
+
+  .products__title {
+    @include fontHeading();
+    margin-bottom: 300px;
+  }
+
+  .products__item {
+    max-width: 370px;
+  }
+
+  .products__item--title {
+    @include font($line-height: 37px, $font-weight: 700, $font-size: 30px);
+    margin-bottom: 65px;
+  }
+
+  .products__item--text {
+    @include font($font-size: 16px);
+  }
+
+  .products__item--text.cream {
+    margin-bottom: 85px;
+  }
+
+  .products__item--text.coffee,
+  .products__item--text.milk {
+    margin-bottom: 60px;
+  }
+}
+
+// ====== ELIPSE ===========
+
+.elipse {
+  transform: translateY(-50%);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background-size: cover;
+  }
+}
+
+.elipse--cream {
+  background: var(----circle-green);
+}
+
+.elipse--coffee {
+  background: var(----circle-yellow);
+}
+
+.elipse--milk {
+  background: var(--circle-brown);
+}
+
+// 0-1199px
+@media screen and (max-width: 1199px) {
+  .elipse {
+    margin-bottom: -80px;
+    height: 210px;
+    width: 200px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+// 0 - 767px
+@media screen and (max-width: 767px) {
+  .elipse--cream {
+    box-shadow: var(--circle-green-shadow-mobile);
+
+    &::before {
+      background-image: url(../images/images/products/smart/cream-smart.png);
+
+      @media screen and (min-device-pixelratio: 2) and (max-width: 767px),
+        screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        background-image: url(../images/images/products/smart/cream-smart@2x.png);
+      }
+    }
+  }
+
+  .elipse--coffee {
+    box-shadow: var(--circle-yellow-shadow-mobile);
+
+    &::before {
+      background-image: url(../images/images/products/smart/coffee-smart.png);
+
+      @media screen and (min-device-pixelratio: 2) and (max-width: 767px),
+        screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        background-image: url(../images/images/products/smart/coffee-smart@2x.png);
+      }
+    }
+  }
+
+  .elipse--milk {
+    box-shadow: var(--circle-brown-shadow-mobile);
+
+    &::before {
+      background-image: url(../images/images/products/smart/milk-smart.png);
+
+      @media screen and (min-device-pixelratio: 2) and (max-width: 767px),
+        screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        background-image: url(../images/images/products/smart/milk-smart@2x.png);
+      }
+    }
+  }
+}
+
+// 768px - 1199px
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .elipse--cream {
+    box-shadow: var(--circle-green-shadow-tablet);
+
+    &::before {
+      background-image: url(../images/images/products/tablet/cream-tablet.png);
+
+      @media screen and (min-device-pixelratio: 2) and (min-width: 768px) and (max-width: 1199px),
+        screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+        screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+        background-image: url(../images/images/products/tablet/cream-tablet@2x.png);
+      }
+    }
+  }
+
+  .elipse--coffee {
+    box-shadow: var(--circle-yellow-shadow-tablet);
+
+    &::before {
+      background-image: url(../images/images/products/tablet/coffee-tablet.png);
+
+      @media screen and (min-device-pixelratio: 2) and (min-width: 768px) and (max-width: 1199px),
+        screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+        screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+        background-image: url(../images/images/products/tablet/coffee-tablet@2x.png);
+      }
+    }
+  }
+
+  .elipse--milk {
+    box-shadow: var(--circle-brown-shadow-tablet);
+
+    &::before {
+      background-image: url(../images/images/products/tablet/milk-tablet.png);
+
+      @media screen and (min-device-pixelratio: 2) and (min-width: 768px) and (max-width: 1199px),
+        screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+        screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+        background-image: url(../images/images/products/tablet/milk-tablet@2x.png);
+      }
+    }
+  }
+}
+
+// 1200px+
+@media screen and (min-width: 1200px) {
+  .elipse {
+    height: 315px;
+    width: 300px;
+    margin-bottom: -85px;
+
+    &::before {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .elipse--cream {
+    box-shadow: var(--circle-green-shadow-desktop);
+
+    &::before {
+      background-image: url(../images/images/products/desctop/cream-desctop.png);
+
+      @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
+        screen and (min-resolution: 192dpi) and (min-width: 1200px),
+        screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        background-image: url(../images/images/products/desctop/cream-desctop@2x.png);
+      }
+    }
+  }
+
+  .elipse--coffee {
+    box-shadow: var(--circle-yellow-shadow-desktop);
+
+    &::before {
+      background-image: url(../images/images/products/desctop/coffee-desctop.png);
+
+      @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
+        screen and (min-resolution: 192dpi) and (min-width: 1200px),
+        screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        background-image: url(../images/images/products/desctop/coffee-desctop@2x.png);
+      }
+    }
+  }
+
+  .elipse--milk {
+    box-shadow: var(--circle-brown-shadow-desktop);
+
+    &::before {
+      background-image: url(../images/images/products/desctop/milk-desctop.png);
+
+      @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
+        screen and (min-resolution: 192dpi) and (min-width: 1200px),
+        screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        background-image: url(../images/images/products/desctop/milk-desctop@2x.png);
+      }
+    }
+  }
+}
+// ====== /ELIPSE ===========
 
 // =========== BUTTON ==========
 .products__icecream-button,
@@ -81,823 +423,3 @@
   height: 20px;
 }
 // =========== /BUTTON ==========
-
-// 0-767px
-@media screen and (max-width: 767px) {
-  .products {
-    background-image: url(../images/images/products/smart/productsfon-smart.png);
-  }
-
-  .products__sub-title {
-    @include fontHeadingSmall($line-height: 22px, $font-size: 18px);
-    margin-bottom: 12px;
-  }
-
-  .products__title {
-    @include fontHeading($line-height: 38px, $font-size: 30px, $letter-spacing: 0.04em);
-    margin-bottom: 148px;
-  }
-
-  .products__item {
-    max-width: 280px;
-    padding: 0 40px 20px;
-    margin-left: auto;
-    margin-right: auto;
-
-    &:not(:last-child) {
-      margin-bottom: 164px;
-    }
-  }
-
-  .products__item--title {
-    @include font($line-height: 24px, $font-weight: 700, $font-size: 20px);
-    margin-bottom: 40px;
-    margin-top: -110px;
-  }
-
-  .products__item--text {
-    margin-bottom: 90px;
-  }
-}
-
-@media screen and (min-device-pixelratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .products {
-    background-image: url(../images/images/products/smart/productsfon-smart@2x.png);
-  }
-}
-
-// ====== ELIPSE ===========
-
-.elipse {
-  // border: 0.67px none;
-  transform: translateY(-50%);
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.elipse--one {
-  background: var(----circle-green);
-}
-
-.elipse--two {
-  background: var(----circle-yellow);
-}
-
-.elipse--three {
-  background: var(--circle-brown);
-}
-
-// 0-1199px
-@media screen and (max-width: 1199px) {
-  .elipse {
-    border-radius: 100px;
-    margin-bottom: 20px;
-  }
-}
-
-// 0 - 767px
-@media screen and (max-width: 767px) {
-  .elipse {
-    height: 210px;
-    width: 200px;
-  }
-
-  .elipse--one {
-    box-shadow: var(--circle-green-shadow-mobile);
-
-    &::before {
-      content: url(../images/images/products/smart/cream-smart.png);
-    }
-  }
-
-  .elipse--two {
-    box-shadow: var(--circle-yellow-shadow-mobile);
-
-    &::before {
-      content: url(../images/images/products/smart/coffee-smart.png);
-    }
-  }
-
-  .elipse--three {
-    box-shadow: var(--circle-brown-shadow-mobile);
-
-    &::before {
-      content: url(../images/images/products/smart/milk-smart.png);
-    }
-  }
-}
-
-// 768px - 1199px
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .elipse {
-    height: 208px;
-    width: 200px;
-  }
-
-  .elipse--one {
-    box-shadow: var(--circle-green-shadow-tablet);
-
-    &::before {
-      content: url(../images/images/products/tablet/cream-tablet.png);
-    }
-  }
-
-  .elipse--two {
-    box-shadow: var(--circle-yellow-shadow-tablet);
-
-    &::before {
-      content: url(../images/images/products/tablet/coffee-tablet.png);
-    }
-  }
-
-  .elipse--three {
-    box-shadow: var(--circle-brown-shadow-tablet);
-
-    &::before {
-      content: url(../images/images/products/tablet/milk-tablet.png);
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .elipse {
-    height: 315px;
-    width: 300px;
-    border-radius: 150px;
-    margin-bottom: 32px;
-  }
-
-  .elipse--one {
-    box-shadow: var(--circle-green-shadow-desktop);
-
-    &::before {
-      content: url(../images/images/products/desctop/cream-desctop.png);
-    }
-  }
-
-  .elipse--two {
-    box-shadow: var(--circle-yellow-shadow-desktop);
-
-    &::before {
-      content: url(../images/images/products/desctop/coffee-desctop.png);
-    }
-  }
-
-  .elipse--three {
-    box-shadow: var(--circle-brown-shadow-desktop);
-
-    &::before {
-      content: url(../images/images/products/desctop/milk-desctop.png);
-    }
-  }
-}
-// ====== /ELIPSE ===========
-
-// 768px +
-@media screen and (min-width: 768px) {
-  .products {
-    background-image: url(../images/images/products/tablet/productsfon-tablet.png);
-    padding-bottom: 82px;
-  }
-
-  .products__list {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-  }
-
-  .products__sub-title {
-    @include fontHeadingSmall($line-height: 27px, $font-size: 22px);
-    margin-bottom: 12px;
-  }
-
-  .products__title {
-    @include fontHeading($line-height: 43px, $font-size: 34px, $letter-spacing: 0.04em);
-    margin-bottom: 200px;
-  }
-
-  .products__item-wrapper {
-    padding: 0 26px 20px;
-  }
-
-  .products__item {
-    min-width: 224px;
-  }
-
-  .products__item--title {
-    @include font($line-height: 27px, $font-weight: 700, $font-size: 22px);
-    margin-bottom: 40px;
-    margin-top: -98px;
-  }
-
-  .products__item--text.one {
-    margin-bottom: 140px;
-  }
-
-  .products__item--text.two {
-    margin-bottom: 90px;
-  }
-
-  .products__item--text.three {
-    margin-bottom: 115px;
-  }
-}
-
-@media screen and (min-device-pixelratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 7680px) {
-  .products {
-    background-image: url(../images/images/products/tablet/productsfon-tablet@2x.png);
-  }
-}
-
-// 1200px +
-@media screen and (min-width: 1200px) {
-  .products {
-    background-image: url(../images/images/products/desctop/productsfon-desctop.png);
-    padding-left: 13px;
-    padding-right: 13px;
-  }
-
-  .products__item-wrapper {
-    padding: 0 65px 60px;
-  }
-
-  .products__list {
-    gap: 32px;
-  }
-
-  .products__sub-title {
-    @include fontHeadingSmall();
-  }
-
-  .products__title {
-    @include fontHeading();
-    margin-bottom: 303px;
-  }
-
-  .products__item {
-    max-width: 370px;
-  }
-
-  .products__item--title {
-    @include font($line-height: 37px, $font-weight: 700, $font-size: 30px);
-    margin-bottom: 65px;
-  }
-
-  .products__item--text {
-    @include font($font-size: 16px);
-  }
-
-  .products__item--text.one {
-    margin-bottom: 85px;
-  }
-
-  .products__item--text.two,
-  .products__item--text.three {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .products {
-    background-image: url(../images/images/products/desctop/productsfon-desctop@2x.png);
-  }
-}
-
-// @media screen and (max-width: 767px) {
-//   .products {
-//     background-image: url(../images/images/products/smart/productsfon-smart.png);
-//     padding-left: 20px;
-//     padding-right: 20px;
-//   }
-
-//   .products__list {
-//     padding-bottom: 60px;
-//   }
-
-//   .products__sub-title {
-//     font-weight: 800;
-//     font-size: 18px;
-//     line-height: 1.23;
-//     text-align: center;
-//     padding-top: 60px;
-//     margin-bottom: 12px;
-//   }
-
-//   .products__title {
-//     font-family: 'Seymour One';
-//     font-weight: 400;
-//     font-size: 30px;
-//     line-height: 1.27;
-//     text-align: center;
-//     margin-bottom: 148px;
-
-//   }
-
-//   .elipse {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(156, 190, 143, 0.7),
-//         rgba(156, 190, 143, 0.7)
-//       ),
-//       #d9d9d9;
-//     border: 0.67px none;
-//     border-radius: 100px;
-//     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-//     height: 210px;
-//     width: 200px;
-//     transform: translateY(-50%);
-//     text-align: center;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 20px;
-
-//     &::before {
-//       content: url(../images/images/products/smart/cream-smart.png);
-//     }
-//   }
-
-//   .elipse-two {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(248, 210, 78, 0.7),
-//         rgba(248, 210, 78, 0.7)
-//       ),
-//       #d9d9d9;
-//     box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-//     border: 0.67px none;
-//     border-radius: 100px;
-//     height: 210px;
-//     width: 200px;
-//     transform: translateY(-50%);
-//     text-align: center;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 20px;
-
-//     &::before {
-//       content: url(../images/images/products/smart/coffee-smart.png);
-//     }
-//   }
-
-//   .elipse-three {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(213, 117, 63, 0.7),
-//         rgba(213, 117, 63, 0.7)
-//       ),
-//       #d9d9d9;
-//     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-//     border: 0.67px none;
-//     border-radius: 100px;
-//     height: 210px;
-//     width: 200px;
-//     transform: translateY(-50%);
-//     text-align: center;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 20px;
-
-//     &::before {
-//       content: url(../images/images/products/smart/milk-smart.png);
-//     }
-//   }
-
-//   .products__list__item {
-//     background-color: #aec6a5;
-//     border-radius: 24px;
-//     width: 280px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 164px;
-//   }
-
-//   .products__list__item__title {
-//     font-size: 20px;
-//     line-height: 1.2;
-//     text-align: center;
-//     margin-bottom: 40px;
-//     margin-top: -110px;
-//   }
-
-//   .products__list__item__text {
-//     font-weight: 400;
-//     line-height: 1.78;
-//     text-align: center;
-//     width: 200px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 90px;
-//   }
-
-//   .products__icecream-button,
-//   .products__icecoffee-button,
-//   .products__milkshakes-button {
-//     cursor: pointer;
-//     border: none;
-//     width: 40px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     padding-bottom: 20px;
-//     display: block;
-//     margin-bottom: 20px;
-//   }
-
-//   .products__icecream-button {
-//     background-color: #aec6a5;
-//   }
-
-//   .products__icecoffee-button {
-//     background-color: #efd478;
-//   }
-
-//   .products__milkshakes-button {
-//     background-color: #d6936d;
-//   }
-
-//   .products__list__item-two {
-//     background-color: #efd478;
-//     border-radius: 24px;
-//     width: 280px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 164px;
-//   }
-
-//   .products__list__item-three {
-//     background-color: #d6936d;
-//     border-radius: 24px;
-//     width: 280px;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-// }
-
-// @media screen and (min-device-pixelratio: 2) and (max-width: 767px),
-//   screen and (min-resolution: 192dpi) and (max-width: 767px),
-//   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-//   .products {
-//     background-image: url(../images/images/products/smart/productsfon-smart@2x.png);
-//   }
-// }
-
-// @media screen and (min-width: 768px) {
-//   .products {
-//     background-image: url(../images/images/products/tablet/productsfon-tablet.png);
-//     margin-left: auto;
-//     margin-right: auto;
-//     padding-left: 32px;
-//     padding-right: 32px;
-//     width: 100%;
-//   }
-
-//   .products__list {
-//     padding-bottom: 82px;
-//     display: flex;
-//     justify-content: center;
-//   }
-
-//   .products__sub-title {
-//     font-weight: 800;
-//     font-size: 22px;
-//     line-height: 1.23;
-//     text-align: center;
-//     padding-top: 60px;
-//     margin-bottom: 12px;
-//   }
-
-//   .products__title {
-//     font-family: 'Seymour One';
-//     font-weight: 400;
-//     font-size: 34px;
-//     line-height: 1.27;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     margin-bottom: 303px;
-//   }
-
-//   .elipse {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(156, 190, 143, 0.7),
-//         rgba(156, 190, 143, 0.7)
-//       ),
-//       #d9d9d9;
-//     border: 0.67px none;
-//     border-radius: 100px;
-//     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-//     height: 210px;
-//     width: 200px;
-//     transform: translateY(-50%);
-//     text-align: center;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 20px;
-
-//     &::before {
-//       content: url(../images/images/products/smart/cream-smart.png);
-//     }
-//   }
-
-//   .elipse-two {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(248, 210, 78, 0.7),
-//         rgba(248, 210, 78, 0.7)
-//       ),
-//       #d9d9d9;
-//     box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-//     border: 0.67px none;
-//     border-radius: 100px;
-//     height: 210px;
-//     width: 200px;
-//     transform: translateY(-50%);
-//     text-align: center;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 20px;
-
-//     &::before {
-//       content: url(../images/images/products/smart/coffee-smart.png);
-//     }
-//   }
-
-//   .elipse-three {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(213, 117, 63, 0.7),
-//         rgba(213, 117, 63, 0.7)
-//       ),
-//       #d9d9d9;
-//     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-//     border: 0.67px none;
-//     border-radius: 100px;
-//     height: 210px;
-//     width: 200px;
-//     transform: translateY(-50%);
-//     text-align: center;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 20px;
-
-//     &::before {
-//       content: url(../images/images/products/smart/milk-smart.png);
-//     }
-//   }
-
-//   .products__list__item {
-//     background-color: #aec6a5;
-//     border-radius: 24px;
-//     width: 224px;
-//     margin-right: 16px;
-//   }
-
-//   .products__list__item__title {
-//     font-size: 22px;
-//     line-height: 1.2;
-//     text-align: center;
-//     margin-bottom: 40px;
-//     margin-top: -98px;
-//   }
-
-//   .products__list__item__text {
-//     font-weight: 400;
-//     line-height: 1.78;
-//     text-align: center;
-//     width: 172px;
-//     height: 143px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 90px;
-//   }
-
-//   .products__icecream-button,
-//   .products__icecoffee-button,
-//   .products__milkshakes-button {
-//     cursor: pointer;
-//     border: none;
-//     width: 40px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     padding-bottom: 20px;
-//     display: block;
-//     margin-bottom: 20px;
-//   }
-
-//   .products__icecream-button {
-//     background-color: #aec6a5;
-//   }
-
-//   .products__icecoffee-button {
-//     background-color: #efd478;
-//   }
-
-//   .products__milkshakes-button {
-//     background-color: #d6936d;
-//   }
-
-//   .products__list__item-two {
-//     background-color: #efd478;
-//     border-radius: 24px;
-//     width: 224px;
-//     margin-right: 16px;
-//   }
-
-//   .products__list__item-three {
-//     background-color: #d6936d;
-//     border-radius: 24px;
-//     width: 224px;
-//   }
-// }
-
-// @media screen and (min-device-pixelratio: 2) and (min-width: 768px),
-//   screen and (min-resolution: 192dpi) and (min-width: 768px),
-//   screen and (min-resolution: 2dppx) and (min-width: 7680px) {
-//   .products {
-//     background-image: url(../images/images/products/tablet/productsfon-tablet@2x.png);
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .products {
-//     background-image: url(../images/images/products/desctop/productsfon-desctop.png);
-//     margin-left: auto;
-//     margin-right: auto;
-//     padding-left: 13px;
-//     padding-right: 13px;
-//     width: 100%;
-//   }
-
-//   .products__list {
-//     padding-bottom: 60px;
-//     display: flex;
-//     justify-content: center;
-//   }
-
-//   .products__sub-title {
-//     font-weight: 800;
-//     font-size: 30px;
-//     line-height: 1.23;
-//     text-align: center;
-//     padding-top: 60px;
-//     margin-bottom: 12px;
-//   }
-
-//   .products__title {
-//     font-family: 'Seymour One';
-//     font-weight: 400;
-//     font-size: 36px;
-//     line-height: 1.27;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     margin-bottom: 303px;
-//   }
-
-//   .elipse {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(156, 190, 143, 0.7),
-//         rgba(156, 190, 143, 0.7)
-//       ),
-//       #d9d9d9;
-//     border: 0.67px none;
-//     border-radius: 150px;
-//     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-//     height: 310px;
-//     width: 300px;
-//     transform: translateY(-50%);
-//     text-align: center;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 20px;
-
-//     &::before {
-//       content: url(../images/images/products/desctop/cream-desctop.png);
-//     }
-//   }
-
-//   .elipse-two {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(248, 210, 78, 0.7),
-//         rgba(248, 210, 78, 0.7)
-//       ),
-//       #d9d9d9;
-//     box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-//     border: 0.67px none;
-//     border-radius: 150px;
-//     height: 310px;
-//     width: 300px;
-//     transform: translateY(-50%);
-//     text-align: center;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 20px;
-
-//     &::before {
-//       content: url(../images/images/products/desctop/coffee-desctop.png);
-//     }
-//   }
-
-//   .elipse-three {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(213, 117, 63, 0.7),
-//         rgba(213, 117, 63, 0.7)
-//       ),
-//       #d9d9d9;
-//     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-//     border: 0.67px none;
-//     border-radius: 150px;
-//     height: 310px;
-//     width: 300px;
-//     transform: translateY(-50%);
-//     text-align: center;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 20px;
-
-//     &::before {
-//       content: url(../images/images/products/desctop/milk-desctop.png);
-//     }
-//   }
-
-//   .products__list__item {
-//     background-color: #aec6a5;
-//     border-radius: 24px;
-//     width: 370px;
-//     margin-right: 32px;
-//   }
-
-//   .products__list__item__title {
-//     font-size: 30px;
-//     line-height: 1.2;
-//     text-align: center;
-//     margin-bottom: 40px;
-//     margin-top: -98px;
-//   }
-
-//   .products__list__item__text {
-//     font-weight: 400;
-//     line-height: 1.78;
-//     text-align: center;
-//     width: 246px;
-//     height: 145px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 90px;
-//     font-size: 16px;
-//   }
-
-//   .products__icecream-button,
-//   .products__icecoffee-button,
-//   .products__milkshakes-button {
-//     cursor: none !important;
-//     border: none;
-//     width: 40px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     padding-bottom: 20px;
-//     display: block;
-//     margin-bottom: 20px;
-//   }
-
-//   .products__icecream-button {
-//     background-color: #aec6a5;
-//   }
-
-//   .products__icecoffee-button {
-//     background-color: #efd478;
-//   }
-
-//   .products__milkshakes-button {
-//     background-color: #d6936d;
-//   }
-
-//   .products__list__item-two {
-//     background-color: #efd478;
-//     border-radius: 24px;
-//     width: 370px;
-//     margin-right: 32px;
-//   }
-
-//   .products__list__item-three {
-//     background-color: #d6936d;
-//     border-radius: 24px;
-//     width: 370px;
-//   }
-// }
-
-// @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
-//   screen and (min-resolution: 192dpi) and (min-width: 1200px),
-//   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-//   .products {
-//     background-image: url(../images/images/products/desctop/productsfon-desctop@2x.png);
-//   }
-// }
