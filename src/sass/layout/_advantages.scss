@@ -1,17 +1,20 @@
 .advantages-section {
   background-color: var(--green-section-background);
-  min-width: 320px;
+  // min-width: 320px;
 
   @media screen and (min-width: 320px) {
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
+    padding-bottom: 35px;
   }
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 204px;
+    // padding-bottom: 204px;
+    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 180px;
+    // padding-bottom: 180px;
+    padding-bottom: 85px;
   }
 }
 
@@ -30,17 +33,12 @@
 }
 
 .advantages-list-title {
-  @include fontHeadingSmall(
-    $font-family: 'Roboto',
-    $line-height: 42px,
-    $font-weight: 700,
-    $font-size: 36px
-  );
+  @include fontHeadingSmall($font-family: "Roboto", $line-height: 42px, $font-weight: 700, $font-size: 36px);
   color: var(--text-light);
   margin-bottom: 18px;
 
   &::before {
-    content: '';
+    content: "";
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,12 +56,12 @@
 }
 
 .title-two::before {
-  content: '';
+  content: "";
   background-image: url(../images/images/icon/weight.png);
 }
 
 .title-three::before {
-  content: '';
+  content: "";
   background-image: url(../images/images/icon/ice-cream.png);
 }
 
@@ -104,22 +102,17 @@
   }
 
   .advantages-list-title {
-    @include fontHeadingSmall(
-      $line-height: 59px,
-      $font-weight: 700,
-      $font-size: 48px,
-      $text-transform: none
-    );
+    @include fontHeadingSmall($line-height: 59px, $font-weight: 700, $font-size: 48px, $text-transform: none);
     margin-bottom: 16px;
 
     &::before {
-      content: '';
+      content: "";
       margin-bottom: 32px;
     }
   }
 
   .advantages-list-text {
-    @include fontHeadingSmall('Montserrat', 24px, 400, 14px, 0em, center, none);
+    @include fontHeadingSmall("Montserrat", 24px, 400, 14px, 0em, center, none);
   }
 }
 
@@ -143,32 +136,16 @@
   }
 
   .advantages-list-title {
-    @include fontHeadingSmall(
-      'Montserrat',
-      71px,
-      700,
-      58px,
-      0.04em,
-      center,
-      none
-    );
+    @include fontHeadingSmall("Montserrat", 71px, 700, 58px, 0.04em, center, none);
     margin-bottom: 16px;
 
     &::before {
-      content: '';
+      content: "";
       margin-bottom: 40px;
     }
   }
 
   .advantages-list-text {
-    @include fontHeadingSmall(
-      'Montserrat',
-      28px,
-      400,
-      16px,
-      0.02em,
-      center,
-      none
-    );
+    @include fontHeadingSmall("Montserrat", 28px, 400, 16px, 0.02em, center, none);
   }
 }
