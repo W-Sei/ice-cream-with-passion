@@ -1,53 +1,61 @@
-.gallery-reviews-background {
-  background-color: var(--background-main);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
+// .gallery-reviews-background {
+//   background-color: var(--background-main);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   background-attachment: fixed;
+// }
 
-.gallery-reviews-background {
-  @media screen and (max-width: 767px) {
-    background-image: url(../images/images/gallery/gallery-fon-smart.png);
-  }
-  @media screen and (min-device-pixelratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    background-image: url(../images/images/gallery/gallery-fon-smart@2x.png);
-  }
+// .gallery-reviews-background {
+//   @media screen and (max-width: 767px) {
+//     background-image: url(../images/images/gallery/gallery-fon-smart.png);
+//   }
+//   @media screen and (min-device-pixelratio: 2) and (max-width: 767px),
+//     screen and (min-resolution: 192dpi) and (max-width: 767px),
+//     screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//     background-image: url(../images/images/gallery/gallery-fon-smart@2x.png);
+//   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    background-image: url(../images/images/gallery/gallery-fon-tablet.png);
-  }
-  @media screen and (min-device-pixelratio: 2) and (min-width: 768px) and (max-width: 1199px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
-    background-image: url(../images/images/gallery/gallery-fon-tablet@2x.png);
-  }
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     background-image: url(../images/images/gallery/gallery-fon-tablet.png);
+//   }
+//   @media screen and (min-device-pixelratio: 2) and (min-width: 768px) and (max-width: 1199px),
+//     screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+//     screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+//     background-image: url(../images/images/gallery/gallery-fon-tablet@2x.png);
+//   }
 
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/images/gallery/gallery-fon-desktop.png);
-  }
-  @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    background-image: url(../images/images/gallery/gallery-fon-desktop@2x.png);
-  }
+//   @media screen and (min-width: 1200px) {
+//     background-image: url(../images/images/gallery/gallery-fon-desktop.png);
+//   }
+//   @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
+//     screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//     background-image: url(../images/images/gallery/gallery-fon-desktop@2x.png);
+//   }
+// }
+
+.gallery-section {
+  padding: 0;
 }
 
 .gallery-container {
   @media screen and (min-width: 320px) {
-    margin-top: -84px;
-    margin-bottom: 20px;
+    // margin-top: -84px;
+    // margin-bottom: 20px;
+
+    margin-bottom: -105px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-top: -224px;
+    // margin-top: -224px;
+    margin-bottom: -160px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: -158px;
-    margin-bottom: 68px;
+    // margin-top: -158px;
+    // margin-bottom: 68px;
+    margin-bottom: -325px;
   }
 }
 
