@@ -1,116 +1,113 @@
 .reviews {
-  background-color: var(--background-main);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+    background-color: var(--background-main);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .reviews {
-  @media screen and (max-width: 767px) {
-    background-image: url(../images/images/gallery/gallery-fon-smart.png);
-  }
-  @media screen and (min-device-pixelratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    background-image: url(../images/images/gallery/gallery-fon-smart@2x.png);
-  }
+    @media screen and (max-width: 767px) {
+        background-image: url(../images/images/gallery/gallery-fon-smart.png);
+    }
+    @media screen and (min-device-pixelratio: 2) and (max-width: 767px),
+        screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        background-image: url(../images/images/gallery/gallery-fon-smart@2x.png);
+    }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    background-image: url(../images/images/gallery/gallery-fon-tablet.png);
-  }
-  @media screen and (min-device-pixelratio: 2) and (min-width: 768px) and (max-width: 1199px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
-    background-image: url(../images/images/gallery/gallery-fon-tablet@2x.png);
-  }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        background-image: url(../images/images/gallery/gallery-fon-tablet.png);
+    }
+    @media screen and (min-device-pixelratio: 2) and (min-width: 768px) and (max-width: 1199px),
+        screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+        screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+        background-image: url(../images/images/gallery/gallery-fon-tablet@2x.png);
+    }
 
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/images/gallery/gallery-fon-desktop.png);
-  }
-  @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    background-image: url(../images/images/gallery/gallery-fon-desktop@2x.png);
-  }
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/images/gallery/gallery-fon-desktop.png);
+    }
+    @media screen and (min-device-pixelratio: 2) and (min-width: 1200px),
+        screen and (min-resolution: 192dpi) and (min-width: 1200px),
+        screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        background-image: url(../images/images/gallery/gallery-fon-desktop@2x.png);
+    }
 }
 
 .reviews-section {
-  @media screen and (min-width: 320px) {
-    // padding-bottom: 393px;
-    padding-top: 185px;
-    padding-bottom: 395px;
-  }
+    @media screen and (min-width: 320px) {
+        padding-top: 185px;
+        padding-bottom: 395px;
+    }
 
-  @media screen and (min-width: 768px) {
-    // padding-bottom: 384px;
-    padding-top: 220px;
-    padding-bottom: 385px;
-  }
+    @media screen and (min-width: 768px) {
+        padding-top: 220px;
+        padding-bottom: 385px;
+    }
 
-  @media screen and (min-width: 1200px) {
-    // padding-bottom: 196px;
-    padding-top: 455px;
-    padding-bottom: 195px;
-  }
+    @media screen and (min-width: 1200px) {
+        padding-top: 455px;
+        padding-bottom: 195px;
+    }
 }
 
 .reviews__testimonials {
-  padding: 34px 39px;
-  background: var(--green-section-background);
-  border-radius: 10px;
-  margin-top: 32px;
-  margin-bottom: 30px;
-
-  @include font($font-size: 12px, $line-height: 31px);
-  text-align: center;
-  color: var(--text-light);
-
-  @media screen and (min-width: 768px) {
-    @include font($font-weight: 500, $line-height: 26px);
-    padding: 29px 80px;
-    border-radius: 24px;
-    margin-top: 28px;
-    margin-bottom: 32px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    @include font($font-weight: 500, $font-size: 16px, $line-height: 30px);
-    max-width: 968px;
-    padding: 39px 109px;
+    padding: 34px 39px;
+    background: var(--green-section-background);
+    border-radius: 10px;
     margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    margin-bottom: 30px;
+
+    @include font($font-size: 12px, $line-height: 31px);
+    text-align: center;
+    color: var(--text-light);
+
+    @media screen and (min-width: 768px) {
+        @include font($font-weight: 500, $line-height: 26px);
+        padding: 29px 80px;
+        border-radius: 24px;
+        margin-top: 28px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font($font-weight: 500, $font-size: 16px, $line-height: 30px);
+        max-width: 968px;
+        padding: 39px 109px;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .reviews__testimonials-name {
-  @include font($font-weight: 500, $font-size: 20px, $line-height: 37px, $letter-spacing: 0);
-  text-align: center;
-  color: var(--text-dark);
-  margin-bottom: 14px;
+    @include font($font-weight: 500, $font-size: 20px, $line-height: 37px, $letter-spacing: 0);
+    text-align: center;
+    color: var(--text-dark);
+    margin-bottom: 14px;
 
-  @media screen and (min-width: 768px) {
-    @include font($font-weight: 500, $font-size: 16px, $line-height: 30px, $letter-spacing: 0);
-    margin-bottom: 32px;
-  }
+    @media screen and (min-width: 768px) {
+        @include font($font-weight: 500, $font-size: 16px, $line-height: 30px, $letter-spacing: 0);
+        margin-bottom: 32px;
+    }
 }
 
 .reviews__testimonials-img {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .slick-dots li button:before {
-  font-size: 12px;
-  line-height: 12px;
-  color: #d9d9d9;
-  opacity: 1;
+    font-size: 12px;
+    line-height: 12px;
+    color: #d9d9d9;
+    opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
-  color: var(--green-section-background);
+    color: var(--green-section-background);
 }
 
 .slick-dots li.slick-current button:before {
-  color: #d9d9d9;
+    color: #d9d9d9;
 }
