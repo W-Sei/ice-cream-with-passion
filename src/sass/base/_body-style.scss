@@ -1,7 +1,11 @@
 body {
-  background-color: var(--green-section-background);
-  font-family: "Montserrat", "Seymour One", "Roboto", sans-serif;
-  color: var(--text-dark);
-  letter-spacing: 0.04em;
-  font-size: 14px;
+    background-color: var(--green-section-background);
+    font-family: "Montserrat", "Seymour One", "Roboto", sans-serif;
+    color: var(--text-dark);
+    letter-spacing: 0.04em;
+    font-size: 14px;
+
+    &.modal-open {
+        overflow: hidden;
+    }
 }

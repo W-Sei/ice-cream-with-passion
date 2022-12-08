@@ -1,29 +1,58 @@
-<div class="backdrop is-hidden js-locations">
-    <div class="modal-locations backdrop-is-hidden">
-        <button type="button" class="modal-close-btn js-locations-close">
-            <svg class="modal-close-icon">
-                <use href="./images/sprite.svg#icon-close"></use>
-            </svg>
-        </button>
-        <p class="modal-locations__title">Our Locations</p>
-        <picture>
-            <source
-                srcset="./images/images/modal-locations/map-desctop.webp 1x, ./images/images/modal-locations/map-desctop@2x.webp 2x"
-                media="(min-width: 1200px)" type="image/webp">
-            <source
-                srcset="./images/images/modal-locations/map-desctop.jpg 1x, ./images/images/modal-locations/map-desctop@2x.jpg 2x"
-                media="(min-width: 1200px)">
-            <source
-                srcset="./images/images/modal-locations/map-smart.webp 1x, ./images/images/modal-locations/map-smart@2x.webp 2x"
-                media="(max-width: 767px)" type="image/webp">
-            <source
-                srcset="./images/images/modal-locations/map-smart.jpg 1x, ./images/images/modal-locations/map-smart@2x.jpg 2x"
-                media="(max-width: 767px)">
-            <img src="./images/images/modal-locations/map-desctop.jpg" alt="Card Poltava"
-                class="modal-locations__photo">
-        </picture>
-        <a class="modal-locations__link link"
-            href="https://www.google.com.ua/maps/place/Соединенные+Штаты+Америки/@36.2408711,-113.7574877,4z/data=!3m1!4b1!4m5!3m4!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891?hl=ru"
-            target="_blank" rel="noopener noreferrer nofollow">Open map</a>
-    </div>
+<div class="backdrop is-hidden js-locations" data-modal>
+  <div class="modal-locations backdrop-is-hidden">
+    <button
+      type="button"
+      class="modal-close-btn js-locations-close"
+      data-modal-close
+    >
+      <svg class="modal-close-icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-locations__title">Our Locations</p>
+    <picture>
+      <source
+        srcset="
+          ./images/images/modal-locations/map-desctop.webp    1x,
+          ./images/images/modal-locations/map-desctop@2x.webp 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/images/modal-locations/map-desctop.jpg    1x,
+          ./images/images/modal-locations/map-desctop@2x.jpg 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/images/modal-locations/map-smart.webp    1x,
+          ./images/images/modal-locations/map-smart@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/images/modal-locations/map-smart.jpg    1x,
+          ./images/images/modal-locations/map-smart@2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        src="./images/images/modal-locations/map-desctop.jpg"
+        alt="Card Poltava"
+        class="modal-locations__photo"
+      />
+    </picture>
+    <a
+      class="modal-locations__link link"
+      href="https://www.google.com.ua/maps/place/Соединенные+Штаты+Америки/@36.2408711,-113.7574877,4z/data=!3m1!4b1!4m5!3m4!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891?hl=ru"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      >Open map</a
+    >
+  </div>
 </div>
