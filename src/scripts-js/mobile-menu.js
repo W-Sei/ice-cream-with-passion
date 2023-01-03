@@ -17,21 +17,21 @@
   };
 
 
-  $('.mobile-navigation-link').on("click", function() {
+  $('.mobile-nav-menu__link').on("click", function () {
     //this == the link that was clicked
     // var href = $(this).attr("href");
     // alert("You're trying to go to " + href);
-    	  mobileMenu.classList.remove('is-open');
+    mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
-});
-  
+  });
+
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
-  
+
   closeMenuBtn22.addEventListener('click', () => {
-	  mobileMenu.classList.remove('is-open');
+    mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });

@@ -17,5 +17,22 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
-  
-  })();
+
+})();
+
+
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector('.js-modal-about-open'),
+//     closeModalBtn: document.querySelector('.js-modal-about-close'),
+//     modal: document.querySelector('.js-modal-about'),
+//   };
+
+//   refs.openModalBtn.addEventListener('click', toggleModal);
+//   refs.closeModalBtn.addEventListener('click', toggleModal);
+
+//   function toggleModal() {
+//     document.body.classList.toggle("modal-open");
+//     refs.modal.classList.toggle('is-hidden');
+//   }
+// })();

@@ -1,4 +1,4 @@
-<div class="backdrop-products-modal backdrop-products-modal-ice-cream js-modal-ice-cream">
+<div class="backdrop-products-modal backdrop-products-modal-ice-cream is-hidden js-modal-ice-cream ">
   <!-- START ######## Modal-ice-cream ######## -->
   <div class="products-modal products-modal-ice-cream">
     <button type="button" class="products-modal__close-btn js-modal-ice-cream-close">
@@ -73,13 +73,13 @@
 
       <div class="products-modal-form__field">
         <input type="text" class="products-modal-form__input modal-ice-cream-input" name="client_name" required
-          minlength="3" placeholder="Name" id="ice-cream-name" pattern="[a-zA-Z-а-яА-ЯіІїЇ]+">
+          minlength="3" placeholder="Name" id="ice-cream-name" pattern="[a-zA-Z-а-яА-ЯіІїЇ]+" />
         <label class="products-modal-form__field-description" for="ice-cream-name">Name</label>
       </div>
 
       <div class="products-modal-form__field">
         <input type="tel" class="products-modal-form__input modal-ice-cream-input" name="client_phone" required
-          placeholder="Phone" id="icecream-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+          placeholder="Phone" id="icecream-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
         <label class="products-modal-form__field-description" for="icecream-phone">Phone</label>
       </div>
 
@@ -90,7 +90,7 @@
       </div>
 
       <input class="products-modal-form__check visually-hidden" type="checkbox" name="client_select-ice-cream" checked
-        required>
+        required />
 
       <button type="submit" class="button products-modal-form__send-btn">
         Submit
@@ -100,7 +100,7 @@
   <!-- END ######## Modal-ice-cream ######## -->
 </div>
 
-<div class="backdrop-products-modal backdrop-products-modal-ice-coffee js-modal-ice-coffee">
+<div class="backdrop-products-modal backdrop-products-modal-ice-coffee is-hidden js-modal-ice-coffee">
   <!-- START ######## Modal-ice-coffee ######## -->
   <div class="products-modal products-modal-ice-coffee">
     <button type="button" class="products-modal__close-btn js-modal-ice-coffee-close">
@@ -181,13 +181,13 @@
 
       <div class="products-modal-form__field">
         <input type="text" class="products-modal-form__input modal-ice-coffee-input" name="client_name" required
-          minlength="3" placeholder="Name" id="coffee-name" pattern="[a-zA-Z-а-яА-ЯіІїЇ]+">
+          minlength="3" placeholder="Name" id="coffee-name" pattern="[a-zA-Z-а-яА-ЯіІїЇ]+" />
         <label class="products-modal-form__field-description" for="coffee-name">Name</label>
       </div>
 
       <div class="products-modal-form__field">
         <input type="tel" class="products-modal-form__input modal-ice-coffee-input" name="client_phone" required
-          placeholder="Phone" id="coffee-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+          placeholder="Phone" id="coffee-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
         <label class="products-modal-form__field-description" for="coffee-phone">Phone</label>
       </div>
 
@@ -198,7 +198,7 @@
       </div>
 
       <input class="products-modal-form__check visually-hidden" type="checkbox" name="client_select-ice-coffee" checked
-        required>
+        required />
 
       <button type="submit" class="button products-modal-form__send-btn">
         Submit
@@ -208,7 +208,7 @@
   <!-- END ######## Modal-ice-coffee ######## -->
 </div>
 
-<div class="backdrop-products-modal backdrop-products-modal-milkshakes js-modal-milkshakes">
+<div class="backdrop-products-modal backdrop-products-modal-milkshakes is-hidden js-modal-milkshakes">
   <!-- START ######## Modal-milkshakes ######## -->
   <div class="products-modal products-modal-milkshakes">
     <button type="button" class="products-modal__close-btn js-modal-milkshakes-close">
@@ -293,13 +293,14 @@
 
       <div class="products-modal-form__field">
         <input type="text" class="products-modal-form__input modal-milkshakes-input" name="client_name" required
-          minlength="3" placeholder="Name" id="milkshake-name" pattern="[a-zA-Z-а-яА-ЯіІїЇ]+">
+          minlength="3" placeholder="Name" id="milkshake-name" pattern="[a-zA-Z-а-яА-ЯіІїЇ]+" />
         <label class="products-modal-form__field-description" for="milkshake-name">Name</label>
       </div>
 
       <div class="products-modal-form__field">
         <input type="tel" class="products-modal-form__input modal-milkshakes-input" name="client_phone" required
-          placeholder="Phone" id="milkshake-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+          placeholder="Phone" id="milkshake-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx" />
         <label class="products-modal-form__field-description" for="milkshake-phone">Phone</label>
       </div>
 
@@ -310,7 +311,7 @@
       </div>
 
       <input class="products-modal-form__check visually-hidden" type="checkbox" name="client_select-milkshakes" checked
-        required>
+        required />
 
       <button type="submit" class="button products-modal-form__send-btn">
         Submit
