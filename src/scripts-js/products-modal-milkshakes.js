@@ -17,5 +17,24 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
-  
-  })();
+
+})();
+
+
+
+
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector('.js-modal-milkshakes-open'),
+//     closeModalBtn: document.querySelector('.js-modal-milkshakes-close'),
+//     modal: document.querySelector('.js-modal-milkshakes'),
+//   };
+
+//   refs.openModalBtn.addEventListener('click', toggleModal);
+//   refs.closeModalBtn.addEventListener('click', toggleModal);
+
+//   function toggleModal() {
+//     document.body.classList.toggle("modal-open");
+//     refs.modal.classList.toggle('is-hidden');
+//   }
+// })();

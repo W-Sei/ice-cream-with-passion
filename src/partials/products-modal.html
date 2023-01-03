@@ -1,70 +1,42 @@
-<div
-  class="backdrop-products-modal backdrop-products-modal-ice-cream js-modal-ice-cream"
-  data-modal
->
+<div class="backdrop-products-modal backdrop-products-modal-ice-cream is-hidden js-modal-ice-cream ">
   <!-- START ######## Modal-ice-cream ######## -->
   <div class="products-modal products-modal-ice-cream">
-    <button
-      type="button"
-      class="products-modal__close-btn js-modal-ice-cream-close"
-      data-modal-close
-    >
+    <button type="button" class="products-modal__close-btn js-modal-ice-cream-close">
       <svg class="products-modal__close-icon">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <form
-      class="products-modal-form products-modal-ice-cream-form"
-      autocomplete="off"
-    >
+    <form class="products-modal-form products-modal-ice-cream-form" autocomplete="off">
       <p class="products-modal-form__title">Chololate icecream</p>
-      <div
-        class="products-modal-form__img products-modal-ice-cream-form__img"
-      ></div>
+      <div class="products-modal-form__img products-modal-ice-cream-form__img"></div>
       <ul class="products-modal-form__calorie-table-list">
         <li class="products-modal-form__calorie-table-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-ice-cream-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-ice-cream-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-ice-cream-name">
+            <div class="products-modal-form__calorie-table-value calorie-ice-cream-value">
               320
             </div>
             kcal
           </div>
         </li>
         <li class="products-modal-form__calorie-table-name-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-ice-cream-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-ice-cream-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-ice-cream-name">
+            <div class="products-modal-form__calorie-table-value calorie-ice-cream-value">
               4g
             </div>
             Prote...
           </div>
         </li>
         <li class="products-modal-form__calorie-table-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-ice-cream-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-ice-cream-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-ice-cream-name">
+            <div class="products-modal-form__calorie-table-value calorie-ice-cream-value">
               8,2g
             </div>
             Fats
           </div>
         </li>
         <li class="products-modal-form__calorie-table-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-ice-cream-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-ice-cream-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-ice-cream-name">
+            <div class="products-modal-form__calorie-table-value calorie-ice-cream-value">
               40,4g
             </div>
             Carbs
@@ -100,62 +72,25 @@
       </div>
 
       <div class="products-modal-form__field">
-        <input
-          type="text"
-          class="products-modal-form__input modal-ice-cream-input"
-          name="client_name"
-          required
-          minlength="3"
-          placeholder="Name"
-          id="ice-cream-name"
-          pattern="[a-zA-Z-а-яА-ЯіІїЇ]+"
-        />
-        <label
-          class="products-modal-form__field-description"
-          for="ice-cream-name"
-          >Name</label
-        >
+        <input type="text" class="products-modal-form__input modal-ice-cream-input" name="client_name" required
+          minlength="3" placeholder="Name" id="ice-cream-name" pattern="[a-zA-Z-а-яА-ЯіІїЇ]+" />
+        <label class="products-modal-form__field-description" for="ice-cream-name">Name</label>
       </div>
 
       <div class="products-modal-form__field">
-        <input
-          type="tel"
-          class="products-modal-form__input modal-ice-cream-input"
-          name="client_phone"
-          required
-          placeholder="Phone"
-          id="icecream-phone"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-          title="xxx-xxx-xx-xx"
-        />
-        <label
-          class="products-modal-form__field-description"
-          for="icecream-phone"
-          >Phone</label
-        >
+        <input type="tel" class="products-modal-form__input modal-ice-cream-input" name="client_phone" required
+          placeholder="Phone" id="icecream-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+        <label class="products-modal-form__field-description" for="icecream-phone">Phone</label>
       </div>
 
       <div class="products-modal-form__field">
-        <textarea
-          class="products-modal-form__comment modal-ice-cream-input"
-          name="client_comment"
-          placeholder="Comment"
-          id="icecream-comment"
-        ></textarea>
-        <label
-          class="products-modal-form__field-description comment"
-          for="icecream-comment"
-          >Comment</label
-        >
+        <textarea class="products-modal-form__comment modal-ice-cream-input" name="client_comment" placeholder="Comment"
+          id="icecream-comment"></textarea>
+        <label class="products-modal-form__field-description comment" for="icecream-comment">Comment</label>
       </div>
 
-      <input
-        class="products-modal-form__check visually-hidden"
-        type="checkbox"
-        name="client_select-ice-cream"
-        checked
-        required
-      />
+      <input class="products-modal-form__check visually-hidden" type="checkbox" name="client_select-ice-cream" checked
+        required />
 
       <button type="submit" class="button products-modal-form__send-btn">
         Submit
@@ -165,73 +100,45 @@
   <!-- END ######## Modal-ice-cream ######## -->
 </div>
 
-<div
-  class="backdrop-products-modal backdrop-products-modal-ice-coffee js-modal-ice-coffee"
-  data-modal
->
+<div class="backdrop-products-modal backdrop-products-modal-ice-coffee is-hidden js-modal-ice-coffee">
   <!-- START ######## Modal-ice-coffee ######## -->
   <div class="products-modal products-modal-ice-coffee">
-    <button
-      type="button"
-      class="products-modal__close-btn js-modal-ice-coffee-close"
-      data-modal-close
-    >
+    <button type="button" class="products-modal__close-btn js-modal-ice-coffee-close">
       <svg class="products-modal__close-icon">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <form
-      class="products-modal-form products-modal-ice-coffee-form"
-      autocomplete="off"
-    >
+    <form class="products-modal-form products-modal-ice-coffee-form" autocomplete="off">
       <p class="products-modal-form__title">Exotic ice coffee</p>
-      <div
-        class="products-modal-form__img products-modal-ice-coffee-form__img"
-      ></div>
+      <div class="products-modal-form__img products-modal-ice-coffee-form__img"></div>
       <ul class="products-modal-form__calorie-table-list">
         <li class="products-modal-form__calorie-table-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-ice-coffee-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-ice-coffee-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-ice-coffee-name">
+            <div class="products-modal-form__calorie-table-value calorie-ice-coffee-value">
               49
             </div>
             kcal
           </div>
         </li>
         <li class="products-modal-form__calorie-table-name-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-ice-coffee-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-ice-coffee-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-ice-coffee-name">
+            <div class="products-modal-form__calorie-table-value calorie-ice-coffee-value">
               0.5g
             </div>
             Prote...
           </div>
         </li>
         <li class="products-modal-form__calorie-table-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-ice-coffee-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-ice-coffee-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-ice-coffee-name">
+            <div class="products-modal-form__calorie-table-value calorie-ice-coffee-value">
               0.7g
             </div>
             Fats
           </div>
         </li>
         <li class="products-modal-form__calorie-table-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-ice-coffee-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-ice-coffee-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-ice-coffee-name">
+            <div class="products-modal-form__calorie-table-value calorie-ice-coffee-value">
               2g
             </div>
             Carbs
@@ -273,58 +180,25 @@
       </div>
 
       <div class="products-modal-form__field">
-        <input
-          type="text"
-          class="products-modal-form__input modal-ice-coffee-input"
-          name="client_name"
-          required
-          minlength="3"
-          placeholder="Name"
-          id="coffee-name"
-          pattern="[a-zA-Z-а-яА-ЯіІїЇ]+"
-        />
-        <label class="products-modal-form__field-description" for="coffee-name"
-          >Name</label
-        >
+        <input type="text" class="products-modal-form__input modal-ice-coffee-input" name="client_name" required
+          minlength="3" placeholder="Name" id="coffee-name" pattern="[a-zA-Z-а-яА-ЯіІїЇ]+" />
+        <label class="products-modal-form__field-description" for="coffee-name">Name</label>
       </div>
 
       <div class="products-modal-form__field">
-        <input
-          type="tel"
-          class="products-modal-form__input modal-ice-coffee-input"
-          name="client_phone"
-          required
-          placeholder="Phone"
-          id="coffee-phone"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-          title="xxx-xxx-xx-xx"
-        />
-        <label class="products-modal-form__field-description" for="coffee-phone"
-          >Phone</label
-        >
+        <input type="tel" class="products-modal-form__input modal-ice-coffee-input" name="client_phone" required
+          placeholder="Phone" id="coffee-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+        <label class="products-modal-form__field-description" for="coffee-phone">Phone</label>
       </div>
 
       <div class="products-modal-form__field">
-        <textarea
-          class="products-modal-form__comment modal-ice-coffee-input"
-          name="client_comment"
-          placeholder="Comment"
-          id="coffee-comment"
-        ></textarea>
-        <label
-          class="products-modal-form__field-description comment"
-          for="coffee-comment"
-          >Comment</label
-        >
+        <textarea class="products-modal-form__comment modal-ice-coffee-input" name="client_comment"
+          placeholder="Comment" id="coffee-comment"></textarea>
+        <label class="products-modal-form__field-description comment" for="coffee-comment">Comment</label>
       </div>
 
-      <input
-        class="products-modal-form__check visually-hidden"
-        type="checkbox"
-        name="client_select-ice-coffee"
-        checked
-        required
-      />
+      <input class="products-modal-form__check visually-hidden" type="checkbox" name="client_select-ice-coffee" checked
+        required />
 
       <button type="submit" class="button products-modal-form__send-btn">
         Submit
@@ -334,73 +208,45 @@
   <!-- END ######## Modal-ice-coffee ######## -->
 </div>
 
-<div
-  class="backdrop-products-modal backdrop-products-modal-milkshakes js-modal-milkshakes"
-  data-modal
->
+<div class="backdrop-products-modal backdrop-products-modal-milkshakes is-hidden js-modal-milkshakes">
   <!-- START ######## Modal-milkshakes ######## -->
   <div class="products-modal products-modal-milkshakes">
-    <button
-      type="button"
-      class="products-modal__close-btn js-modal-milkshakes-close"
-      data-modal-close
-    >
+    <button type="button" class="products-modal__close-btn js-modal-milkshakes-close">
       <svg class="products-modal__close-icon">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <form
-      class="products-modal-form products-modal-milkshakes-form"
-      autocomplete="off"
-    >
+    <form class="products-modal-form products-modal-milkshakes-form" autocomplete="off">
       <p class="products-modal-form__title">Banana milkshake</p>
-      <div
-        class="products-modal-form__img products-modal-milkshakes-form__img"
-      ></div>
+      <div class="products-modal-form__img products-modal-milkshakes-form__img"></div>
       <ul class="products-modal-form__calorie-table-list">
         <li class="products-modal-form__calorie-table-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-milkshakes-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-milkshakes-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-milkshakes-name">
+            <div class="products-modal-form__calorie-table-value calorie-milkshakes-value">
               722
             </div>
             kcal
           </div>
         </li>
         <li class="products-modal-form__calorie-table-name-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-milkshakes-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-milkshakes-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-milkshakes-name">
+            <div class="products-modal-form__calorie-table-value calorie-milkshakes-value">
               14g
             </div>
             Prote...
           </div>
         </li>
         <li class="products-modal-form__calorie-table-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-milkshakes-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-milkshakes-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-milkshakes-name">
+            <div class="products-modal-form__calorie-table-value calorie-milkshakes-value">
               41g
             </div>
             Fats
           </div>
         </li>
         <li class="products-modal-form__calorie-table-item">
-          <div
-            class="products-modal-form__calorie-table-name calorie-milkshakes-name"
-          >
-            <div
-              class="products-modal-form__calorie-table-value calorie-milkshakes-value"
-            >
+          <div class="products-modal-form__calorie-table-name calorie-milkshakes-name">
+            <div class="products-modal-form__calorie-table-value calorie-milkshakes-value">
               73g
             </div>
             Carbs
@@ -446,62 +292,26 @@
       </div>
 
       <div class="products-modal-form__field">
-        <input
-          type="text"
-          class="products-modal-form__input modal-milkshakes-input"
-          name="client_name"
-          required
-          minlength="3"
-          placeholder="Name"
-          id="milkshake-name"
-          pattern="[a-zA-Z-а-яА-ЯіІїЇ]+"
-        />
-        <label
-          class="products-modal-form__field-description"
-          for="milkshake-name"
-          >Name</label
-        >
+        <input type="text" class="products-modal-form__input modal-milkshakes-input" name="client_name" required
+          minlength="3" placeholder="Name" id="milkshake-name" pattern="[a-zA-Z-а-яА-ЯіІїЇ]+" />
+        <label class="products-modal-form__field-description" for="milkshake-name">Name</label>
       </div>
 
       <div class="products-modal-form__field">
-        <input
-          type="tel"
-          class="products-modal-form__input modal-milkshakes-input"
-          name="client_phone"
-          required
-          placeholder="Phone"
-          id="milkshake-phone"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-          title="xxx-xxx-xx-xx"
-        />
-        <label
-          class="products-modal-form__field-description"
-          for="milkshake-phone"
-          >Phone</label
-        >
+        <input type="tel" class="products-modal-form__input modal-milkshakes-input" name="client_phone" required
+          placeholder="Phone" id="milkshake-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx" />
+        <label class="products-modal-form__field-description" for="milkshake-phone">Phone</label>
       </div>
 
       <div class="products-modal-form__field">
-        <textarea
-          class="products-modal-form__comment modal-milkshakes-input"
-          name="client_comment"
-          placeholder="Comment"
-          id="milkshake-comment"
-        ></textarea>
-        <label
-          class="products-modal-form__field-description comment"
-          for="milkshake-comment"
-          >Comment</label
-        >
+        <textarea class="products-modal-form__comment modal-milkshakes-input" name="client_comment"
+          placeholder="Comment" id="milkshake-comment"></textarea>
+        <label class="products-modal-form__field-description comment" for="milkshake-comment">Comment</label>
       </div>
 
-      <input
-        class="products-modal-form__check visually-hidden"
-        type="checkbox"
-        name="client_select-milkshakes"
-        checked
-        required
-      />
+      <input class="products-modal-form__check visually-hidden" type="checkbox" name="client_select-milkshakes" checked
+        required />
 
       <button type="submit" class="button products-modal-form__send-btn">
         Submit
